@@ -34,6 +34,7 @@ Organized like a real org chart — each division covers a slice of what an agen
 | [Manager Accountability Scorecard](starter-kit/08-manager-accountability-scorecard.md) | Task data → a one-page Monday scorecard | Monday morning meeting prep |
 | [Daily Owner Brief](starter-kit/10-daily-owner-brief.md) | Calendar + tasks + pipeline → one 2-minute morning brief | First thing every morning |
 | [1:1 Prep & Follow-Up](starter-kit/11-1on1-prep-and-followup.md) | Direct report's workload → agenda, feedback, and logged follow-up | Before and after every 1:1 |
+| [Meeting to Product Roadmap](starter-kit/17-meeting-to-product-roadmap.md) | Strategy meeting → vision doc + a backlog grounded in what's real | After a product direction meeting |
 
 ### ✍️ Voice & Outreach Division
 *Sounding like yourself, and reaching the right people.*
@@ -43,6 +44,8 @@ Organized like a real org chart — each division covers a slice of what an agen
 | [Write in My Voice](starter-kit/12-write-in-my-voice.md) | AI-sounding drafts → your natural voice, plus full social post rules | Before anything AI-written goes out |
 | [Deal Pipeline Review](starter-kit/13-deal-pipeline-review.md) | Open deals → urgency-ranked review with drafted follow-ups | Daily or a few times a week |
 | [LinkedIn Outbound Strategy](starter-kit/14-linkedin-outbound-strategy.md) | Your existing network → a 30-day sales opportunity plan | Planning or reviewing LinkedIn outreach |
+| [Warm Lead Outreach](starter-kit/15-warm-lead-outreach.md) | Contact list → researched, tier-matched outreach drafts | Working your follow-up backlog |
+| [LinkedIn DM Outreach](starter-kit/16-linkedin-dm-outreach.md) | A specific person → the actual message that gets a reply | Messaging a named contact on LinkedIn |
 
 More divisions will be added over time as the ManagedCoder library grows.
 
