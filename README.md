@@ -35,6 +35,15 @@ Organized like a real org chart — each division covers a slice of what an agen
 | [Daily Owner Brief](starter-kit/10-daily-owner-brief.md) | Calendar + tasks + pipeline → one 2-minute morning brief | First thing every morning |
 | [1:1 Prep & Follow-Up](starter-kit/11-1on1-prep-and-followup.md) | Direct report's workload → agenda, feedback, and logged follow-up | Before and after every 1:1 |
 
+### ✍️ Voice & Outreach Division
+*Sounding like yourself, and reaching the right people.*
+
+| Skill | Specialty | When to Use |
+|---|---|---|
+| [Write in My Voice](starter-kit/12-write-in-my-voice.md) | AI-sounding drafts → your natural voice, plus full social post rules | Before anything AI-written goes out |
+| [Deal Pipeline Review](starter-kit/13-deal-pipeline-review.md) | Open deals → urgency-ranked review with drafted follow-ups | Daily or a few times a week |
+| [LinkedIn Outbound Strategy](starter-kit/14-linkedin-outbound-strategy.md) | Your existing network → a 30-day sales opportunity plan | Planning or reviewing LinkedIn outreach |
+
 More divisions will be added over time as the ManagedCoder library grows.
 
 ## How to use a skill file
