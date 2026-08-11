@@ -20,6 +20,7 @@ Organized like a real org chart — each division covers a slice of what an agen
 | [Client Status Report](starter-kit/01-client-status-report.md) | Turns messy notes into a clean client update | Weekly/biweekly client check-ins |
 | [Proposal / SOW Draft](starter-kit/02-proposal-sow-draft.md) | Discovery notes → first-pass proposal | New deal, scoping a project |
 | [Competitor / Prospect Scan](starter-kit/04-competitor-prospect-scan.md) | Company name → pitch-ready brief | Before a sales call or pitch |
+| [Meeting-to-CRM Log](starter-kit/09-meeting-to-crm-log.md) | Call transcript/notes → logged deal update + next step | Right after any client, prospect, or partner call |
 
 ### 🧭 Team & Delegation Division
 *Running the team without living in your PM tool.*
@@ -31,6 +32,8 @@ Organized like a real org chart — each division covers a slice of what an agen
 | [Daily Task Triage](starter-kit/06-daily-task-triage.md) | Your own task list → the 3 that matter today | Every morning or evening |
 | [Weekly Delegated Task Review](starter-kit/07-weekly-delegated-task-review.md) | Everyone else's tasks → who's stalled, who's blocked | Every Friday, before Monday's meeting |
 | [Manager Accountability Scorecard](starter-kit/08-manager-accountability-scorecard.md) | Task data → a one-page Monday scorecard | Monday morning meeting prep |
+| [Daily Owner Brief](starter-kit/10-daily-owner-brief.md) | Calendar + tasks + pipeline → one 2-minute morning brief | First thing every morning |
+| [1:1 Prep & Follow-Up](starter-kit/11-1on1-prep-and-followup.md) | Direct report's workload → agenda, feedback, and logged follow-up | Before and after every 1:1 |
 
 More divisions will be added over time as the ManagedCoder library grows.
 
