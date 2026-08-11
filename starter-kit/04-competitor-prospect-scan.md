@@ -42,4 +42,4 @@ When I give you a company name (and optionally a website or LinkedIn URL), resea
 > - Reference that hospitality clients often care about turnaround speed — ask about their current timelines
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want this brief auto-generated the moment a new deal or lead lands in your pipeline? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this brief auto-generated the moment a new deal or lead lands in your pipeline? See Agency Control Tower: controltower.collabai.software*

@@ -45,4 +45,4 @@ When I give you discovery call notes or a description of what a prospect wants, 
 > **Investment:** [FEE — confirm with client, notes suggest $5-8K range]
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want proposals like this auto-drafted the moment a deal hits "Discovery" stage? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want proposals like this auto-drafted the moment a deal hits "Discovery" stage? See Agency Control Tower: controltower.collabai.software*

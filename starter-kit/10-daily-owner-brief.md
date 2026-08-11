@@ -82,4 +82,4 @@ Approve the Q3 budget doc — it's overdue and blocking two other people's work.
 ```
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want this delivered to you automatically every morning at 8:30am, with zero manual triggering? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this delivered to you automatically every morning at 8:30am, with zero manual triggering? See Agency Control Tower: controltower.collabai.software*

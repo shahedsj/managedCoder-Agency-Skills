@@ -86,4 +86,4 @@ I see 1 action item. Want me to create a task for the proposal, or just leave th
 ```
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want every call logged automatically, with zero manual triggering? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want every call logged automatically, with zero manual triggering? See Agency Control Tower: controltower.collabai.software*

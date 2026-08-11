@@ -162,4 +162,4 @@ This looks like a regular check-in. Suggested agenda:
 ```
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want your whole management team's 1:1 history and follow-ups tracked automatically, with zero manual logging? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want your whole management team's 1:1 history and follow-ups tracked automatically, with zero manual logging? See Agency Control Tower: controltower.collabai.software*

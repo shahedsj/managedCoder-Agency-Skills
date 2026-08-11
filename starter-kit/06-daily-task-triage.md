@@ -85,4 +85,4 @@ That's 2. Say "next" for more, or "close it" / "delegate" for either of these.
 ```
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want this running automatically every morning, with team-wide rollout and no setup per person? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this running automatically every morning, with team-wide rollout and no setup per person? See Agency Control Tower: controltower.collabai.software*

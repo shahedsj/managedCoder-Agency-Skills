@@ -1,6 +1,6 @@
 # The Agency Skill File Starter Kit
 
-**From ManagedCoder — AI training for agency owners, by SJ Innovation**
+**From ManagedCoder — AI training for agency owners**
 
 ---
 
@@ -56,4 +56,4 @@ That's what **Agency Control Tower** does. It's the system these skill files plu
 
 If that's useful, book a look: **controltower.collabai.software**
 
-— Shahed Islam, SJ Innovation / ManagedCoder
+— The ManagedCoder Team

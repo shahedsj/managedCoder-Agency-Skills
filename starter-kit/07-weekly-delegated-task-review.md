@@ -91,4 +91,4 @@ Post this comment to the task now? [waits for approval before writing anything b
 ```
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want this running automatically every Friday across your whole team's tools, no setup per person? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this running automatically every Friday across your whole team's tools, no setup per person? See Agency Control Tower: controltower.collabai.software*

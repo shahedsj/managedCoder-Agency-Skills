@@ -42,4 +42,4 @@ When I give you a pile of raw team updates (could be copy-pasted Slack messages,
 > **Wins:** Mike closed 2 deals this week.
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want this digest built automatically every Friday from your team's actual activity, with no copy-pasting? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this digest built automatically every Friday from your team's actual activity, with no copy-pasting? See Agency Control Tower: controltower.collabai.software*

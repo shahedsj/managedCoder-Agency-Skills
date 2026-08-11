@@ -47,4 +47,4 @@ When I give you raw project notes (bullet points, Slack copy-paste, half sentenc
 > Next update: end of this week, once checkout is live.
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want reports like this generated and sent automatically every Friday? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want reports like this generated and sent automatically every Friday? See Agency Control Tower: controltower.collabai.software*

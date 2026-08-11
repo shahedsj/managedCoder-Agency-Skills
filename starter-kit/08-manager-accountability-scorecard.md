@@ -70,4 +70,4 @@ Sam — is the client portal redesign still happening, or should we kill it — 
 ```
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want this scorecard generated automatically every Monday with zero manual pulls? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this scorecard generated automatically every Monday with zero manual pulls? See Agency Control Tower: controltower.collabai.software*

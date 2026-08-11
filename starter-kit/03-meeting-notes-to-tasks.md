@@ -44,4 +44,4 @@ When I give you meeting notes or a transcript, produce two things:
 > - Which hosting provider we're going with — not yet decided
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder by SJ Innovation. Want every meeting logged and turned into tasks automatically, without pasting anything? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want every meeting logged and turned into tasks automatically, without pasting anything? See Agency Control Tower: controltower.collabai.software*
