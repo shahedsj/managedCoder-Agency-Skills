@@ -8,13 +8,31 @@ A skill file is a page of plain English instructions that an AI agent (Claude, C
 
 This repo collects skill files built for the tasks agency owners do every week: client updates, proposals, meeting follow-up, prospect research, and team status.
 
-## What's inside
+## The Skill Roster
 
-| Folder | What it is |
-|---|---|
-| `starter-kit/` | The free 5-skill starter kit — client status report, proposal/SOW draft, meeting notes to tasks, competitor/prospect scan, weekly team status digest. Start here. |
+Organized like a real org chart — each division covers a slice of what an agency owner actually spends time on. Start with `00-START-HERE.md`, then grab whichever division fits what's eating your week.
 
-More will be added over time as the ManagedCoder library grows.
+### 📋 Client & Growth Division
+*Winning and keeping the work.*
+
+| Skill | Specialty | When to Use |
+|---|---|---|
+| [Client Status Report](starter-kit/01-client-status-report.md) | Turns messy notes into a clean client update | Weekly/biweekly client check-ins |
+| [Proposal / SOW Draft](starter-kit/02-proposal-sow-draft.md) | Discovery notes → first-pass proposal | New deal, scoping a project |
+| [Competitor / Prospect Scan](starter-kit/04-competitor-prospect-scan.md) | Company name → pitch-ready brief | Before a sales call or pitch |
+
+### 🧭 Team & Delegation Division
+*Running the team without living in your PM tool.*
+
+| Skill | Specialty | When to Use |
+|---|---|---|
+| [Meeting Notes → Tasks](starter-kit/03-meeting-notes-to-tasks.md) | Transcript → owned, dated action items | Right after any meeting |
+| [Weekly Team Status Digest](starter-kit/05-weekly-team-status-digest.md) | Scattered updates → one Friday-read digest | End of week, before you go dark |
+| [Daily Task Triage](starter-kit/06-daily-task-triage.md) | Your own task list → the 3 that matter today | Every morning or evening |
+| [Weekly Delegated Task Review](starter-kit/07-weekly-delegated-task-review.md) | Everyone else's tasks → who's stalled, who's blocked | Every Friday, before Monday's meeting |
+| [Manager Accountability Scorecard](starter-kit/08-manager-accountability-scorecard.md) | Task data → a one-page Monday scorecard | Monday morning meeting prep |
+
+More divisions will be added over time as the ManagedCoder library grows.
 
 ## How to use a skill file
 
