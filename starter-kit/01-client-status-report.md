@@ -1,64 +1,151 @@
-# Client Status Report Skill
+---
+name: client-status-report
+description: Turn messy project notes into a clean, client-ready status update that protects the relationship when things slip. Use whenever the user needs to update a client — weekly or biweekly check-ins, milestone recaps, "what do I tell the client", or when they paste rough notes, chat messages, or a task export and need it turned into something sendable. Also use when a client is chasing for an update, when a project is late and the client has not been told yet, when scope is creeping and it needs to go on the record, or before a client call when the user needs to know where things actually stand.
+---
 
-## What this does
+# Client Status Report
 
-Turns rough, messy project notes into a clean, client-ready status update — so you're not staring at a blank doc trying to remember what actually happened this week.
+Most agencies lose clients over surprise, not over quality. A status update is the cheapest insurance you can buy — it turns a slipping project into a managed project, in writing, before anyone gets angry.
 
-## When to use it
+> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
 
-- Every time you need to send a client an update — weekly, biweekly, or after a milestone
-- When all you have is scattered notes, Slack messages, or half-sentences and need them turned into something sendable
-- Right before a client call, to get your own head straight on where things stand
+## How it works
 
-## Setup
+```
+┌──────────────────────────────────────────────────────────────┐
+│  STANDALONE (always works)                                    │
+│  ✓ Paste rough notes, chat copy, or a task export            │
+│  ✓ Client-ready update under 200 words                       │
+│  ✓ Flags what you're missing BEFORE you send                 │
+├──────────────────────────────────────────────────────────────┤
+│  SUPERCHARGED (when you connect your tools)                   │
+│  + ~~project tracker: pull the period's completed work        │
+│  + ~~CRM: pull the contact and when you last updated them     │
+│  + ~~email: draft straight into a reply on the live thread    │
+└──────────────────────────────────────────────────────────────┘
+```
 
-Works best with a PM/project connector (Asana, ClickUp, Monday.com, Notion, etc.) so it can pull recent task activity and comments for this client's project directly. If you also have a CRM connector, it can pull the client contact and last-update date too.
+## What I need from you
 
-No connector yet? Just paste your raw notes — Slack copy-paste, half sentences, a task list export, whatever you've got — and it still works exactly the same way.
+**Option A — Connected tools.** Name the client. I'll pull the last 7–14 days of activity.
 
-## Instructions for the AI
+**Option B — Paste anything.** Rough is fine:
+`"finished homepage, started checkout, need their logo, still waiting on feedback from last week, dev says checkout done fri"`
 
-You are turning raw project notes into a client-facing status update.
+**Option C — Just talk.** "Redesign is going okay but they still haven't sent content and it's starting to hurt the timeline."
 
-1. **Get the material.** If a PM connector is available, pull recent activity/comments for this client's project. Otherwise, use whatever raw notes the owner pastes in.
+Tell me once how this client likes it — short and blunt, or warmer with more context — and I'll match it every time.
 
-2. **Write the update in this structure:**
-   - **Opening line** — one sentence, plain language, no fluff. State where the project stands right now (on track, ahead, or needs a decision from the client).
-   - **What we completed this period** — 3-5 bullets max. Each bullet is a finished thing, not a task in progress. Use plain outcomes ("Redesigned the checkout page," not "Worked on checkout").
-   - **What's in progress** — 2-4 bullets. Say what's being worked on and give a realistic date, not "soon."
-   - **What we need from the client** — if nothing is needed, say "Nothing needed from you right now." If something is needed (approval, content, a decision, access), name it exactly and give a deadline.
-   - **Risks or flags** — only include this section if something is actually at risk. Don't manufacture a risk section if there isn't one. If there's a risk, say what it is and what's being done about it — never raise a flag without a next step attached.
-   - **Closing line** — one sentence. Next update date or next milestone.
+## Step 1 — Work out the real situation before writing
 
-3. **Apply these rules:**
-   - Total length: under 200 words unless the client specifically wants long-form updates.
-   - No jargon the client wouldn't use themselves. If the notes say "refactored the API layer," rewrite it as what the client actually notices ("made the app load faster").
-   - Never write "we're working hard on this" or similar filler — it says nothing. Say what was actually done.
-   - If the notes don't tell you something (a date, a decision owner), don't guess — write "[NEED: confirm date]" so the owner catches it before sending, instead of inventing one.
-   - Match the tone to the client relationship: keep it warm but professional, like an update from someone who respects their time.
+Before drafting, decide which of these you're actually in. The answer changes the whole update, and getting it wrong is how updates cause damage.
 
-4. **Deliver the draft for review.** This is a draft to edit and send, not something to send automatically — even if an email or messaging connector is available, wait for explicit approval before sending anything.
+| Situation | Signal in the notes | What the update must do |
+|---|---|---|
+| **On track** | Work completed, no blockers, dates holding | Confirm progress, keep it short |
+| **Blocked on the client** | "waiting on", "need their", "no response" | Make the ask impossible to ignore, with a consequence |
+| **Slipping, our fault** | Work behind, no client dependency | Say it plainly, give the new date and the recovery plan |
+| **Slipping, their fault** | Their delay caused ours | Connect cause to effect, on the record, without blame language |
+| **Scope creeping** | New requests appearing in notes | Name the new items as new, flag the impact, don't absorb silently |
+
+If the notes are ambiguous between two of these, ask one question rather than guessing. Guessing "on track" when you're actually slipping is the single most expensive mistake this skill can make.
+
+## Step 2 — Write the update
+
+Use this exact structure. Skip any section that doesn't apply.
+
+```markdown
+**[Project] — update for [Client], [date]**
+
+[One sentence. Where this stands: on track / on track but we need something / date moving.]
+
+**Done this period**
+- [Finished thing, in outcome language]
+- [Finished thing]
+
+**In progress**
+- [Thing] — [specific date, not "soon"]
+
+**We need from you**
+- [Exact thing] — by [date], because [what it blocks]
+
+**Timeline** *(only if a date is moving)*
+[Old date] → [new date]. [One-sentence cause.] [What we're doing about it.]
+
+**New requests** *(only if scope came up)*
+[Item] — not in current scope. [Impact on time/cost.] Want us to quote it, or park it?
+
+Next update: [date or milestone].
+```
+
+## Step 3 — Flag back to the user, separately
+
+The update goes to the client. This part is for the user only — never include it in the client-facing text.
+
+```markdown
+⚠️ Before you send:
+- [NEED: confirm the checkout date — notes said "Friday" but not which Friday]
+- [The logo request is now 2 weeks old. Third time asking. Consider a call, not another email.]
+- [You're absorbing 2 new requests without quoting them. That's ~6 hours unbilled.]
+```
+
+## The rules that make this work
+
+**Write outcomes, not activity.** "Redesigned the checkout page," not "worked on checkout." Clients pay for outcomes and get nervous reading about effort. Translate anything technical into what they'd actually notice — "refactored the API layer" becomes "made the app load faster."
+
+**Under 200 words unless they've asked for long-form.** Your update competes with 40 other emails. Long ones get skimmed, and the part that gets skipped is always "we need from you" — the only section with a deadline in it.
+
+**Never invent a date, an owner, or a status.** Write `[NEED: confirm date]` and let the user fill it. A confident wrong date in a client email becomes evidence against you in a dispute. A bracket is a ten-second fix.
+
+**Every ask gets a deadline AND a consequence.** "Logo files" is ignorable. "Logo files by Thursday, or the header slips a week" is not. Clients aren't ignoring you out of malice — they're triaging, and an ask with no stated cost loses the triage every time. This one habit does more to unblock projects than anything else in this skill.
+
+**Never raise a risk without a next step attached.** A flag with no plan reads as panic and invites the client to start managing you. "Content is late, so we're building with placeholders and swapping Monday" reads as control. Same facts, opposite outcome.
+
+**Bad news goes in the written update, early.** Slippage that appears in writing before the deadline is a project being managed. The identical slippage delivered after the deadline is a surprise — and surprise is what actually loses clients. If you're tempted to leave it out until you "have a better answer," that's the exact thing to put in.
+
+**Name scope creep the first time it appears.** New requests absorbed silently become the baseline expectation, and by the third one you're doing free work and resented for pushing back. One neutral line — "not in current scope, want us to quote it?" — costs nothing early and is nearly impossible to raise later.
+
+**Their delay, stated as cause and effect, not blame.** Not "you never sent the content." Instead: "Content arrived Aug 8 rather than Aug 1, so launch moves from Aug 15 to Aug 22." Facts and dates, no adjectives. This is the sentence that protects you three months later when someone asks why the project was late.
+
+**Skip empty sections.** A manufactured risk section trains the client to ignore the real ones.
 
 ## Worked example
 
-**Input (raw notes):** "finished homepage redesign, started checkout flow, need their logo files, waitin on their feedback from last week still, dev team says checkout done by fri"
+**Input:** `"finished homepage redesign, started checkout, need their logo files, waitin on their feedback from last week still, dev team says checkout done by fri, also they asked about adding a blog which wasnt in the SOW"`
 
 **Output:**
 
-> Quick update on the redesign project — we're on track.
+> **Website Redesign — update for Nova Retail, Aug 12**
 >
-> **Completed this week:**
-> - Finished the homepage redesign
-> - Started work on the new checkout flow
+> On track, with two things we need from you to keep it that way.
 >
-> **In progress:**
-> - Checkout flow — on track for this Friday
+> **Done this period**
+> - Homepage redesign finished and ready for your review
+> - Checkout flow build started
 >
-> **We need from you:**
-> - Your logo files (high-res, any format) so we can finalize the header
-> - Feedback on last week's homepage draft — we're paused on final polish until we hear back
+> **In progress**
+> - Checkout flow — on track for Friday Aug 15
 >
-> Next update: end of this week, once checkout is live.
+> **We need from you**
+> - Logo files (high-res, any format) — by Thursday, so we can finalize the header
+> - Feedback on the homepage draft — by Thursday. It's been open a week and final polish is paused until we hear back.
+>
+> **New requests**
+> - Blog section — not in the current scope. Roughly 2 weeks of additional work. Want us to quote it, or park it until after launch?
+>
+> Next update: Friday, once checkout is live.
+
+> ⚠️ Before you send:
+> - The homepage feedback request is 8 days old. I've attached a date. If this is the second time asking, a 10-minute call will beat a third email.
+> - Good catch flagging the blog before you started it. Do not begin any of that work until they answer.
+
+## Tips
+
+1. **Send on a schedule, not when there's news.** Clients who hear from you every Friday stop emailing to ask for updates. Silence is what makes them anxious — not bad news.
+2. **The "we need from you" section is the whole point.** Everything above it is context. Put the real ask there, with a date and a cost, every single time.
+3. **If you're dreading writing this update, that IS the update.** The project needs a conversation and the report should say so.
+4. **Keep the last three.** When a client insists they were never told about a delay, a dated trail ends the conversation in one reply. This is why you write it down even when a call would be faster.
+5. **The client who goes quiet is the risk, not the client who complains.** A complaining client is engaged. Two unanswered updates in a row is your signal to pick up the phone.
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder. Want reports like this generated and sent automatically every Friday? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want these written and sent automatically every Friday from your live project data? See Agency Control Tower: controltower.collabai.software*
