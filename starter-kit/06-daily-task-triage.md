@@ -1,93 +1,260 @@
-# Daily Task Triage Skill
+---
+name: daily-task-triage
+description: Score your open tasks, work them 3 at a time, and draft the exact comment that unblocks whoever is waiting on you. Use whenever the user says "my tasks", "task review", "task check", "what's on my plate", "what do I have today", "morning review", "evening review", "my daily tasks", "next 3", "show blockers", "what should I close", or "who's waiting on me". Also use when they paste a task export, when they say the board is a mess, or when they suspect the team is stuck waiting on a decision from them.
+---
 
-## What this does
+# Daily Task Triage
 
-Turns your messy task list into a short, ranked list of what actually needs your attention today — instead of you scrolling every board every morning. It scores tasks by who's blocked, whether it fits your actual role, and whether you keep seeing the same task with no progress. Shows you 3 at a time so you don't get overwhelmed, and drafts the exact comment or nudge to post back.
+Most of your task list isn't waiting on work. It's waiting on you saying yes or no. This finds those tasks first, because every hour one sits there is an hour someone else on payroll is idle.
 
-## When to use it
+> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
 
-- Every morning or evening, instead of manually re-reading your whole PM tool
-- When you have 30+ open tasks and no idea which 3 actually matter today
-- When you suspect your team is quietly stuck waiting on you for a decision
+## How it works
 
-## Setup
+```
+┌──────────────────────────────────────────────────────────────┐
+│  STANDALONE (always works)                                    │
+│  ✓ Paste a task list or export                               │
+│  ✓ Full scoring, hard overrides, 3 at a time                 │
+│  ✓ Drafted comments and nudges you copy back in              │
+├──────────────────────────────────────────────────────────────┤
+│  SUPERCHARGED (when you connect your tools)                   │
+│  + ~~project tracker: pull tasks live, post comments,         │
+│    close and reassign after you approve                       │
+│  + ~~chat: send the nudge to whoever is blocked               │
+│  + ~~meeting notes: context on why the task exists            │
+└──────────────────────────────────────────────────────────────┘
+```
 
-This skill pulls your tasks live through whatever tool connector you already have set up in Claude — Asana, ClickUp, Monday.com, Linear, HubSpot, GoHighLevel, or similar. If you haven't connected one yet, search your Claude connector/MCP settings for your PM or CRM tool and add it once — after that this runs with zero copy-pasting.
+## What I need from you
 
-No connector available yet? You can still paste a rough task list instead (one task per line: title, assignee, status, due date) and the AI will work from that.
+**Option A — Connected tracker.** Say "my tasks." I pull everything open and assigned to you.
 
-You also need a one-time list of your own core responsibilities (5-8 bullet points — what you're actually supposed to be spending time on as the owner). Paste this once at the top of the chat; the AI will score against it every time.
+**Option B — Paste them.** One task per line: title, status, due date, who created it, last comment and its date. Missing fields are fine — missing is itself a signal.
 
-## Instructions for the AI
+**Option C — One task.** "What do I do with the invoice template task" works too.
 
-You are triaging a task list for a business owner who is too busy to review every task manually.
+**Give me this once:** your own stated core responsibilities — 5 to 8 lines of what you are actually accountable for as the owner. Everything gets scored against that list. Without it, scoring collapses into urgency only, and urgent is not the same as yours.
 
-1. **Get the data.** If a PM/CRM tool connector is available in this session, use it to pull the owner's open tasks (assigned to them, not done/archived) directly — do not ask the owner to paste anything first. If no connector is available, ask them to paste a task list instead.
+## Step 1 — Pull the open tasks
 
-2. **Detect morning or evening mode** from the time of day or how the owner phrased the request ("morning review" vs "evening review"). This changes what you lead with:
-   - **Morning:** lead with tasks that are blocking someone else. The goal is unblocking the team before the day gets going.
-   - **Evening:** lead with tasks that look done but are still marked open ("can probably close"). The goal is clearing finished work and leaving a clean board for tomorrow.
-   - If you can't tell the time of day and the owner didn't say, ask which mode they want, or default to morning.
+Everything assigned to this person that is not done, archived, or deleted — status `new` or `in progress` only. For each: title, status, priority, due date, description, the last comment and its date, and who created it. The last comment does most of the work here; a task with no comment history can only be scored on dates. Sort the raw pull by priority (urgent, high, medium, low) then due date ascending, nulls last. That's the input order, not the output order — scoring reorders it.
 
-3. **Score every task:**
-   - Someone else is blocked waiting on this owner (comment says "waiting," "need approval," "blocked," "need decision") → high priority
-   - Task matches one of the owner's stated core responsibilities → medium-high priority
-   - Task is pure execution/ops that isn't the owner's job → flag as "should be delegated," lower priority for the owner to personally do
-   - No due date and no urgency signal → low priority
+## Step 2 — Apply hard overrides first
 
-4. **Apply hard overrides before scoring:**
-   - Overdue tasks always show first, regardless of score
-   - Tasks that have appeared in a prior session 3+ times with zero action get flagged: "you've seen this — decide or archive"
-   - If the last comment/update says something is done but the status is still open, flag it as "can probably close"
-   - If a task title starts with a person's name, treat it as "track this person's work," not "do this yourself"
+These run **before** scoring — each describes a situation where the score is the wrong question.
 
-5. **Never show more than 3 tasks at once.** After each group of 3, ask if the owner wants the next 3, wants to skip one, wants to close one, or wants to delegate one.
+| Condition | Action |
+|---|---|
+| Due date is past | **OVERDUE** — show before all others regardless of score |
+| Priority urgent + no due date | Treat as due today |
+| Last comment says done / deployed / live but status is still open | Bucket: **CAN CLOSE** |
+| Last comment says on hold | Separate section — do not push the owner on it |
+| 7+ days stale with zero comments | Flag: keep or archive? |
+| Title starts with a person's name | This is accountability, not execution — draft a nudge to that person |
+| Seen 3+ times in past sessions with no action | Add: "you've seen this before — decide now or archive" |
 
-6. **For each task, output this card format:**
-   ```
-   [PRIORITY BADGE] TASK TITLE
-   🔗 [link to the task, if the connector returns one]
-   Due: [date or "no date"] | Assigned to: [name] | Status: [status]
-   Context: [1 sentence — what this is actually about]
-   Your action: [exactly what the owner needs to do — decide, unblock, or nothing]
-   Draft comment/reply: [a short, direct comment they could post back, in plain language, no corporate phrasing]
-   ```
-   Badges: OVERDUE, BLOCKING TEAM, DUE SOON, SEEN BEFORE, LOW.
+The last row is the one people skip and shouldn't. A task you've looked at three times without acting is not a task, it's a decision you're avoiding — surfacing it a fourth time in the same neutral tone teaches the list to lie to you.
 
-7. **If the owner approves a drafted comment or close/delegate action, write it back through the same connector** (post the comment, update status, or reassign) instead of just describing what to do. Confirm what you actually changed afterward.
+## Step 3 — Score every task
 
-8. **Keep drafted comments blunt and specific**, not corporate. Name the person, the exact ask, and a real deadline. Avoid phrases like "just checking in" or "please advise."
+Add the points. Highest first.
 
-9. **At the end of a session**, summarize: how many reviewed, how many closed, how many delegated, and what's still open — so the owner has a clean stopping point.
+**Input type — what does this actually need from you?**
+
+| Condition | Points |
+|---|---|
+| Quick decision (approve / reject / choose) | **+3** |
+| Comment to unblock a team member | **+2** |
+| Strategic review | **+1** |
+| The owner has to execute it personally | **0** — flag for delegation |
+
+**Team blocking**
+
+| Condition | Points |
+|---|---|
+| Last comment contains "waiting", "need approval", "blocked", "need decision", "need credentials" | **+3** |
+| Task was created by a team member | **+2** |
+| No comment in 5+ days | **+1** |
+| Owner already commented in the last 24h | **−1** |
+
+**Role alignment — against the owner's own stated core responsibilities**
+
+| Condition | Points |
+|---|---|
+| Directly matches one of the stated responsibilities | **+2** |
+| Loosely related | **+1** |
+| Pure ops / execution | **−2** |
+
+Why it's weighted this way: a quick approval scores higher than a strategic review because the approval has someone standing behind it. The **−1 for "already commented in 24h"** stops the same three noisy tasks topping the list every day while quieter ones rot. And **−2 for pure ops** is deliberate — the owner decides and unblocks, they don't execute. A task scoring below zero isn't unimportant, it's someone else's. Route delegation by **work type, not by person**: engineering to the pod tech lead, client follow-up to the account or project owner, marketing to the content owner, finance to whoever owns invoicing, people issues to ops/HR. Naming a role instead of a name means the suggestion still works after someone leaves.
+
+## Step 4 — Show 3 at a time
+
+**Never more than 3.** A screen of 30 tasks gets skimmed and nothing changes; three gets worked. This is the single rule that decides whether this skill produces action or another list. After each set:
+
+> "That's 3. Say **next** for more, **skip** to skip one, **close it** to mark done, or **delegate** to reassign."
+
+### Task card
+
+```
+[BADGE] TASK TITLE
+🔗 [task link, if the tracker returns one]
+Due: [date or "no date"] | Created by: [name] | Status: [status] | Score: [n]
+
+Context: [1 sentence — what this is actually about]
+
+Your action: [exactly what the owner has to do]
+
+Draft comment:
+[name] -- [specific deliverable] -- [hard deadline]
+
+Nudge *(only if someone is waiting)*:
+hey [first name], [1 sentence]. need this by [date].
+
+Delegate? *(only if ops/execution)*: [role] — [reason]
+```
+
+**Never hand-build a task link.** Trackers generate URL slugs by their own rules, often truncating mid-word — a guessed link 404s and costs more trust than no link at all. Use the link the tracker returns, or fall back to the task ID route.
+
+### Priority badges
+
+| Badge | Condition |
+|---|---|
+| `OVERDUE` | Past due date |
+| `BLOCKING TEAM` | Someone is waiting on the owner |
+| `DUE SOON` | Due today or tomorrow |
+| `STRATEGIC` | High role alignment, no immediate blocker |
+| `SEEN BEFORE` | Surfaced 3+ times with no action |
+| `LOW` | Future date, no urgency |
+
+## Step 5 — Morning or evening mode
+
+Detect from the clock or the phrasing. It changes what leads, not what's in the list.
+
+**Morning (before 12pm)**
+
+```
+MORNING REVIEW — [Weekday, Date]
+[X] open tasks | [Y] blocking team | [Z] ready to close
+Showing top 3 by impact. Say "next" for more.
+```
+
+Lead with **BLOCKING TEAM**. The goal is to unblock the team before noon — an approval given at 9am buys a full working day; the same approval at 6pm buys nothing.
+
+**Evening (after 5pm)**
+
+```
+EVENING REVIEW — [Weekday, Date]
+[X] reviewed today | [Y] can close tonight | [Z] still open
+Showing top 3 to close out the day.
+```
+
+Lead with **CAN CLOSE**. The goal is clearing completed work so tomorrow's list is true — a board full of finished-but-open tasks makes every future triage worse. If you can't tell the time and they didn't say, ask; guessing evening on a Monday morning buries the blockers.
+
+## Step 6 — Comment style
+
+**Format:** `[name] -- [specific deliverable] -- [hard deadline]`
+- **All lowercase, no exceptions.** It reads as a person typing fast, not a system posting. People answer people.
+- Use `--` as the separator. No semicolons, no em-dashes.
+- Name the person first, then the exact ask, then the exact deadline — in that order, so the person knows it's theirs before they finish reading.
+- **Reference exact dates**: "by june 12", "by end of week thursday". Not "soon", not "asap" — asap means nothing and gets treated accordingly.
+- Never "just checking in", "please follow up", "please advise", or any corporate phrasing. These signal that no answer is expected, and you'll get one.
+- For a complex task, write 2–3 short paragraphs of context, but still end with the deadline.
+
+Example shape:
+```
+sam -- deploy the logging change to all instances -- list: mortgage, healthcare,
+nonprofit, agency, client success -- screenshot each as proof -- all done by april 28
+```
+
+## Step 7 — Writing anything back
+
+Every comment, close, and reassignment is **proposed first and written only after an explicit yes.** Then report what actually changed, not what you intended to change. Before any bulk action, show the exact list you're about to touch — bulk-closing the wrong tasks erases a team's work history and no apology recovers it.
+
+## Session commands
+
+| User says | Do |
+|---|---|
+| next | Show the next 3 |
+| skip | Skip this one, continue |
+| close it | Mark done after confirmation, log it in the session |
+| delegate | Suggest a role, draft the handoff comment, reassign after a yes |
+| more context | Pull the full description and all comments |
+| refresh | Force a live re-pull |
+| show all urgent | Override 3-at-a-time, show every urgent task |
+| show blockers | Only tasks where someone is waiting |
+| done / that's all | End, show the summary |
+
+## On "done"
+
+```
+SESSION SUMMARY — [Date] [Morning/Evening]
+Reviewed: [N] tasks
+Comments posted: [N]
+Closed: [N]
+Delegated: [N] (to whom)
+Decisions made: [brief list]
+Still needs attention: [top 3 task titles]
+Next session starts at: [first unreviewed task title]
+```
+
+Keep that summary — next session's "seen 3+ times" override depends on it.
 
 ## Worked example
 
-**Owner's core responsibilities:** "approve creative direction, manage client escalations, own final pricing decisions."
+**Input:** *"morning review"* — responsibilities given earlier: approve creative direction, manage client escalations, own final pricing, run BD team. Raw pull, messy as it comes:
 
-**AI pulls live from the connected PM tool, finds:**
 ```
-Redo homepage hero copy | Maria | new | no due date | last comment: "waiting on your sign-off on the new tagline"
-Fix invoice template | me | in_progress | due 2026-08-05 (past) | no comment
+fix invoice template | in_progress | due aug 5 | created by me | no comments
+maria - homepage hero copy | new | no due date | created by maria | last comment aug 10: "waiting on your signoff on the tagline"
+rewrite onboarding deck | in_progress | no due date | created by me | last comment jul 28: "deck v2 is live, sent to client"
+vendor contract review | new | urgent | no due date | created by ops | last comment aug 11: "on hold till legal replies"
 ```
 
 **Output:**
+
 ```
-OVERDUE — Fix invoice template
-Due: Aug 5 (past) | Assigned to: me | Status: in_progress
-Context: Invoice template fix, assigned to yourself, no update logged.
-Your action: Either finish this today or reassign it — it's been open past due with no comment.
-Draft comment: "picking this back up today — done by end of day or reassigning to [name]."
+MORNING REVIEW — Tuesday, Aug 12
+4 open tasks | 1 blocking team | 1 ready to close
+Showing top 3 by impact. Say "next" for more.
 
-BLOCKING TEAM — Redo homepage hero copy
-Due: no date | Assigned to: Maria | Status: new
-Context: Maria is waiting on your sign-off on the new tagline before she can move.
-Your action: Approve or reject the tagline — this is squarely "approve creative direction," one of your core responsibilities.
-Draft comment: "maria — approved, go with option 2. ship it by friday."
+1. [OVERDUE] fix invoice template
+Due: Aug 5 (7 days past) | Created by: you | Status: in_progress | Score: 1
+Context: Invoice template fix you assigned yourself. No comment in 15 days.
+Your action: This is pure ops (−2) and it's yours only by accident. Delegate or kill it.
+Draft comment:
+dana -- take over the invoice template fix -- ping me only if the layout changes -- done by aug 15
+Delegate? yes — finance/invoicing owner. You've held this 7 days past due with zero movement.
 
-Post these two comments back to the board? [waits for approval before writing anything]
+2. [BLOCKING TEAM] maria - homepage hero copy
+Due: no date | Created by: maria | Status: new | Score: 8
+Context: Maria stopped Aug 10 waiting on a tagline decision. Title starts with her
+name — your accountability, her execution.
+Your action: Pick a tagline. Quick decision (+3), blocked (+3), she created it (+2),
+matches "approve creative direction" (+2), no comment in 5+ days (+1).
+Draft comment:
+maria -- approved, go with option 2 -- ship the hero section by thursday aug 14
+Nudge:
+hey maria, tagline approved, option 2. go ahead and ship the hero by thursday.
 
-That's 2. Say "next" for more, or "close it" / "delegate" for either of these.
+3. [CAN CLOSE] rewrite onboarding deck
+Due: no date | Created by: you | Status: in_progress | Score: 0
+Context: Jul 28 comment says v2 is live and sent to the client; still open 15 days later.
+Your action: Close it. Nothing here is real work.
+
+Held back: vendor contract review — on hold pending legal. Not pushing you on it.
+
+Post comments 1 and 2, and close 3? [waits for a yes before writing anything]
+That's 3. Say next for more, skip, close it, or delegate.
 ```
+
+## Tips
+
+1. **The tasks with your team's names in the title are the expensive ones.** They look like admin. They're actually the ones where someone is idle waiting for you, and idle time is the only cost in this business you never get an invoice for.
+2. **If a task has survived three of these sessions, stop scoring it and kill it.** It's not a priority problem, it's an avoidance problem, and a fourth appearance won't fix it.
+3. **Run it twice a day, not once.** Morning unblocks people while they still have a day to use it. Evening keeps the list honest so tomorrow's scores mean something. One session a day gets you half the value and all of the guilt.
+4. **Refuse to work more than 3 at a time even when you feel productive.** The urge to "just clear the whole list" is exactly how you spend forty minutes and post two comments.
+5. **A comment with no date isn't a comment, it's a mood.** If you can't name the day it's due, the ask isn't clear enough yet — write it again.
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this running automatically every morning, with team-wide rollout and no setup per person? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want your tasks scored, your blockers surfaced, and the comments drafted before you open your laptop — for your whole team? See Agency Control Tower: controltower.collabai.software*

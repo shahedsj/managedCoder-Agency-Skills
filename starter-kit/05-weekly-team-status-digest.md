@@ -1,58 +1,151 @@
-# Weekly Team Status Digest Skill
+---
+name: weekly-team-status-digest
+description: Roll scattered team updates into one digest you can read in three minutes — what each person shipped, who's blocked, what's affecting more than one project, and who went quiet. Use every Friday or whenever the user says "what did everyone do this week", "weekly digest", "team update", "catch me up on the team", or pastes a pile of standup notes, chat messages, or task exports. Also use before a Monday leadership meeting, or when the user feels out of touch with what their team is actually working on.
+---
 
-## What this does
+# Weekly Team Status Digest
 
-Rolls up scattered updates from your team (Slack messages, standup notes, task list exports, individual check-ins) into one clean weekly digest — so you're not chasing five people for "what did you get done this week."
+You don't need to know what everyone did. You need to know who's stuck, what's about to slip, and who has gone quiet. This finds those three things and ignores the rest.
 
-## When to use it
+> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
 
-- Every Friday (or whenever your week ends)
-- Before a Monday leadership meeting, to walk in already knowing where things stand
-- Any time updates are scattered across Slack, email, and a PM tool and you need one picture
+## How it works
 
-## Setup
+```
+┌──────────────────────────────────────────────────────────────┐
+│  STANDALONE (always works)                                    │
+│  ✓ Paste standup notes, chat copy, or a task export          │
+│  ✓ Per-person digest, cross-team flags, capacity read        │
+│  ✓ Names who didn't report — that's a finding, not a gap     │
+├──────────────────────────────────────────────────────────────┤
+│  SUPERCHARGED (when you connect your tools)                   │
+│  + ~~project tracker: pull completed and in-flight work       │
+│  + ~~chat: pull standup posts and check-ins                   │
+│  + ~~CRM: catch client-side blockers the team mentioned       │
+└──────────────────────────────────────────────────────────────┘
+```
 
-Works with a PM/CRM connector (Asana, ClickUp, Monday.com, Linear, HubSpot, GoHighLevel, etc.) to pull each team member's completed and in-progress work directly. If you also have a Slack connector, it can pull recent standup/check-in messages too.
+## What I need from you
 
-No connectors yet? Paste a pile of raw team updates instead — copy-pasted Slack messages, a list of names with notes, task exports — it still works the same way.
+**Option A — Connected.** "Run my weekly digest." I'll pull the week's activity per person.
 
-## Instructions for the AI
+**Option B — Paste it.** Chat copy, a list of names with notes, a task export. Messy is fine.
 
-You are rolling up team updates into one weekly digest.
+**Option C — Name the team.** Give me who should be in it, and I'll tell you who's missing from whatever you paste.
 
-1. **Get the material.** If PM/CRM and Slack connectors are available, pull completed and in-progress work per person, plus any recent check-in messages. Otherwise, use whatever raw updates are pasted in.
+**Give me the roster once** — who's on the team. Without it, people who sent nothing are invisible, and those are exactly the ones you need to see.
 
-2. **Produce a digest with this structure:**
-   - **One-line company pulse** — a single sentence on how the week went overall (busy but on track / a few things slipped / strong week, ahead of schedule). Base this on what's actually in the notes, don't inflate it.
-   - **By person** — for each team member mentioned, a short block: **[Name]** — what they completed (2-3 bullets max), what's blocked or needs input (if anything), one line on capacity (slammed / normal / light) if that's inferable from the notes.
-   - **Cross-team flags** — anything that affects more than one person or project (a client waiting on something, a shared blocker, a deadline at risk). This is the section worth actually acting on — put the most important thing first.
-   - **Wins worth calling out** — 1-3 things worth a "nice work" mention, if there are any. Skip this section rather than force it if nothing stands out.
+## Step 1 — Group by person, not by project
 
-3. **Apply these rules:**
-   - Group by person, not by project — the point is knowing what each team member is carrying.
-   - If someone's update is missing or thin, say "no update received" for them rather than skipping them silently — that's useful signal on its own (are they overloaded, did they forget, is something wrong).
-   - Don't editorialize on performance ("Sara is really struggling") — just state what's in the notes factually and let the owner draw conclusions.
-   - Keep the whole digest short enough to read in under 3 minutes — this is a Friday-afternoon read, not a report.
-   - If the same blocker shows up from two different people, call that out explicitly in Cross-team Flags — that's usually the most important thing in the whole digest.
+Group everything by the human, even though the data usually arrives by project. The question this answers is "what is each person carrying," and that only appears when one person's work is in one place.
 
-4. **If the owner has a place they want this posted** (a Slack channel, a doc) and a connector for it is available, post or write it there too, after they confirm — otherwise just deliver it in chat.
+A project view hides the person who's on four projects at 30% each — which is the person about to drop something.
+
+## Step 2 — Read the three signals
+
+For each person, extract:
+
+**Shipped** — finished things, in outcome language. 2-3 bullets max. Not "worked on the API" but "checkout flow live."
+
+**Blocked** — anything waiting on someone else, especially waiting on the owner. Name who it's waiting on.
+
+**Capacity** — slammed / normal / light, only if the notes actually support it. Signals: number of active items, whether they mention being behind, whether they shipped nothing but were clearly busy.
+
+## Step 3 — Produce the digest
+
+```markdown
+# Team digest — week ending [date]
+
+**Pulse:** [One sentence on the week overall. Honest, not inflated.]
+
+## Needs you
+[Anything blocked specifically on the owner. Put this first — it's the only
+ section with a deadline attached to the reader.]
+
+## By person
+**[Name]** — [what shipped]
+Blocked: [what and on whom, or nothing]
+Capacity: [slammed / normal / light]
+
+**[Name]** — No update received.
+
+## Cross-team flags
+- [Thing affecting more than one person or project, most important first]
+
+## Went quiet
+[Anyone on the roster with no update, and how many weeks running]
+
+## Worth calling out
+[1-3 genuine wins. Skip the section rather than manufacture one.]
+```
+
+## The rules that make this work
+
+**"No update received" is the most valuable line in the digest.** Never skip someone silently because they sent nothing. Silence is information — overloaded, disengaged, avoiding something, or already gone in their head. A digest that only shows the people who reported gives you a systematically optimistic view of your own company.
+
+**Two weeks of silence from the same person is an escalation, not a note.** Say so explicitly. One quiet week is a busy week; two is a pattern, and the cost of asking is ten minutes while the cost of not asking is usually a resignation you didn't see coming.
+
+**Put "Needs you" first.** The owner is the bottleneck on more items than they realise, and those items are the highest-leverage thing in the document. Burying them under a per-person list means they get read last, if at all.
+
+**The same blocker from two people is the headline.** If two people independently mention the same client, the same missing access, the same stalled decision — that is the single most important line in the digest, and it belongs at the top of cross-team flags. One person mentioning a problem is a problem; two people mentioning it independently is a systemic one.
+
+**Don't editorialize on performance.** State what's in the notes. "Sara shipped nothing this week and mentioned being blocked on design" — not "Sara is struggling." The owner has context you don't, including things they can't put in writing, and a judgement from a digest can quietly poison how they read that person for months.
+
+**Outcomes, not activity.** "Checkout flow live" not "continued work on checkout." Activity language makes a stalled week look productive, which defeats the purpose of reading this at all.
+
+**Three minutes, hard limit.** This is a Friday-afternoon read. If it takes fifteen minutes, it gets skipped in week three and the habit dies.
+
+**Distinguish blocked-on-owner from blocked-on-client.** Both are blocks, but only one of them the owner can clear this afternoon. Mixing them means the actionable ones get lost.
 
 ## Worked example
 
-**Input (raw notes):** "sara: finished the checkout flow, waiting on client feedback on homepage still. mike: closed 2 deals this week, one client asking about pricing for add on services. josh: no update sent. team mentioned twice that the Acme client hasn't responded in over a week"
+**Input:** `"sara: finished checkout flow, still waiting on client feedback on homepage. mike: closed 2 deals, one client asking about pricing for add-ons. josh: nothing sent again. dana mentioned the acme client hasn't responded in over a week, sara said the same thing"`
 
-**Output (excerpt):**
+**Output:**
 
-> **Pulse:** Solid week — delivery on track, one client responsiveness issue worth watching.
+> # Team digest — week ending Aug 15
 >
-> **Sara** — Finished the checkout flow. Blocked: still waiting on client feedback on the homepage draft.
-> **Mike** — Closed 2 deals this week. One existing client asking about pricing for add-on services — may be worth a quick call.
-> **Josh** — No update received.
+> **Pulse:** Solid delivery week. One client responsiveness issue showing up from two people, and a second week of silence from Josh.
 >
-> **Cross-team flags:**
-> - Acme client hasn't responded in over a week — flagged by two people, likely blocking more than one project. Worth a direct check-in call rather than another email.
+> ## Needs you
+> - Nothing blocked on you directly this week.
 >
-> **Wins:** Mike closed 2 deals this week.
+> ## By person
+> **Sara** — Checkout flow finished.
+> Blocked: client feedback on the homepage draft.
+> Capacity: normal
+>
+> **Mike** — Closed 2 deals. An existing client is asking about add-on pricing.
+> Blocked: nothing
+> Capacity: normal
+>
+> **Dana** — Flagged the Acme client as unresponsive.
+> Blocked: Acme, over a week silent
+> Capacity: not stated
+>
+> **Josh** — No update received. **Second week running.**
+>
+> ## Cross-team flags
+> - **Acme has not responded in over a week — raised independently by Dana and Sara.** Two people blocked on the same client means this is bigger than one project. Worth a direct call rather than another email.
+> - Mike has a live add-on pricing question. That's revenue sitting in an inbox.
+>
+> ## Went quiet
+> - Josh — 2 weeks, no update. Worth a direct conversation this week.
+>
+> ## Worth calling out
+> - Mike closed 2 deals.
+
+> ⚠️ The two things I'd act on:
+> - Josh at two weeks is the real story in this digest, not the Acme client.
+> - Acme being raised by two people independently means it's already costing you more than one project's time.
+
+## Tips
+
+1. **Read the quiet, not the loud.** The people writing detailed updates are usually fine. The one-line update and the missing update are where the risk is.
+2. **Answer "Needs you" before you close the laptop Friday.** Every item in that section costs someone else Monday morning. Clearing it Friday buys your team a full day.
+3. **Don't forward the digest to the team.** It contains your read on capacity and silence. It's for you. If you want to share wins, pull those out separately.
+4. **Same blocker three weeks running is a system problem.** Stop chasing it as a task. Something structural — an approval nobody owns, access nobody has — is generating it, and it'll keep coming back until that gets fixed.
+5. **If the digest is always green, you're reading the wrong inputs.** Real weeks have friction. A consistently clean digest usually means people are reporting what they think you want to hear, and the actual problems are surfacing somewhere you're not looking.
 
 ---
-*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this digest built automatically every Friday from your team's actual activity, with no copy-pasting? See Agency Control Tower: controltower.collabai.software*
+*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this built automatically every Friday from your team's real activity, with nothing to collect? See Agency Control Tower: controltower.collabai.software*

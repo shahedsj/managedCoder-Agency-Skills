@@ -51,15 +51,26 @@ More divisions will be added over time as the ManagedCoder library grows.
 
 ## How to use a skill file
 
-**Option A — Claude Project (recommended if you have Claude with Projects)**
-1. Create a Claude Project.
-2. Paste the skill file into the Project's custom instructions.
-3. Paste your raw material (notes, transcript, company name) into the chat.
+Every file works three ways. Pick whichever suits you.
 
-**Option B — Paste per use (works with Claude, ChatGPT, or any AI chat)**
+**Option A — Paste it (works with Claude, ChatGPT, Gemini, anything)**
 1. Paste the whole skill file into a new chat.
 2. Paste your raw material underneath it.
 3. Send.
+
+**Option B — Install it as a skill**
+Each file has YAML frontmatter at the top (`name` and `description`), so it works as a real skill file. Upload it to Claude or ChatGPT and it becomes a saved skill that triggers itself when relevant — no pasting each time.
+
+**Option C — Download the whole kit**
+Grab the repo as a ZIP (green **Code** button → Download ZIP), unzip, and load the whole `starter-kit/` folder at once.
+
+### Connecting your tools
+
+The skills use placeholders like `~~CRM` and `~~project tracker` instead of naming products, so they work with whatever you already use. See **[CONNECTORS.md](starter-kit/CONNECTORS.md)**.
+
+You don't need to connect anything to start — every skill has a **STANDALONE** mode that works from pasted notes, and a **SUPERCHARGED** mode that kicks in once a tool is connected.
+
+**Nothing is ever written or sent without your approval.** Emails are drafts. CRM updates get proposed first.
 
 If the AI gets something wrong, don't just fix the output — fix the skill file. Add the missing rule or exception. Next time it gets it right, because now it knows.
 
