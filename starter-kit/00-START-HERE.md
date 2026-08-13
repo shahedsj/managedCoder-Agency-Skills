@@ -14,7 +14,7 @@ Built and used by an agency owner running a 140-person team. Not theory — thes
 
 Don't read the whole kit. Do this instead.
 
-**1.** Open [`01-client-status-report.md`](01-client-status-report.md) and copy the whole file.
+**1.** Open [`01-client-growth-client-status-report.md`](01-client-growth-client-status-report.md) and copy the whole file.
 
 **2.** Paste it into a new Claude or ChatGPT chat.
 
@@ -50,9 +50,9 @@ Seventeen files is a lot. These three need zero setup and pay off on the first r
 
 | Start with | What it does | Try it on |
 |---|---|---|
-| [01 — Client Status Report](01-client-status-report.md) | Messy notes → a client update that protects you when things slip | Any live project |
-| [03 — Meeting Notes to Tasks](03-meeting-notes-to-tasks.md) | A transcript → owned, dated action items | Your last call |
-| [12 — Write in My Voice](12-write-in-my-voice.md) | Kills the AI-sounding draft. Also owns how to write a post that lands | Anything you're about to send |
+| [01 — Client Status Report](01-client-growth-client-status-report.md) | Messy notes → a client update that protects you when things slip | Any live project |
+| [03 — Meeting Notes to Tasks](03-team-delegation-meeting-notes-to-tasks.md) | A transcript → owned, dated action items | Your last call |
+| [12 — Write in My Voice](12-voice-outreach-write-in-my-voice.md) | Kills the AI-sounding draft. Also owns how to write a post that lands | Anything you're about to send |
 
 Once one of those earns its place, come back for the rest.
 
