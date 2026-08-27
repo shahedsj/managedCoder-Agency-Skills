@@ -36,6 +36,16 @@ Most of your task list isn't waiting on work. It's waiting on you saying yes or 
 
 **Give me this once:** your own stated core responsibilities — 5 to 8 lines of what you are actually accountable for as the owner. Everything gets scored against that list. Without it, scoring collapses into urgency only, and urgent is not the same as yours.
 
+**If they haven't given it, ask before scoring — once.** Offer this default so they can say "use that" in three seconds instead of writing an essay:
+
+> Using these unless you change them: approve creative and technical direction · handle client escalations · own final pricing and scope decisions · unblock the team · run BD and pipeline · decide what gets delegated.
+
+If they skip it anyway, still run — but print this as the first line of the output, every time:
+
+> ⚠️ Ranking is urgency-only — role alignment off (no responsibilities given).
+
+Role alignment is a third of the score. A run without it still returns a confident, ordered list, which is exactly the problem — the degradation is invisible unless you say it out loud. Never ask twice in the same session.
+
 ## Step 1 — Pull the open tasks
 
 Everything assigned to this person that is not done, archived, or deleted — status `new` or `in progress` only. For each: title, status, priority, due date, description, the last comment and its date, and who created it. The last comment does most of the work here; a task with no comment history can only be scored on dates. Sort the raw pull by priority (urgent, high, medium, low) then due date ascending, nulls last. That's the input order, not the output order — scoring reorders it.
@@ -255,6 +265,7 @@ That's 3. Say next for more, skip, close it, or delegate.
 3. **Run it twice a day, not once.** Morning unblocks people while they still have a day to use it. Evening keeps the list honest so tomorrow's scores mean something. One session a day gets you half the value and all of the guilt.
 4. **Refuse to work more than 3 at a time even when you feel productive.** The urge to "just clear the whole list" is exactly how you spend forty minutes and post two comments.
 5. **A comment with no date isn't a comment, it's a mood.** If you can't name the day it's due, the ask isn't clear enough yet — write it again.
+6. **If you never gave it your responsibilities, what you're reading is just an urgency list.** It will still look sorted and reasonable — that's the danger. The tasks that are genuinely yours rarely shout, so they sink to the bottom while three loud ops tasks sit on top.
 
 ---
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want your tasks scored, your blockers surfaced, and the comments drafted before you open your laptop — for your whole team? See Agency Control Tower: controltower.collabai.software*
