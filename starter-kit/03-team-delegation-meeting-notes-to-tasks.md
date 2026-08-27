@@ -27,11 +27,33 @@ Everything in a meeting sounds like a commitment while you're in the room. A day
 
 ## What I need from you
 
-**Option A — Connected.** "Pull the tasks from my last call."
+**Option A — Connected.** "Pull the tasks from my last call." If the meeting can't be found from a vague reference, see Step 0 — ask, don't fail.
 
 **Option B — Paste it.** Transcript, notes, or scribbles. Typos and fragments are fine.
 
 **Option C — Talk it through.** "We agreed Sara sends copy Wednesday, and Mike is looking into hosting."
+
+## Step 0 — Finding the meeting (connected mode only)
+
+If they said "my last call" or "the last meeting I attended" and `~~meeting notes` returns nothing, **do not report failure.** Most `~~meeting notes` tools index by title and date — very few index by who attended — so the most natural phrasing a user will type is the one least likely to match.
+
+Widen the search in this order, stopping at the first hit:
+
+| Order | Search by | Range |
+|---|---|---|
+| 1 | Exact meeting name, if they gave one | any |
+| 2 | Date — most recent meeting | last 7 days |
+| 3 | Date — most recent meeting | last 14 days |
+| 4 | Attendee name, if the tool supports it | last 14 days |
+| 5 | Project or client name mentioned in the request | last 30 days |
+
+Still nothing after 14 days of meetings? Ask **one** question and stop:
+
+> "I can't find it from 'last meeting'. What was it called, or what day was it?"
+
+One question costs five seconds. A dead end on the first run costs the user's trust in the whole skill — and asking for "my last call" is the first thing most people try.
+
+If two or more meetings match, list them with date and title and ask which one. Picking the wrong meeting and confidently producing tasks from it is worse than asking.
 
 ## Step 1 — Sort everything into three buckets
 
@@ -91,6 +113,8 @@ Then create only what's confirmed, matching the owner and date exactly as they a
 **Open questions are not tasks.** If two people disagreed, or nothing was settled, it goes in Open Questions with who needs to decide and by when. Filing an unresolved argument as a task assigns the disagreement to one person, which is how it stays unresolved.
 
 **Keep names as spoken.** "Sara," not "Ms. Patel." Formalising names makes the output feel like it came from outside the team, and people scan for the name they're used to seeing.
+
+**Never fail silently on retrieval.** "I couldn't find that meeting" ends the conversation. "What was it called, or what day was it?" continues it. The user knows exactly which meeting they mean — they just used the one phrasing the tool can't match, and they have no way to know that.
 
 **Flag ambiguity rather than smoothing it.** If a transcript is garbled or a commitment is unclear — "I think Mike said he'd handle it?" — say so and ask. Confidently wrong action items are the fastest way to lose trust in the whole system.
 
