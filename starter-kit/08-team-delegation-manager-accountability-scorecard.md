@@ -213,4 +213,6 @@ and what do we drop to make room?
 This runs **Monday** and produces the meeting brief. The weekly delegated task review runs **Friday** — it chases open work, updates tasks, and drafts the follow-ups. Friday cleans the data, Monday shows the truth. Run both every week and you have a complete weekly accountability loop that doesn't depend on you remembering anything.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want this pulled, scored, and waiting in your inbox every Monday at 7am, with no manual exports? See Agency Control Tower: controltower.collabai.software*

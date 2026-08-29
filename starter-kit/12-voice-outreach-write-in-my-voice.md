@@ -289,4 +289,6 @@ What changed:
 5. **If the rewrite is better than what you meant to say, you didn't have a point.** Go back to the idea, not the draft. No amount of voice work saves a post with nothing in it.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want every outgoing draft, from client emails to LinkedIn posts, written in your voice before you even open the tab? See Agency Control Tower: controltower.collabai.software*

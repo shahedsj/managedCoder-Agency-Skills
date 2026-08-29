@@ -153,4 +153,6 @@ Keep it to one page. This is a scan before a call, not a research report.
 5. **Save the brief to the deal.** Six months later when this comes back around, the version of them you researched today is context nobody else on your team will have.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want a brief like this generated automatically the moment a new lead lands in your pipeline? See Agency Control Tower: controltower.collabai.software*

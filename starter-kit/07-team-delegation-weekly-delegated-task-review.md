@@ -220,4 +220,6 @@ Note what it caught that a raw overdue list would not: Dana looks like two failu
 6. **Start next week by checking Monday's tasks actually closed.** A review nobody follows up on teaches the team that the deadline was decorative.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want this scorecard, the notes, and the Monday brief produced for you every Friday without you pulling a single list? See Agency Control Tower: controltower.collabai.software*

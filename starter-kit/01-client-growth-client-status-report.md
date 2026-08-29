@@ -148,4 +148,6 @@ The update goes to the client. This part is for the user only — never include 
 5. **The client who goes quiet is the risk, not the client who complains.** A complaining client is engaged. Two unanswered updates in a row is your signal to pick up the phone.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want these written and sent automatically every Friday from your live project data? See Agency Control Tower: controltower.collabai.software*

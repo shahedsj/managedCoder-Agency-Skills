@@ -220,4 +220,6 @@ The skill caught two things here. The owner's memory of "we talked recently" was
 5. **Batch 10-15, work 3-5.** Ambition kills these sessions. Five researched, approved, well-tiered drafts beat forty generated ones you're too nervous to send.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want the research, tiering, and drafts prepared for your whole follow-up list every morning before you sit down? See Agency Control Tower: controltower.collabai.software*

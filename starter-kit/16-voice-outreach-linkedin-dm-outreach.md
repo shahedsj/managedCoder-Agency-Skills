@@ -231,4 +231,6 @@ Send this as text, or record it as a voice note instead? [waits for an explicit 
 5. **Never send two messages in a row without a reply.** A second unanswered DM is the moment you become someone who sends unanswered DMs. Switch channels or switch format instead.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want every lead researched, hooked, drafted, and queued for one-click approval instead of you opening profiles one at a time? See Agency Control Tower: controltower.collabai.software*
