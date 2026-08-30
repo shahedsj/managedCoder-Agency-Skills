@@ -1,90 +1,228 @@
 # ManagedCoder Agency Skills
 
-Free, ready-to-use AI "skill files" for digital agency owners. Part of [ManagedCoder](https://managedcoder.com) — AI training for agency owners, by SJ Innovation.
+**An open library of reusable AI operating skills for agency owners.**
 
-## What this is
+Most agency owners do not need another AI demo. They need help running the business they already have.
 
-A skill file is a page of plain English instructions that an AI agent (Claude, ChatGPT, or similar) can follow every time, so you don't have to explain the task again. Write it once, reuse it forever.
+ManagedCoder Agency Skills turns recurring agency work into reusable instructions your AI can follow consistently. Client updates. Pipeline reviews. Delegation. Project risk. Team accountability. Research. Reporting. Knowledge capture.
 
-This repo collects skill files built for the tasks agency owners do every week: client updates, proposals, meeting follow-up, prospect research, and team status.
+Write the operating logic once. Improve it when you learn. Reuse it across Claude, ChatGPT, and other capable AI systems.
 
-## The Skill Roster
+Part of [ManagedCoder](https://managedcoder.com), practical AI training for agency owners by SJ Innovation.
 
-Organized like a real org chart — each division covers a slice of what an agency owner actually spends time on. Start with `00-START-HERE.md`, then grab whichever division fits what's eating your week.
+## What makes this different
 
-### 📋 Client & Growth Division
-*Winning and keeping the work.*
+This is not a collection of clever prompts and it is not an imaginary AI agency with hundreds of job titles.
 
-| Skill | Specialty | When to Use |
+The library is organized around the real operating responsibilities of an agency owner.
+
+A useful skill should do at least one of these things:
+
+- save the owner or manager meaningful time
+- catch a risk before it becomes a client problem
+- make delegation more consistent
+- turn scattered information into a decision
+- protect scope, margin, or follow-up
+- capture knowledge so the company does not depend on one person's memory
+
+The goal is simple: **less owner dependency, better operating visibility, and more repeatable execution.**
+
+## The Agency Skill OS
+
+The library is growing into nine operating categories.
+
+| Category | What it helps you run | Current coverage |
 |---|---|---|
-| [Client Status Report](starter-kit/01-client-growth-client-status-report.md) | Turns messy notes into a clean client update | Weekly/biweekly client check-ins |
-| [Proposal / SOW Draft](starter-kit/02-client-growth-proposal-sow-draft.md) | Discovery notes → first-pass proposal | New deal, scoping a project |
-| [Competitor / Prospect Scan](starter-kit/04-client-growth-competitor-prospect-scan.md) | Company name → pitch-ready brief | Before a sales call or pitch |
-| [Meeting-to-CRM Log](starter-kit/09-client-growth-meeting-to-crm-log.md) | Call transcript/notes → logged deal update + next step | Right after any client, prospect, or partner call |
+| **01 Owner Command & Direction** | Priorities, decisions, daily briefs, strategic direction | Available |
+| **02 Client Success & Retention** | Client communication, health, expectations, renewals, risk | Available, expanding |
+| **03 Sales & Pipeline** | CRM, proposals, prospecting, outreach, pipeline follow-up | Available |
+| **04 Delivery, Scope & Operations** | Projects, scope, capacity, delivery risk, execution | Available, expanding |
+| **05 Team & Leadership** | Delegation, accountability, managers, 1:1s, team visibility | Available |
+| **06 Marketing, Voice & Content** | Brand voice, owner content, marketing execution | Available, expanding |
+| **07 Research & Intelligence** | Prospect, competitor, market and industry intelligence | Available, expanding |
+| **08 Finance & Profitability** | Margin, utilization, pricing, invoices, cash and profitability | Coming next |
+| **09 Agency Brain & Systems** | SOPs, decisions, institutional knowledge, handoffs, second brain | Coming next |
 
-### 🧭 Team & Delegation Division
-*Running the team without living in your PM tool.*
+A small agency may only need a few of these. A larger agency can connect them into workflows and eventually run them automatically.
 
-| Skill | Specialty | When to Use |
-|---|---|---|
-| [Meeting Notes → Tasks](starter-kit/03-team-delegation-meeting-notes-to-tasks.md) | Transcript → owned, dated action items | Right after any meeting |
-| [Weekly Team Status Digest](starter-kit/05-team-delegation-weekly-team-status-digest.md) | Scattered updates → one Friday-read digest | End of week, before you go dark |
-| [Daily Task Triage](starter-kit/06-team-delegation-daily-task-triage.md) | Your own task list → the 3 that matter today | Every morning or evening |
-| [Weekly Delegated Task Review](starter-kit/07-team-delegation-weekly-delegated-task-review.md) | Everyone else's tasks → who's stalled, who's blocked | Every Friday, before Monday's meeting |
-| [Manager Accountability Scorecard](starter-kit/08-team-delegation-manager-accountability-scorecard.md) | Task data → a one-page Monday scorecard | Monday morning meeting prep |
-| [Daily Owner Brief](starter-kit/10-team-delegation-daily-owner-brief.md) | Calendar + tasks + pipeline → one 2-minute morning brief | First thing every morning |
-| [1:1 Prep & Follow-Up](starter-kit/11-team-delegation-1on1-prep-and-followup.md) | Direct report's workload → agenda, feedback, and logged follow-up | Before and after every 1:1 |
-| [Meeting to Product Roadmap](starter-kit/17-team-delegation-meeting-to-product-roadmap.md) | Strategy meeting → vision doc + a backlog grounded in what's real | After a product direction meeting |
+## Start with a real problem
 
-### ✍️ Voice & Outreach Division
-*Sounding like yourself, and reaching the right people.*
+Do not install everything.
 
-| Skill | Specialty | When to Use |
-|---|---|---|
-| [Write in My Voice](starter-kit/12-voice-outreach-write-in-my-voice.md) | AI-sounding drafts → your natural voice, plus full social post rules | Before anything AI-written goes out |
-| [Deal Pipeline Review](starter-kit/13-voice-outreach-deal-pipeline-review.md) | Open deals → urgency-ranked review with drafted follow-ups | Daily or a few times a week |
-| [LinkedIn Outbound Strategy](starter-kit/14-voice-outreach-linkedin-outbound-strategy.md) | Your existing network → a 30-day sales opportunity plan | Planning or reviewing LinkedIn outreach |
-| [Warm Lead Outreach](starter-kit/15-voice-outreach-warm-lead-outreach.md) | Contact list → researched, tier-matched outreach drafts | Working your follow-up backlog |
-| [LinkedIn DM Outreach](starter-kit/16-voice-outreach-linkedin-dm-outreach.md) | A specific person → the actual message that gets a reply | Messaging a named contact on LinkedIn |
+Pick the thing that is wasting time or creating risk this week.
 
-More divisions will be added over time as the ManagedCoder library grows.
+| If this is happening... | Start here |
+|---|---|
+| Client updates take too long or projects are slipping | **Client Status Report** |
+| Meetings end but ownership is unclear | **Meeting Notes to Tasks** |
+| You are unsure what deserves your attention today | **Daily Owner Brief** |
+| Managers are not following through consistently | **Manager Accountability Scorecard** |
+| Deals sit without clear next steps | **Deal Pipeline Review** |
+| AI writing does not sound like you | **Write in My Voice** |
 
-## How to use a skill file
+See [`starter-kit/00-START-HERE.md`](starter-kit/00-START-HERE.md) for the guided starting point.
 
-Every file works three ways. Pick whichever suits you.
+## Current skill library
 
-**Option A — Paste it (works with Claude, ChatGPT, Gemini, anything)**
-1. Paste the whole skill file into a new chat.
-2. Paste your raw material underneath it.
-3. Send.
+### 01 Owner Command & Direction
 
-**Option B — Install it as a skill**
-Each file has YAML frontmatter at the top (`name` and `description`), so it works as a real skill file. Upload it to Claude or ChatGPT and it becomes a saved skill that triggers itself when relevant — no pasting each time.
+*Know what matters, what needs a decision, and what should be delegated.*
 
-**Option C — Download the whole kit**
-Grab the repo as a ZIP (green **Code** button → Download ZIP), unzip, and load the whole `starter-kit/` folder at once.
+- **Daily Task Triage**: turn your task list into the few things that deserve attention now
+- **Daily Owner Brief**: combine calendar, tasks and pipeline into a short operating brief
+- **Meeting to Product Roadmap**: turn a strategy discussion into direction and an actionable backlog
 
-### Connecting your tools
+### 02 Client Success & Retention
 
-The skills use placeholders like `~~CRM` and `~~project tracker` instead of naming products, so they work with whatever you already use. See **[CONNECTORS.md](starter-kit/CONNECTORS.md)**.
+*Keep clients informed before small problems become relationship problems.*
 
-You don't need to connect anything to start — every skill has a **STANDALONE** mode that works from pasted notes, and a **SUPERCHARGED** mode that kicks in once a tool is connected.
+- **Client Status Report**: turn messy delivery notes into a clear client update and surface hidden risk
 
-**Nothing is ever written or sent without your approval.** Emails are drafts. CRM updates get proposed first.
+### 03 Sales & Pipeline
 
-If the AI gets something wrong, don't just fix the output — fix the skill file. Add the missing rule or exception. Next time it gets it right, because now it knows.
+*Move opportunities forward without relying on memory for follow-up.*
 
-## Where this comes from
+- **Proposal / SOW Draft**
+- **Meeting-to-CRM Log**
+- **Deal Pipeline Review**
+- **LinkedIn Outbound Strategy**
+- **Warm Lead Outreach**
+- **LinkedIn DM Outreach**
 
-This project follows the idea in Garry Tan's "Own Your Intelligence" talk at YC Startup School 2026 — write down how you work in plain markdown, let an agent run it, and the library compounds over time. This repo is that idea, scoped to what an agency owner actually needs day to day.
+### 04 Delivery, Scope & Operations
 
-## Want this running automatically, not manually?
+*Turn commitments into owned work and make delivery easier to manage.*
 
-That's what [Agency Control Tower](https://controltower.collabai.software) does — it wires skill files like these into your actual workflow so they run on their own, across your whole team.
+- **Meeting Notes to Tasks**
 
-## Contributing
+Next additions will focus on scope creep, project risk, capacity and delivery visibility.
 
-Issues and pull requests are welcome. Keep skill files agency-relevant, plain English, and honest about their limits (say "not specified" rather than inventing an answer).
+### 05 Team & Leadership
+
+*Build a management layer so every issue does not come back to the owner.*
+
+- **Weekly Team Status Digest**
+- **Weekly Delegated Task Review**
+- **Manager Accountability Scorecard**
+- **1:1 Prep & Follow-Up**
+
+### 06 Marketing, Voice & Content
+
+*Use AI without losing the owner's actual voice.*
+
+- **Write in My Voice**
+
+### 07 Research & Intelligence
+
+*Turn outside information into useful context before a sales or strategic decision.*
+
+- **Competitor / Prospect Scan**
+
+### 08 Finance & Profitability
+
+Planned skills include margin leakage review, utilization review, invoice follow-up, pricing review and monthly profitability review.
+
+### 09 Agency Brain & Systems
+
+Planned skills include meeting-to-knowledge capture, decision logging, SOP creation, employee handoffs and Agency Second Brain maintenance.
+
+## How a skill works
+
+A skill file is a set of plain-English operating instructions that tells an AI how to perform a recurring job.
+
+The value is not the first output. The value is what happens after you improve the file.
+
+If the AI misses something important, update the rule in the skill instead of fixing only that one answer. The next run starts with what you learned.
+
+That is how the library compounds.
+
+## Three ways to use the library
+
+**Paste it**
+
+Open a skill file, paste it into Claude, ChatGPT, Gemini, or another capable AI, then provide the material it needs.
+
+**Install it**
+
+Skills include frontmatter so compatible AI systems can save and reuse the instructions instead of making you paste them every time.
+
+**Connect it**
+
+Many skills support a standalone mode using pasted information and a connected mode using systems such as your CRM, project tracker, email, calendar, or other business tools. See [`starter-kit/CONNECTORS.md`](starter-kit/CONNECTORS.md).
+
+## Human approval stays in the loop
+
+Connected does not mean uncontrolled.
+
+The default pattern is:
+
+1. read the relevant information
+2. analyze it using the skill's rules
+3. propose the action or draft
+4. let a human approve consequential writes or sends
+
+A client email should not suddenly send itself because an AI decided it was ready.
+
+## From individual skills to agency workflows
+
+One skill solves one recurring job. The larger opportunity comes from connecting them.
+
+For example:
+
+```text
+Meeting
+  -> Meeting Notes to Tasks
+  -> Meeting-to-CRM Log
+  -> Client Status Report
+  -> Delegated Task Review
+  -> Daily Owner Brief
+```
+
+That is the direction of ManagedCoder: reusable operating intelligence that can start manually, connect to existing tools, and eventually become part of an Agency Control Tower.
+
+## Principles for contributions
+
+A ManagedCoder skill should be:
+
+- **Agency-specific**: solve a real agency operating problem
+- **Reusable**: useful more than once
+- **Opinionated**: include actual rules, thresholds, checks or output structure
+- **Tool-flexible**: avoid unnecessary dependence on one SaaS product
+- **Honest**: say when information is missing instead of inventing it
+- **Safe to operate**: require approval before consequential external actions unless the user explicitly configures otherwise
+- **Easy to improve**: the logic should be understandable enough for an owner to edit
+
+Issues and pull requests are welcome.
+
+## Where this is going
+
+The long-term model has three layers:
+
+```text
+AGENCY OWNER
+     |
+     v
+OPERATING SKILLS
+Owner | Clients | Sales | Delivery | Team | Marketing | Research | Finance
+     |
+     v
+AGENCY BRAIN
+Knowledge | Decisions | SOPs | Client Context | History
+     |
+     v
+CONNECTED SYSTEMS
+CRM | Project Management | Email | Calendar | Meetings | Finance
+```
+
+The skill files are the operating logic. Your systems hold the live data. The Agency Brain preserves context. A Control Tower can eventually orchestrate the workflows across all three.
+
+## ManagedCoder
+
+ManagedCoder teaches agency owners how to build this themselves instead of only buying another AI tool.
+
+[ManagedCoder](https://managedcoder.com)
+
+For teams that want these workflows connected and running across the business, see [Agency Control Tower](https://controltower.collabai.software).
 
 ## License
 

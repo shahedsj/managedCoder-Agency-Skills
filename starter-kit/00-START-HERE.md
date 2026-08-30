@@ -1,129 +1,202 @@
-# Start Here — The Agency Skill File Starter Kit
+# Start Here: ManagedCoder Agency Skill Starter Kit
 
-**17 skill files for the work agency owners do every week.** Free, no signup, yours to keep.
+**17 reusable AI skills for the work agency owners deal with every week.**
 
-Built and used by an agency owner running a 140-person team. Not theory — these are the actual instructions behind how the work gets done.
+This is not a prompt collection to browse for an hour.
 
-> **Next free class: Thursday, Aug 27 — "Build It In Lovable. Then Remix Mine."**
-> Live on Zoom, 90 minutes, no cap.
-> → [build.managedcoder.com/classes](https://build.managedcoder.com/classes)
+Pick one recurring problem. Use one skill on real agency work. If it saves time, catches a risk, or improves a decision, keep it. Then improve the file as your operating rules get better.
 
----
+That is the system.
 
-## Get a win in 5 minutes
+## Get your first win in 5 minutes
 
-Don't read the whole kit. Do this instead.
+Start with a live client project.
 
-**1.** Open [`01-client-growth-client-status-report.md`](01-client-growth-client-status-report.md) and copy the whole file.
+**1.** Open [`01 Client Status Report`](02-client-success/01-client-status-report.md).
 
-**2.** Paste it into a new Claude or ChatGPT chat.
+**2.** Copy the skill into Claude, ChatGPT, or another capable AI.
 
-**3.** Underneath it, paste your actual messy notes about a live client project. Fragments are fine. Something like:
+**3.** Paste the rough notes you already have. They do not need to be clean.
 
+```text
+finished homepage, checkout started, still waiting for logo
+client has not replied to feedback request from last week
+dev expects checkout friday
+client also asked for a blog section but it was not in original scope
 ```
-finished homepage, started checkout, need their logo, still waiting on
-feedback from last week, dev says checkout done fri, also they asked about
-adding a blog which wasnt in the SOW
-```
 
-**4.** Send.
+**4.** Run the skill.
 
-You'll get back a client-ready update under 200 words — plus a separate flag telling you the blog request is unquoted scope you're about to absorb for free, and that your feedback ask is now 8 days old.
+You should get more than polished writing. A useful result should also surface things you might otherwise miss, such as an aging client dependency or a request that may be outside the agreed scope.
 
-That second part is the point. It's not a writing tool. It's the thing that catches what you'd have missed.
+That is the difference between asking AI to write and giving AI operating instructions.
 
----
+## Choose based on the problem
 
-## What a skill file actually is
+You do not need all 17 skills.
 
-A page of plain-English instructions your AI follows every time. Write it once, and you stop re-explaining the same task.
-
-The idea comes from Garry Tan's "Own Your Intelligence" talk — write down how you work, hand it to an agent, and the library compounds. This kit is that idea, already written for an agency.
-
-Each file carries the real thing: the scoring tables, the thresholds, the output formats, and the reasoning. Not "prioritize important tasks" but *+5 if the follow-up date has passed, −2 if you already commented in the last 3 days.* Specifics are what make the output consistent instead of improvised.
-
----
-
-## Start with these three
-
-Seventeen files is a lot. These three need zero setup and pay off on the first run.
-
-| Start with | What it does | Try it on |
-|---|---|---|
-| [01 — Client Status Report](01-client-growth-client-status-report.md) | Messy notes → a client update that protects you when things slip | Any live project |
-| [03 — Meeting Notes to Tasks](03-team-delegation-meeting-notes-to-tasks.md) | A transcript → owned, dated action items | Your last call |
-| [12 — Write in My Voice](12-voice-outreach-write-in-my-voice.md) | Kills the AI-sounding draft. Also owns how to write a post that lands | Anything you're about to send |
-
-Once one of those earns its place, come back for the rest.
-
----
-
-## The full kit
-
-**📋 Client & Growth** — winning and keeping the work
-`01` Client Status Report · `02` Proposal / SOW Draft · `04` Competitor / Prospect Scan · `09` Meeting-to-CRM Log
-
-**🧭 Team & Delegation** — running the team without living in your PM tool
-`03` Meeting Notes → Tasks · `05` Weekly Team Status Digest · `06` Daily Task Triage · `07` Weekly Delegated Task Review · `08` Manager Accountability Scorecard · `10` Daily Owner Brief · `11` 1:1 Prep & Follow-Up · `17` Meeting to Product Roadmap
-
-**✍️ Voice & Outreach** — sounding like yourself, reaching the right people
-`12` Write in My Voice · `13` Deal Pipeline Review · `14` LinkedIn Outbound Strategy · `15` Warm Lead Outreach · `16` LinkedIn DM Outreach
-
----
-
-## Three ways to use them
-
-**Paste it.** Copy the file into a chat, paste your material underneath. Works in Claude, ChatGPT, Gemini — anything.
-
-**Install it.** Every file has frontmatter at the top, so it works as a real skill file. Upload it to Claude or ChatGPT and it saves as a skill that triggers itself when relevant. No pasting each time.
-
-**Take the whole kit.** Green **Code** button at the top of the repo → Download ZIP → unzip → load the `starter-kit/` folder.
-
----
-
-## Connecting your tools (optional)
-
-Every skill runs standalone from pasted notes. Connect a tool and it gets better — it pulls the data itself instead of asking you, and can write results back after you approve.
-
-The files use `~~CRM` and `~~project tracker` placeholders rather than naming products, so they work with whatever you already use. See [CONNECTORS.md](CONNECTORS.md).
-
-**Nothing is ever written or sent without your approval.** Emails are drafts. CRM updates get proposed first. If a skill ever writes something without asking, that's a bug — please tell us.
-
----
-
-## When the output isn't right
-
-Don't fix the output. Fix the file.
-
-Add the missing rule, the exception, the number you actually use. Next time it gets it right, because now it knows. That's the whole compounding idea — a skill file you've corrected three times is worth more than any prompt you'll ever write.
-
----
-
-## You're using these early
-
-This kit is in beta. If a skill underperformed, we want to know which one and what you gave it — that's what makes the next version better.
-
-Open an issue on the repo, or reply to any newsletter email.
-
----
-
-## Where this comes from
-
-ManagedCoder is where agency owners learn to run their agency with AI — free live classes, built with you in the room. You leave with working files, not slides.
-
-**Free classes, live on Zoom:**
-
-| Date | Class |
+| What is happening in your agency? | Start with |
 |---|---|
-| **Thu, Aug 27** | Build It In Lovable. Then Remix Mine. |
-| **Thu, Sep 10** | Agency Second Brain — Hands On, In the Room *(Manhattan, 20 seats)* |
-| **Thu, Sep 24** | Claude Skills That Run Your Agency |
+| Client updates take too long | **01 Client Status Report** |
+| Meetings create notes but not ownership | **03 Meeting Notes to Tasks** |
+| Your day is controlled by whoever messages you first | **10 Daily Owner Brief** |
+| You have too many tasks and cannot see the real priorities | **06 Daily Task Triage** |
+| Delegated work keeps coming back to you | **07 Weekly Delegated Task Review** |
+| Managers need stronger accountability | **08 Manager Accountability Scorecard** |
+| Deals are sitting without clear next steps | **13 Deal Pipeline Review** |
+| You need to follow up with warm contacts | **15 Warm Lead Outreach** |
+| AI writing sounds generic | **12 Write in My Voice** |
 
-→ **[Save your seat](https://build.managedcoder.com/classes)** — free, no cap on the Zoom sessions
+## How the library is organized
 
-→ **[Get the weekly newsletter](https://build.managedcoder.com/newsletter)** — AI for agencies, one email a week, plus new skills as they drop
+ManagedCoder is organized around the operating responsibilities of an agency owner, not around imaginary AI job titles.
 
-If you got value from one file in this kit, the classes are the same thing with the reasoning attached.
+### 01 Owner Command & Direction
 
----
-*The Agency Skill File Starter Kit — ManagedCoder. Want these running on their own across your whole team, instead of one chat at a time? See Agency Control Tower: controltower.collabai.software*
+Know what matters, what needs a decision, and what should be delegated.
+
+Current skills: `06 Daily Task Triage`, `10 Daily Owner Brief`, `17 Meeting to Product Roadmap`.
+
+### 02 Client Success & Retention
+
+Keep clients informed and surface relationship risk before it becomes an escalation.
+
+Current skill: `01 Client Status Report`.
+
+### 03 Sales & Pipeline
+
+Keep opportunities moving from research and proposal through CRM and follow-up.
+
+Current skills: `02 Proposal / SOW Draft`, `09 Meeting-to-CRM Log`, `13 Deal Pipeline Review`, `14 LinkedIn Outbound Strategy`, `15 Warm Lead Outreach`, `16 LinkedIn DM Outreach`.
+
+### 04 Delivery, Scope & Operations
+
+Turn commitments into owned work and make delivery problems visible earlier.
+
+Current skill: `03 Meeting Notes to Tasks`.
+
+Upcoming focus: scope creep, project risk, capacity, delivery visibility.
+
+### 05 Team & Leadership
+
+Build a stronger management layer so every question and escalation does not depend on the owner.
+
+Current skills: `05 Weekly Team Status Digest`, `07 Weekly Delegated Task Review`, `08 Manager Accountability Scorecard`, `11 1:1 Prep & Follow-Up`.
+
+### 06 Marketing, Voice & Content
+
+Use AI to communicate and create without flattening the owner's actual voice.
+
+Current skill: `12 Write in My Voice`.
+
+### 07 Research & Intelligence
+
+Research prospects, competitors, markets and changes before making a sales or strategic decision.
+
+Current skill: `04 Competitor / Prospect Scan`.
+
+### 08 Finance & Profitability
+
+Protect margin and improve financial visibility.
+
+Planned: project margin leakage, utilization, invoice follow-up, pricing and monthly profitability review.
+
+### 09 Agency Brain & Systems
+
+Capture the knowledge that normally disappears into meetings, Slack, documents and people's heads.
+
+Planned: decision logs, meeting-to-knowledge capture, SOP creation, handoffs and Agency Second Brain maintenance.
+
+## What a skill file actually contains
+
+A useful skill is not just a long prompt.
+
+It can contain:
+
+- rules for what information to inspect
+- scoring or prioritization logic
+- thresholds and exceptions
+- required checks before producing an answer
+- a repeatable output format
+- instructions for connected tools
+- approval rules before anything is written or sent
+
+Specific operating logic is what makes the output repeatable.
+
+"Prioritize my tasks" is a prompt.
+
+"Score overdue client commitments higher, identify blocked delegated work, separate decisions only I can make, and return the top three actions" is operating logic.
+
+## Standalone first, connected when useful
+
+Every starter skill should remain useful without a complicated setup.
+
+**Standalone mode** works from information you paste into the conversation.
+
+**Connected mode** can use your CRM, project tracker, email, calendar, meeting system, or other connected tools to retrieve the same information automatically.
+
+See [`CONNECTORS.md`](CONNECTORS.md) for the connector pattern.
+
+## Human approval is the default
+
+The skills may analyze information and prepare actions, but consequential external actions should remain reviewable.
+
+A normal connected workflow looks like this:
+
+```text
+READ
+  -> ANALYZE
+  -> DRAFT OR RECOMMEND
+  -> HUMAN APPROVAL
+  -> WRITE OR SEND
+```
+
+If a skill sends client communication or changes important business data without the approval behavior it promises, treat that as a bug.
+
+## Fix the skill, not only the answer
+
+When an output is wrong, ask why.
+
+Did the skill miss an exception? Add it.
+
+Did it prioritize the wrong thing? Improve the scoring rule.
+
+Did it use the wrong tone? Add a better example or constraint.
+
+Did it need information that was unavailable? Define the source it should use next time.
+
+A skill you have corrected several times becomes a small piece of your company's operating knowledge.
+
+## Where this leads
+
+Individual skills are the starting point.
+
+The larger model is:
+
+```text
+Your agency systems
+CRM + PM + Email + Calendar + Meetings + Finance
+                 |
+                 v
+            Agency Brain
+      context + history + decisions
+                 |
+                 v
+          Operating Skills
+                 |
+                 v
+       recurring workflows
+                 |
+                 v
+        Agency Control Tower
+```
+
+You can start with one markdown file today. You do not need the full architecture to get value from the first skill.
+
+## ManagedCoder
+
+ManagedCoder is practical AI training for agency owners. The goal is to leave with working systems and reusable operating knowledge, not just notes from another AI class.
+
+See [ManagedCoder](https://managedcoder.com) for classes and resources.
+
+If you eventually want the skills connected across your agency, see [Agency Control Tower](https://controltower.collabai.software).
