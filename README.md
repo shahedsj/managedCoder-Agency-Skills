@@ -1,159 +1,87 @@
 # ManagedCoder Agency Skills
 
-**An open library of reusable AI operating skills for agency owners.**
+**What part of your agency still depends on you?**
 
-Most agency owners do not need another AI demo. They need help running the business they already have.
+ManagedCoder Agency Skills is an open library of reusable AI operating skills built around real agency work: clients, sales, delivery, delegation, profitability, decisions, and company knowledge.
 
-ManagedCoder turns recurring agency work into reusable operating instructions: client health, pipeline, delegation, project risk, scope, team accountability, profitability, meeting intelligence, and company knowledge.
+You do not need to install everything. Pick the problem you want help with and start there.
 
-Write the operating logic once. Improve it when you learn. Reuse it across capable AI systems.
+**New here?** Start with [`START-HERE.md`](START-HERE.md). No special setup is required.
 
-Part of [ManagedCoder](https://managedcoder.com), practical AI training for agency owners by SJ Innovation.
+## Pick the part of your agency you want to improve
 
-## What makes this different
+| Area | Use it when... | Skills |
+|---|---|---:|
+| [**01 Owner Command & Direction**](01-owner-command/) | Too many things still need the owner's attention or decision | 5 |
+| [**02 Client Success & Retention**](02-client-success/) | You want to catch client risk before the client becomes the alert | 2 |
+| [**03 Sales & Pipeline**](03-sales-pipeline/) | Deals, proposals, CRM, and follow-up are inconsistent | 6 |
+| [**04 Delivery, Scope & Operations**](04-delivery-operations/) | Projects slip, ownership is unclear, or scope keeps expanding | 3 |
+| [**05 Team & Leadership**](05-team-leadership/) | Delegation, accountability, 1:1s, or capacity need stronger systems | 5 |
+| [**06 Marketing, Voice & Content**](06-marketing-content/) | You want AI help without losing the owner's real voice | 1 |
+| [**07 Research & Intelligence**](07-research-intelligence/) | You need better prospect, competitor, or market intelligence | 1 |
+| [**08 Finance & Profitability**](08-finance-profitability/) | Projects are busy but you cannot see where margin is leaking | 1 |
+| [**09 Agency Brain & Systems**](09-agency-brain-systems/) | Important decisions and knowledge keep disappearing into meetings and people's heads | 2 |
 
-This is not a prompt collection and it is not an imaginary AI agency with hundreds of job titles.
+## Start with a problem you have this week
 
-A useful ManagedCoder skill should do at least one of these:
-
-- reduce owner dependency
-- catch risk before it becomes a client problem
-- improve a recurring business decision
-- make delegation and accountability more consistent
-- protect scope, margin, or follow-up
-- capture company knowledge so it does not live only in people's heads
-- turn scattered information into an actionable operating picture
-
-The goal is **less founder dependency, stronger company knowledge, better decisions, and more repeatable execution.**
-
-## The ManagedCoder maturity path
-
-```text
-Learn -> Build -> Skill -> Brain -> Connect -> Automate -> Delegate -> Operate
-```
-
-You can start with one markdown file and pasted information.
-
-As the agency matures, the same operating logic can use an Agency Second Brain and connected business systems. Repeated trusted workflows can later become automations or agents.
-
-## 26 starter skills across 9 operating categories
-
-| Category | What it helps you run | Coverage |
-|---|---|---|
-| **01 Owner Command & Direction** | Priorities, decisions, daily/weekly briefs, meeting prep, direction | Available |
-| **02 Client Success & Retention** | Client communication, health, expectations, relationship risk | Available |
-| **03 Sales & Pipeline** | CRM, proposals, prospecting, outreach, pipeline follow-up | Available |
-| **04 Delivery, Scope & Operations** | Commitments, scope, project risk, execution | Available |
-| **05 Team & Leadership** | Delegation, accountability, managers, 1:1s, capacity | Available |
-| **06 Marketing, Voice & Content** | Brand voice and owner communication | Available, expanding |
-| **07 Research & Intelligence** | Prospect, competitor, market and industry intelligence | Available, expanding |
-| **08 Finance & Profitability** | Project margin leakage and agency economics | Available, expanding |
-| **09 Agency Brain & Systems** | Decisions, institutional knowledge, second-brain patterns | Available, expanding |
-
-See [`starter-kit/00-START-HERE.md`](starter-kit/00-START-HERE.md) for the guided starting point.
-
-## Start with the problem, not the library
-
-| If this is happening... | Start here |
+| Problem | Try this skill |
 |---|---|
-| Client updates take too long | **Client Status Report** |
-| You do not know which clients are becoming risky | **Client Health Review** |
-| Meetings end but ownership is unclear | **Meeting Notes to Tasks** |
-| The same decision keeps getting reopened | **Agency Decision Logger** |
-| Meeting knowledge disappears after the transcript | **Meeting to Knowledge Capture** |
-| You are unsure what deserves your attention today | **Daily Owner Brief** |
-| Weekly reviews are full of status but few decisions | **Weekly Owner Decision Brief** |
-| You need context before an important call | **Next Meeting Prep Brief** |
-| Client requests keep expanding | **Scope Creep Watchdog** |
-| Project status says green but you do not trust it | **Project Risk Review** |
-| You cannot tell whether the team is overloaded | **Capacity & Overload Review** |
-| A project is busy but not profitable | **Project Margin Leakage Review** |
-| Deals sit without clear next steps | **Deal Pipeline Review** |
-| AI writing does not sound like you | **Write in My Voice** |
+| Client updates take too long | [Client Status Report](02-client-success/01-client-status-report.md) |
+| You do not know which clients are becoming risky | [Client Health Review](02-client-success/19-client-health-review.md) |
+| Meetings end but ownership is unclear | [Meeting Notes to Tasks](04-delivery-operations/03-meeting-notes-to-tasks.md) |
+| Client requests keep expanding | [Scope Creep Watchdog](04-delivery-operations/20-scope-creep-watchdog.md) |
+| Project status says green but you do not trust it | [Project Risk Review](04-delivery-operations/21-project-risk-review.md) |
+| Your weekly review is mostly status instead of decisions | [Weekly Owner Decision Brief](01-owner-command/18-weekly-owner-decision-brief.md) |
+| You need context before an important call | [Next Meeting Prep Brief](01-owner-command/26-next-meeting-prep-brief.md) |
+| You cannot tell whether the team is truly overloaded | [Capacity & Overload Review](05-team-leadership/22-capacity-overload-review.md) |
+| A project is busy but margin keeps disappearing | [Project Margin Leakage Review](08-finance-profitability/23-project-margin-leakage-review.md) |
+| Meeting knowledge disappears after the transcript | [Meeting to Knowledge Capture](09-agency-brain-systems/24-meeting-to-knowledge-capture.md) |
+| The same leadership decision keeps getting reopened | [Agency Decision Logger](09-agency-brain-systems/25-agency-decision-logger.md) |
+| Deals sit without clear next steps | [Deal Pipeline Review](03-sales-pipeline/13-deal-pipeline-review.md) |
+| AI writing does not sound like you | [Write in My Voice](06-marketing-content/12-write-in-my-voice.md) |
 
-## Current skill library
+## How to use a skill
 
-### 01 Owner Command & Direction
-- Daily Task Triage
-- Daily Owner Brief
-- Meeting to Product Roadmap
-- Weekly Owner Decision Brief
-- Next Meeting Prep Brief
+**1. Open one skill.**
 
-### 02 Client Success & Retention
-- Client Status Report
-- Client Health Review
+**2. Give it real agency information.** Paste meeting notes, project updates, CRM data, tasks, or whatever the skill asks for.
 
-### 03 Sales & Pipeline
-- Proposal / SOW Draft
-- Meeting-to-CRM Log
-- Deal Pipeline Review
-- LinkedIn Outbound Strategy
-- Warm Lead Outreach
-- LinkedIn DM Outreach
+**3. Run it in ChatGPT, Claude, Gemini, Codex, or another capable AI.**
 
-### 04 Delivery, Scope & Operations
-- Meeting Notes to Tasks
-- Scope Creep Watchdog
-- Project Risk Review
+**4. Improve the operating rule when the output is wrong.** Do not only correct the answer. Improve the reusable skill.
 
-### 05 Team & Leadership
-- Weekly Team Status Digest
-- Weekly Delegated Task Review
-- Manager Accountability Scorecard
-- 1:1 Prep & Follow-Up
-- Capacity & Overload Review
+That is the idea behind ManagedCoder: turn what normally lives in the owner's head into operating logic the company can reuse.
 
-### 06 Marketing, Voice & Content
-- Write in My Voice
+## More than prompts
 
-### 07 Research & Intelligence
-- Competitor / Prospect Scan
-
-### 08 Finance & Profitability
-- Project Margin Leakage Review
-
-### 09 Agency Brain & Systems
-- Meeting to Knowledge Capture
-- Agency Decision Logger
-
-Next Agency Brain additions: SOP Builder, Employee Handoff Builder, knowledge health review, and Agency Second Brain setup/maintenance.
-
-## What a skill contains
-
-A skill file is a set of plain-English operating instructions for a recurring job.
-
-Good skills contain more than wording. They contain reusable judgment:
+A ManagedCoder skill can contain:
 
 - workflow rules
 - decision logic
 - thresholds and exceptions
 - prioritization
-- required inputs
-- missing-data behavior
+- required inputs and missing-data behavior
 - validation
 - structured outputs
 - source/provenance behavior
 - approval rules
 - connector behavior
 
-The value is not the first output. The value is what happens after you improve the file.
+`Prioritize my tasks` is a prompt.
 
-If the AI misses something important, fix the rule in the skill instead of correcting only that one answer. The next run starts with what you learned.
+`Score overdue client commitments higher, identify blocked delegated work, separate decisions only I can make, and return the top three actions` is operating logic.
 
-## Standalone first, connected second
+## Standalone first
 
-**Standalone:** paste the information you already have. No special infrastructure required.
+Every starter skill should work with information you paste into the conversation.
 
-**Connected:** let the same skill retrieve context from CRM, project management, email, calendar, meetings, finance, or an Agency Brain. See [`starter-kit/CONNECTORS.md`](starter-kit/CONNECTORS.md).
+No CRM integration. No database. No Control Tower required.
 
-A connected skill should become more informed, not become a completely different workflow.
+When useful, the same skill can later retrieve context from connected CRM, project management, email, calendar, meetings, finance, or an Agency Brain. See [`CONNECTORS.md`](CONNECTORS.md).
 
 ## Human approval stays in the loop
 
 Connected does not mean uncontrolled.
-
-Default pattern:
 
 ```text
 READ
@@ -164,52 +92,13 @@ READ
   -> WRITE OR SEND
 ```
 
-A client email, task, CRM change, scope change, financial action, or knowledge update should not happen silently because an AI decided it was ready.
+Client communication, task creation, CRM changes, scope changes, financial actions, and company-knowledge updates should remain reviewable.
 
-## Skills, Brain, Connectors, Workflows
-
-Keep the layers separate:
-
-- **Skills** contain reusable operating logic.
-- **Agency Brain** contains company knowledge, decisions, SOPs, context, history, and reviewed lessons.
-- **Connectors** read and write live systems.
-- **Workflows** chain several skills around a recurring business process.
-- **Automations/agents** run mature workflows after the agency trusts the logic and controls.
-
-Changing business facts should live in authoritative data/knowledge systems, not hardcoded inside skills.
-
-## Example workflow
+## Where this leads
 
 ```text
-Client meeting
-  -> Meeting Notes to Tasks
-  -> Meeting to Knowledge Capture
-  -> Meeting-to-CRM Log
-  -> Scope Creep Watchdog
-  -> Client Health Review
-  -> Client Status Report
-  -> Weekly Owner Decision Brief
+Learn -> Build -> Skill -> Brain -> Connect -> Automate -> Delegate -> Operate
 ```
-
-One meeting can now update execution, relationship context, scope awareness, and durable company knowledge without pretending those are the same thing.
-
-## Contribution standard
-
-Before adding a skill, ask:
-
-1. Does it solve a recurring agency problem?
-2. Does it reduce founder dependency or improve a decision?
-3. Is it meaningfully agency-specific?
-4. Does it contain operating logic rather than only prompting?
-5. Can it work standalone?
-6. Can it later use connected systems?
-7. Can Agency Brain knowledge improve it?
-8. Does it produce an actionable result?
-9. Are consequential actions human-reviewable?
-10. Does company knowledge make it improve over time?
-11. Is there a logical path toward workflow automation or an Agency Control Tower?
-
-## Where this is going
 
 ```text
 AGENCY OWNER / TEAM
@@ -230,15 +119,13 @@ CRM | PM | Email | Calendar | Meetings | Finance
 WORKFLOWS -> AUTOMATIONS -> AGENTS -> AGENCY CONTROL TOWER
 ```
 
-The durable asset is the agency's knowledge and operating logic, not one LLM. Keep it usable by ChatGPT, Claude, Gemini, Codex, MCP clients, and future models.
+The durable asset is the agency's knowledge and operating logic, not one LLM.
 
 ## ManagedCoder
 
-ManagedCoder teaches agency owners how to build this progression themselves instead of only buying another AI tool.
+[ManagedCoder](https://managedcoder.com) teaches agency owners how to build practical AI operating systems from real agency work.
 
-[ManagedCoder](https://managedcoder.com)
-
-For teams that want these workflows connected and running across the business, see [Agency Control Tower](https://controltower.collabai.software).
+For teams that eventually want these workflows connected across their business, see [Agency Control Tower](https://controltower.collabai.software).
 
 ## License
 
