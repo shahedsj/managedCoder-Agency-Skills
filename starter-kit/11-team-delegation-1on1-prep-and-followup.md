@@ -589,4 +589,6 @@ Agenda type: Regular check-in, with a career thread
 5. **Your best performer needs the most 1:1 time, not the least.** They cause no problems, so they get skipped — and they're the one with the most options. "What's keeping you here?" is a question you want to ask before you find out the hard way.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want every manager's 1:1s prepped, logged, and their follow-ups tracked automatically — without anyone writing notes? See Agency Control Tower: controltower.collabai.software*

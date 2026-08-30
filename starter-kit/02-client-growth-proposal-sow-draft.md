@@ -178,4 +178,6 @@ Separate from the proposal. This is for them, not the client.
 5. **The exclusions list is a sales tool, not just protection.** It shows you listened to everything, and it gives them a menu for later. Half your follow-on revenue is sitting in that section.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want proposals drafted the moment a deal hits discovery, from your real call notes? See Agency Control Tower: controltower.collabai.software*

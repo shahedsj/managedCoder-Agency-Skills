@@ -178,4 +178,6 @@ Notice what it caught: Harlow Group was dropped (closed), the Flags section was 
 5. **When the brief gets long, that's the signal — not the problem.** Over 300 words consistently means you're holding too much yourself. That's a delegation conversation, and the brief just handed you the list.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want this built and delivered to you at 8:30 every morning, without you asking for it? See Agency Control Tower: controltower.collabai.software*

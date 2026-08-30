@@ -301,4 +301,6 @@ first 5 warm prospects?
 5. **Most people quit in week 3.** Warm reconnects reply in days; cold sequences take 2–3 weeks to produce a meeting. Week 3 is when it looks broken and is actually working.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want your buckets sorted, your sequence timing tracked, and your follow-ups queued without a spreadsheet? See Agency Control Tower: controltower.collabai.software*

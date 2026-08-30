@@ -193,4 +193,6 @@ Push the follow-up date to Friday and log this as the next step? [waits]
 4. **Close-lost is a real answer.** A clean pipeline you trust is worth more than a big pipeline you don't. Killing a dead deal costs nothing and makes every forecast truer.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want this scored and drafted for you every morning, across your whole team's pipeline? See Agency Control Tower: controltower.collabai.software*

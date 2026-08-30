@@ -158,4 +158,6 @@ Then create only what's confirmed, matching the owner and date exactly as they a
 5. **Watch for the recurring open question.** The same unresolved item appearing across three meetings isn't a scheduling problem — it's a decision someone is avoiding, and it needs escalating rather than re-listing.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want every meeting captured and turned into owned tasks automatically, with nothing to paste? See Agency Control Tower: controltower.collabai.software*

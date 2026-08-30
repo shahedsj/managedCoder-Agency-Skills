@@ -228,4 +228,6 @@ Then the scale question, separately: at 50 concurrent client businesses, the ans
 5. **If the meeting named three top priorities, it named zero.** Go back and ask which ships first. A roadmap built on three number-ones just moves the prioritisation problem onto whoever picks up the tasks.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want your backlog checked against what's actually built every time the plan changes, instead of once a quarter? See Agency Control Tower: controltower.collabai.software*

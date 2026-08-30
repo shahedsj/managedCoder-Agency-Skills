@@ -148,4 +148,6 @@ Capacity: [slammed / normal / light]
 5. **If the digest is always green, you're reading the wrong inputs.** Real weeks have friction. A consistently clean digest usually means people are reporting what they think you want to hear, and the actual problems are surfacing somewhere you're not looking.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want this built automatically every Friday from your team's real activity, with nothing to collect? See Agency Control Tower: controltower.collabai.software*

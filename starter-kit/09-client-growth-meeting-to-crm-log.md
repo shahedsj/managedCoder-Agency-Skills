@@ -211,4 +211,6 @@ or both?
 5. **Don't trust a clean-looking transcript any more than a messy one.** Transcription is most dangerous when it's fluent and wrong — a garbled line makes you check; a smooth sentence with the wrong number doesn't.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want every call classified, matched, logged, and turned into next steps the moment it ends, with no one triggering it? See Agency Control Tower: controltower.collabai.software*

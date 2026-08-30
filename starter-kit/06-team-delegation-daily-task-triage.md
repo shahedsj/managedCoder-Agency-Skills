@@ -268,4 +268,6 @@ That's 3. Say next for more, skip, close it, or delegate.
 6. **If you never gave it your responsibilities, what you're reading is just an urgency list.** It will still look sorted and reasonable — that's the danger. The tasks that are genuinely yours rarely shout, so they sink to the bottom while three loud ops tasks sit on top.
 
 ---
+*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
+
 *Part of the Agency Skill File Starter Kit — ManagedCoder. Want your tasks scored, your blockers surfaced, and the comments drafted before you open your laptop — for your whole team? See Agency Control Tower: controltower.collabai.software*
