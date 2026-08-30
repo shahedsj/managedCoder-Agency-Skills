@@ -12,7 +12,7 @@ That is the system.
 
 Start with a live client project.
 
-**1.** Open [`01-client-growth-client-status-report.md`](01-client-growth-client-status-report.md).
+**1.** Open [`01 Client Status Report`](02-client-success/01-client-status-report.md).
 
 **2.** Copy the skill into Claude, ChatGPT, or another capable AI.
 
@@ -49,7 +49,7 @@ You do not need all 17 skills.
 
 ## How the library is organized
 
-ManagedCoder is being organized around the operating responsibilities of an agency owner, not around imaginary AI job titles.
+ManagedCoder is organized around the operating responsibilities of an agency owner, not around imaginary AI job titles.
 
 ### 01 Owner Command & Direction
 
