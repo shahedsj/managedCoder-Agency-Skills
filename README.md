@@ -8,6 +8,9 @@ You do not need to install everything. Pick the problem you want help with and s
 
 **New here?** Start with [`START-HERE.md`](START-HERE.md). No special setup is required.
 
+**New skill every week. [Get them by email →](https://managedcoder.com/newsletter)**<br>
+**Using these in your agency? [Tell me which one →](https://github.com/shahedsj/managedCoder-Agency-Skills/issues/new?template=skill-feedback.yml)**
+
 ## Pick the part of your agency you want to improve
 
 | Area | Use it when... | Skills |
