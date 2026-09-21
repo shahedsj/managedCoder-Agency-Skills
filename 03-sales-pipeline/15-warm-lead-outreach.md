@@ -67,6 +67,32 @@ Run all 5 in parallel.
 
 **5. ~~LinkedIn profile — only when LinkedIn is the channel.** Spend **30-60 seconds** getting **one** sharp personalization hook: a post from the last **1-2 weeks**, a job change, or company news. Also note connection status (connected / pending / not connected) and, from any prior messages, their communication style — fast and casual, or slow and formal. **If there's no usable hook, say so plainly rather than inventing one.** A fabricated hook is detectable and it costs more than sending nothing.
 
+## Step 2A — Check the CRM record is telling the truth
+
+Run this before you match an offer or write a word. It takes thirty seconds and it is the difference between a personalized email and a visibly wrong one.
+
+**Two checks, every contact:**
+
+1. **Does the company on the record match the email domain, or the person's real employer?** `richard.hayes@hofstra.edu` on a record that says the company is "Adventure House" is a red flag, not a detail.
+2. **Do several unrelated contacts share an identical company and industry**, despite different titles and different email domains? That pattern means the whole cluster is mis-joined, not just one record.
+
+This is a common and expensive CRM failure. In one real batch, seven contacts with completely unrelated titles, employers, and email domains all came back mapped to the same company because of a bad record join. Drafting from the CRM company name would have been visibly wrong to every single recipient.
+
+**If either check fails:**
+
+- Use the real company found from the email domain, their email signature, or a quick check — and carry on, **or**
+- If you cannot confidently establish the real company, **stop. Do not draft.** Say the record looks mis-joined and needs fixing first.
+
+**Other data problems worth catching here:**
+
+| Problem | Why it matters |
+|---|---|
+| Several addresses comma-separated in one email field | Exact-match search misses these, so history checks return a false "never contacted". Search each one separately |
+| Two different profile URLs for the same person | One of them is wrong |
+| A profile URL pointing at someone else entirely | This is how a message written for one person reaches a stranger at a different company. It has happened. Open the link before you use anything from it |
+
+**Always report what you flagged, and why, in the wrap-up.** A data problem found and not reported gets rediscovered by the next person, at the same cost.
+
 ## Step 3 — Present findings, then wait
 
 Show this exactly. Do not skip to drafting.
@@ -180,9 +206,37 @@ Ready to update the CRM: follow-up status → contacted, last contact
 date → today, next follow-up → [today + 1 month]. Confirm? [waits]
 ```
 
-Then, and only then, write the updates back: follow-up status, last contact date, and push the **next follow-up date to 1 month out** for everyone contacted.
+Then, and only then, write the updates back.
 
 **Never auto-write to any system. Confirm first, every time,** then report what actually changed — not what you intended to change.
+
+### Log after it is sent, not when it is drafted
+
+A draft sitting in your outbox is not a touch. Logging it as one puts a contact into the "already contacted" bucket while they have heard nothing from you.
+
+**A touch that is not logged is invisible.** In one real case, 38 LinkedIn messages went out and none were written back to the CRM. Two days later the whole batch had to be reconstructed from an export, and every one of those contacts was still sitting in the follow-up queue marked as uncontacted.
+
+**If your tool already logs the send itself** — a marketing platform, a sequencer, a CRM-native send — do not log it again. Two records of one email is a worse problem than none, because now neither is trustworthy.
+
+### Put the real message in the record
+
+A future session reading *"sent follow-up"* learns nothing. One reading the actual text can pick the thread back up.
+
+Log the real subject line and the real message body, not a paraphrase. Use a stable key if your tool supports it, so a retry does not create a duplicate.
+
+### Set the interval, not the date
+
+Most CRMs recalculate the next follow-up date from `last contact date + interval`. A date written directly is silently overwritten the next time anything touches the record — so it looks like it saved, and then quietly is not there.
+
+| Situation | Interval |
+|---|---|
+| Replied, wants to meet | 7 days |
+| Warm or hot | 30 days |
+| Standard | 45 days |
+| Asked for space, no response expected | 60 days |
+| Out of office until a known date | That date, minus today |
+
+Never set an interval under 7 days on a follow-up contact. Under a week is not persistence, it is pressure.
 
 ## Worked example
 

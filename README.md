@@ -17,12 +17,12 @@ You do not need to install everything. Pick the problem you want help with and s
 |---|---|---:|
 | [**01 Owner Command & Direction**](01-owner-command/) | Too many things still need the owner's attention or decision | 5 |
 | [**02 Client Success & Retention**](02-client-success/) | You want to catch client risk before the client becomes the alert | 2 |
-| [**03 Sales & Pipeline**](03-sales-pipeline/) | Deals, proposals, CRM, and follow-up are inconsistent | 6 |
+| [**03 Sales & Pipeline**](03-sales-pipeline/) | Deals, proposals, CRM, and follow-up are inconsistent | 8 |
 | [**04 Delivery, Scope & Operations**](04-delivery-operations/) | Projects slip, ownership is unclear, or scope keeps expanding | 3 |
 | [**05 Team & Leadership**](05-team-leadership/) | Delegation, accountability, 1:1s, or capacity need stronger systems | 5 |
-| [**06 Marketing, Voice & Content**](06-marketing-content/) | You want AI help without losing the owner's real voice | 1 |
-| [**07 Research & Intelligence**](07-research-intelligence/) | You need better prospect, competitor, or market intelligence | 1 |
-| [**08 Finance & Profitability**](08-finance-profitability/) | Projects are busy but you cannot see where margin is leaking | 1 |
+| [**06 Marketing, Voice & Content**](06-marketing-content/) | You want AI help without losing the owner's real voice | 3 |
+| [**07 Research & Intelligence**](07-research-intelligence/) | You need better prospect, competitor, or market intelligence | 2 |
+| [**08 Finance & Profitability**](08-finance-profitability/) | Projects are busy but you cannot see where margin is leaking | 2 |
 | [**09 Agency Brain & Systems**](09-agency-brain-systems/) | Important decisions and knowledge keep disappearing into meetings and people's heads | 2 |
 
 ## Start with a problem you have this week
@@ -42,6 +42,12 @@ You do not need to install everything. Pick the problem you want help with and s
 | The same leadership decision keeps getting reopened | [Agency Decision Logger](09-agency-brain-systems/25-agency-decision-logger.md) |
 | Deals sit without clear next steps | [Deal Pipeline Review](03-sales-pipeline/13-deal-pipeline-review.md) |
 | AI writing does not sound like you | [Write in My Voice](06-marketing-content/12-write-in-my-voice.md) |
+| Your outreach list has never been properly cleaned | [ICP List Build](03-sales-pipeline/27-icp-list-build.md) |
+| A batch of emails all read like the same template | [Unique Cold Outreach](03-sales-pipeline/28-unique-cold-outreach.md) |
+| Every email you send sounds like a different person wrote it | [Owner Email Rules](06-marketing-content/29-owner-email-rules.md) |
+| You want to write about what you actually learned running the agency | [Owner Blog Post](06-marketing-content/30-owner-blog-post.md) |
+| You need real background on a person before a call | [Lead Research Brief](07-research-intelligence/31-lead-research-brief.md) |
+| A contract is sitting unread and somebody wants it signed | [Contract Red-Flag Review](08-finance-profitability/32-contract-red-flag-review.md) |
 
 ## How to use a skill
 
