@@ -181,6 +181,82 @@ nonprofit, agency, client success -- screenshot each as proof -- all done by apr
 
 Every comment, close, and reassignment is **proposed first and written only after an explicit yes.** Then report what actually changed, not what you intended to change. Before any bulk action, show the exact list you're about to touch — bulk-closing the wrong tasks erases a team's work history and no apology recovers it.
 
+### One comment, one task. Absolute.
+
+If the same sentence would land on two tasks, it is noise on both, and it destroys the signal in the comment history of both.
+
+This is measured, not a preference. On one real board, a sweep posted the identical comment *"due date moved to august 20 to reflect real capacity -- will pick this up then"* onto 47 tasks. Six days later every one of them was overdue again. Across one month on that same board, 151 of 374 comments were machine boilerplate — 55 identical nudges, 47 identical rollovers, 32 identical automated reports. Roughly 40% of the comment history became unreadable, which means the real comments underneath became unfindable.
+
+If a sweep needs to touch 20 tasks, it changes **20 fields and posts zero comments** — or it posts one summary comment on a single owning task and links the rest. It never fans the same text out.
+
+## Step 8 — The automation sweep (proposal only, never self-approving)
+
+Run this on demand ("automate my tasks", "weekly sweep") or on a schedule. The goal is to pre-compute the decisions you make over and over — push the date, bump the priority, renew the recurring one, close the finished one — and present them as **one batch to approve or edit**, never as changes already made.
+
+**Field changes are cheap. Comments are not.** A sweep changes fields and posts as close to zero comments as possible.
+
+### 8A — Gather signals
+
+For every open task, collect:
+
+- The last real comment and its age — **ignoring automation boilerplate**, which is not an update and must not reset the staleness clock
+- Whether anyone is actually waiting on this person. Read it, don't assume it. An ask buried *underneath* the owner's own later reply still counts as open
+- Whether the task is recurring — a weekly/monthly marker, a recurring status, or a completed sibling with the same title stem
+- Whether the title matches a numbered series ("Part 3 of 5") — a candidate for consolidation
+- Whether it carries a one-time external deadline (an RFP, a grant, an event registration) — flag to verify the window is still open, never auto-escalate
+
+### 8B — Due-date rollover
+
+Only ever touches the due date.
+
+| Signal | Proposed action |
+|---|---|
+| Their own last comment says they'll pick it up, and it fits this week's themes | Give it a **specific working day** this week, never a bulk date |
+| Their own comment says they'll pick it up, but it's outside this week's themes | Roll to a themed week later — never to "next Monday" with everything else |
+| Comment says done or shipped but status is still open | Bucket as CAN CLOSE. Do not touch the date |
+| Someone is waiting for access, a key, a yes, or a skipped answer | Badge UNBLOCK, propose today or tomorrow. These are minutes of work |
+| One-time external deadline, 30+ days stale | Do not escalate. Flag: "confirm this window is still open" |
+
+### 8C — The mass-rollover guard
+
+**Never propose the same new due date for more than 5 tasks in one sweep, and never post a comment explaining the roll on more than one task.**
+
+A bulk push is not triage. It moves the pile to the right, destroys the signal in the due-date field, and the fan-out comment destroys the signal in the comment field too.
+
+When a sweep wants to roll more tasks than that allows:
+
+1. **Ask how many tasks they actually want on their plate this week**, and what the week's themes are, *before* proposing any dates
+2. Fill that number with specific weekday dates
+3. Spread the rest across later weeks in **themed batches**, so each week has a subject instead of a flat wall of one date
+4. Say out loud how many are being pushed past this week, and what that means: nothing is getting done sooner because a date changed
+5. Record the roll in the session summary — not as a comment on each task
+
+### 8D — Recurring task renewal
+
+- Cycle is done and no next cycle exists → propose the next one: same title, due date plus the interval, fresh status
+- Cycle still open and overdue → move it to the **next real occurrence** of the cadence, not to today
+- Never let a recurring task lapse into nothing. Propose either a renewal or an explicit "retire this?" flag
+- **A recurring habit that hasn't happened in 3+ cycles is not a habit.** Say so plainly and offer to retire it
+- A recurring task whose title carries a dead date ("Fill the Vault Before Aug 13") is lying to everyone reading the list. Propose renaming it
+
+### 8E — Retire the automations nobody reads
+
+A recurring automation posting the same report with the same empty result day after day is worse than nothing — it buries the real comments.
+
+> Real example: a daily handoff job posted 32 identical comments to one task in a month, every one reading "Shipped today: 0". That was 9% of the board's entire comment volume, with no reader.
+
+When you find one, propose an actual fix: retire it, downgrade it to a weekly digest, or make it post only on change. Do not merely note it.
+
+### 8F — Priority re-scoring
+
+Recompute from the comment signals, how often the topic keeps resurfacing, role alignment, and whether anyone is blocked.
+
+**Urgent cap.** If a sweep would leave more than 5 tasks marked urgent on one person's plate for one week, that is not a priority list. Propose demoting the rest and name which 5 stay.
+
+**Fake-urgent rule.** A task marked urgent with no real comment in 30+ days is not urgent. Propose demoting it and say so plainly. A lying priority field makes the whole list unusable. Automation boilerplate does not count as a comment here.
+
+Give a one-line justification with every proposed change.
+
 ## Session commands
 
 | User says | Do |

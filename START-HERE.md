@@ -1,6 +1,6 @@
 # Start Here: ManagedCoder Agency Skill Starter Kit
 
-**26 reusable AI operating skills for agency owners.**
+**32 reusable AI operating skills for agency owners.**
 
 This is not a prompt collection to browse for an hour.
 
@@ -33,7 +33,7 @@ That is the difference between asking AI to write and giving AI a reusable way t
 
 ## Choose based on the problem
 
-You do not need all 26 skills.
+You do not need all 32 skills.
 
 | What is happening in your agency? | Start with |
 |---|---|
@@ -55,6 +55,12 @@ You do not need all 26 skills.
 | Deals are sitting without clear next steps | **13 Deal Pipeline Review** |
 | You need to follow up with warm contacts | **15 Warm Lead Outreach** |
 | AI writing sounds generic | **12 Write in My Voice** |
+| Your outreach list has never been cleaned | **27 ICP List Build** |
+| Your batch emails read like a template | **28 Unique Cold Outreach** |
+| Your emails sound different every time | **29 Owner Email Rules** |
+| You want to write about what you actually learned | **30 Owner Blog Post** |
+| You need background on a person before a call | **31 Lead Research Brief** |
+| A contract is waiting and nobody has read it properly | **32 Contract Red-Flag Review** |
 
 ## How the library is organized
 
@@ -76,7 +82,7 @@ Current skills: `01 Client Status Report`, `19 Client Health Review`.
 
 Keep opportunities moving from research and proposal through CRM and follow-up.
 
-Current skills: `02 Proposal / SOW Draft`, `09 Meeting-to-CRM Log`, `13 Deal Pipeline Review`, `14 LinkedIn Outbound Strategy`, `15 Warm Lead Outreach`, `16 LinkedIn DM Outreach`.
+Current skills: `02 Proposal / SOW Draft`, `09 Meeting-to-CRM Log`, `13 Deal Pipeline Review`, `14 LinkedIn Outbound Strategy`, `15 Warm Lead Outreach`, `16 LinkedIn DM Outreach`, `27 ICP List Build`, `28 Unique Cold Outreach`.
 
 ### 04 Delivery, Scope & Operations
 
@@ -94,19 +100,19 @@ Current skills: `05 Weekly Team Status Digest`, `07 Weekly Delegated Task Review
 
 Use AI to communicate and create without flattening the owner's actual voice.
 
-Current skill: `12 Write in My Voice`.
+Current skills: `12 Write in My Voice`, `29 Owner Email Rules`, `30 Owner Blog Post`.
 
 ### 07 Research & Intelligence
 
 Research prospects, competitors, markets, and changes before making a sales or strategic decision.
 
-Current skill: `04 Competitor / Prospect Scan`.
+Current skills: `04 Competitor / Prospect Scan`, `31 Lead Research Brief`.
 
 ### 08 Finance & Profitability
 
 Protect project economics and make margin leakage visible while there is still time to correct it.
 
-Current skill: `23 Project Margin Leakage Review`.
+Current skills: `23 Project Margin Leakage Review`, `32 Contract Red-Flag Review`.
 
 Next: invoice/cash collection, pricing, utilization economics, monthly profitability.
 
