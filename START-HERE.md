@@ -1,12 +1,14 @@
 # Start Here: ManagedCoder Agency Skill Starter Kit
 
-**32 reusable AI operating skills for agency owners.**
+**34 reusable AI operating skills for agency owners.**
 
 This is not a prompt collection to browse for an hour.
 
 Pick one recurring agency problem. Use one skill on real work. If it saves time, catches a risk, improves a decision, or captures knowledge that would otherwise disappear, keep it. Then improve the file as your operating rules get better.
 
 That is the system.
+
+[Browse the complete catalog](CATALOG.md) · [Latest updates](CHANGELOG.md)
 
 ## Get your first win in 5 minutes
 
@@ -33,7 +35,7 @@ That is the difference between asking AI to write and giving AI a reusable way t
 
 ## Choose based on the problem
 
-You do not need all 32 skills.
+You do not need all 34 skills.
 
 | What is happening in your agency? | Start with |
 |---|---|
@@ -62,6 +64,9 @@ You do not need all 32 skills.
 | You need background on a person before a call | **31 Lead Research Brief** |
 | A contract is waiting and nobody has read it properly | **32 Contract Red-Flag Review** |
 
+| Partner promises lose momentum | [33 Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md) |
+| Marketing and sales meetings lack follow-through | [34 Weekly Marketing & Sales Review](06-marketing-content/34-weekly-marketing-sales-review.md) |
+
 ## How the library is organized
 
 ManagedCoder is organized around what an agency owner needs to run the business, not around imaginary AI job titles.
@@ -82,7 +87,7 @@ Current skills: `01 Client Status Report`, `19 Client Health Review`.
 
 Keep opportunities moving from research and proposal through CRM and follow-up.
 
-Current skills: `02 Proposal / SOW Draft`, `09 Meeting-to-CRM Log`, `13 Deal Pipeline Review`, `14 LinkedIn Outbound Strategy`, `15 Warm Lead Outreach`, `16 LinkedIn DM Outreach`, `27 ICP List Build`, `28 Unique Cold Outreach`.
+Current skills: `02 Proposal / SOW Draft`, `09 Meeting-to-CRM Log`, `13 Deal Pipeline Review`, `14 LinkedIn Outbound Strategy`, `15 Warm Lead Outreach`, `16 LinkedIn DM Outreach`, `27 ICP List Build`, `28 Unique Cold Outreach`, `33 Partner Pipeline & Follow-Up`.
 
 ### 04 Delivery, Scope & Operations
 
@@ -100,7 +105,7 @@ Current skills: `05 Weekly Team Status Digest`, `07 Weekly Delegated Task Review
 
 Use AI to communicate and create without flattening the owner's actual voice.
 
-Current skills: `12 Write in My Voice`, `29 Owner Email Rules`, `30 Owner Blog Post`.
+Current skills: `12 Write in My Voice`, `29 Owner Email Rules`, `30 Owner Blog Post`, `34 Weekly Marketing & Sales Review`.
 
 ### 07 Research & Intelligence
 

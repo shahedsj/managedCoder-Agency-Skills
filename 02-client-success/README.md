@@ -4,7 +4,11 @@ Skills for keeping clients informed, identifying relationship risk early, managi
 
 The operating principle is simple: clients can handle problems better than surprises.
 
-## Current skills
+## Available skills
 
-- `01 Client Status Report` - turn delivery activity into a clear client update
-- `19 Client Health Review` - classify relationship health from delivery, communication, commercial, scope, and sponsor signals
+| Skill | Open workflow |
+|---|---|
+| 01 | [Client Status Report](01-client-status-report.md) |
+| 19 | [Client Health Review](19-client-health-review.md) |
+
+[All categories](../CATALOG.md) · [Start here](../START-HERE.md)

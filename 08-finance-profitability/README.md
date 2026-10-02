@@ -2,11 +2,11 @@
 
 Skills for seeing where agency economics are improving or leaking before the month-end P&L explains it too late.
 
-## Current skills
+## Available skills
 
-- `23 Project Margin Leakage Review` - identify scope, estimate, rework, utilization, billing, collection, process, and staffing-mix leakage
-- `32 Contract Red-Flag Review` - read an NDA, MSA, SOW or vendor agreement in plain English, flag the clauses that cost money or IP, and say when a lawyer is needed
+| Skill | Open workflow |
+|---|---|
+| 23 | [Project Margin Leakage Review](23-project-margin-leakage-review.md) |
+| 32 | [Contract Red-Flag Review](32-contract-red-flag-review.md) |
 
-## Next areas
-
-Invoice/cash collection review, pricing review, utilization economics, and monthly agency profitability review.
+[All categories](../CATALOG.md) · [Start here](../START-HERE.md)

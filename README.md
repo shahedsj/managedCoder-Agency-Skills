@@ -1,15 +1,41 @@
 # ManagedCoder Agency Skills
 
-**What part of your agency still depends on you?**
+**34 reusable AI workflows for agency owners. Built from real agency operating experience.**
 
-ManagedCoder Agency Skills is an open library of reusable AI operating skills built around real agency work: clients, sales, delivery, delegation, profitability, decisions, and company knowledge.
+Created by [Shahed Islam](https://github.com/shahedsj), co-founder of SJ Innovation, through [ManagedCoder](https://managedcoder.com). This library turns lessons from running an agency into reusable workflows for client updates, delivery, team accountability, outreach, partnerships and weekly decisions.
 
-You do not need to install everything. Pick the problem you want help with and start there.
+The goal is simple: help your agency run with fewer decisions and follow-ups depending on the owner.
 
-**New here?** Start with [`START-HERE.md`](START-HERE.md). No special setup is required.
+Start with one Markdown file and the information you already have. Use it with ChatGPT, Claude, Gemini, Codex or another capable AI. No CRM connection or paid ManagedCoder product is required for the standalone workflows. Results depend on the model and the evidence you provide.
 
-**New skill every week. [Get them by email →](https://managedcoder.com/newsletter)**<br>
-**Using these in your agency? [Tell me which one →](https://github.com/shahedsj/managedCoder-Agency-Skills/issues/new?template=skill-feedback.yml)**
+[**Start in 5 minutes**](START-HERE.md) · [**Browse all 34 skills**](CATALOG.md) · [**See what changed**](CHANGELOG.md) · [**Try the plugin release candidate**](docs/plugin/INSTALL.md)
+
+## What is available today
+
+| What you can use | Current scope |
+|---|---|
+| Public skill library | 34 Markdown workflows across 9 agency operating areas |
+| Standalone use | Paste relevant notes, tasks, project or CRM information into your AI with the selected skill |
+| Connected use | Optional guidance for using your own authorized tools; this repository does not provide a working connection to your systems |
+| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 34-skill catalog |
+| Public plugin directory | Not published or approved; see [publishing status](docs/plugin/PUBLISHING.md) |
+
+## Latest update: October 2, 2026
+
+- **New: [Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md).** Track reciprocal commitments, resolve relationship ownership and separate internal notes from partner-visible updates.
+- **New: [Weekly Marketing & Sales Review](06-marketing-content/34-weekly-marketing-sales-review.md).** Turn last week's promises, campaign evidence and pipeline changes into a decision agenda.
+- **Accountability improvements.** Distinguish weekly commitment completion from backlog clearance. Preserve deadlines and identify missing evidence.
+- **Outreach improvements.** Check opt-outs, active conversations and ownership. Keep drafts separate from verified sent activity.
+
+[Read the change log](CHANGELOG.md) for scope and validation details.
+
+## Why I am sharing this
+
+Running an agency creates repeated decisions: what needs attention, who owns the next step, what was actually delivered, and when a client or partner needs an update.
+
+I am turning those operating lessons into files other agency owners can inspect, copy and adapt. The public versions keep the reusable rules and remove private company records and configuration. You bring your own agency context.
+
+The aim is to make useful operating knowledge available beyond one owner or one AI tool. These workflows are a starting point to test against your work, not a claim that every public version has been proven in every agency.
 
 ## Pick the part of your agency you want to improve
 
@@ -110,30 +136,11 @@ Client communication, task creation, CRM changes, scope changes, financial actio
 
 ## Where this leads
 
-```text
-Learn -> Build -> Skill -> Brain -> Connect -> Automate -> Delegate -> Operate
-```
+Start with a useful workflow. Add your company's policies, decisions and history. Connect live systems when the manual workflow earns your trust. Configure recurring automation separately when you are ready.
 
-```text
-AGENCY OWNER / TEAM
-        |
-        v
-OPERATING SKILLS
-Owner | Clients | Sales | Delivery | Team | Marketing | Research | Finance
-        |
-        v
-AGENCY BRAIN
-Knowledge | Decisions | SOPs | Client Context | History
-        |
-        v
-CONNECTED SYSTEMS
-CRM | PM | Email | Calendar | Meetings | Finance
-        |
-        v
-WORKFLOWS -> AUTOMATIONS -> AGENTS -> AGENCY CONTROL TOWER
-```
+**Learn → Build → Skill → Brain → Connect → Automate → Delegate → Operate**
 
-The durable asset is the agency's knowledge and operating logic, not one LLM.
+The durable asset is your agency's knowledge and operating logic. The model can change.
 
 ## ManagedCoder
 
@@ -143,7 +150,7 @@ For teams that eventually want these workflows connected across their business, 
 
 ## License
 
-MIT
+[MIT](LICENSE). Preserve any additional attribution included in individual files.
 
 
 
@@ -159,3 +166,9 @@ Six operating Skills plus context setup are now packaged as a portable Skills-on
 - [Privacy](docs/plugin/PRIVACY.md)
 
 Build: `python3 scripts/build_plugin.py`. Requires Python 3 and PyYAML. Check generated files with `python3 scripts/build_plugin.py --check`.
+
+## Help improve the library
+
+Try one workflow on real work, then [share feedback](https://github.com/shahedsj/managedCoder-Agency-Skills/issues/new?template=skill-feedback.yml). Describe the expected result, what went wrong and which rule needs to change. Use fictional or redacted examples. Do not post client records or private team information.
+
+[ManagedCoder classes and resources](https://managedcoder.com) · [Newsletter](https://managedcoder.com/newsletter)
