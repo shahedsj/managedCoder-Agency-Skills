@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekly Owner Decision Brief"
+  short_description: "Find the decisions only the owner should make"
+  default_prompt: "Use $weekly-owner-decision-brief with the agency information I provide."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Status Report"
+  short_description: "Draft clear updates from real project evidence"
+  default_prompt: "Use $client-status-report with the agency information I provide."

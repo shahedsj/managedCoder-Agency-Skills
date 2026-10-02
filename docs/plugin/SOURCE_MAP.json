@@ -1,0 +1,37 @@
+[
+  {
+    "skill": "weekly-owner-decision-brief",
+    "source": "01-owner-command/18-weekly-owner-decision-brief.md",
+    "sha256": "890dc1f9328d94bd4773036ff45b9891c789aa19ea2f04f3bfc50f35d1633a5d"
+  },
+  {
+    "skill": "client-status-report",
+    "source": "02-client-success/01-client-status-report.md",
+    "sha256": "6673e78e9f4dced9782467be58330d95ee899392dba577bbbddc12ad7e8491ed"
+  },
+  {
+    "skill": "scope-creep-watchdog",
+    "source": "04-delivery-operations/20-scope-creep-watchdog.md",
+    "sha256": "faff29d33f630c5fbf46e4ea828f5593b036bea81bf1db456c7460e49324933f"
+  },
+  {
+    "skill": "project-risk-review",
+    "source": "04-delivery-operations/21-project-risk-review.md",
+    "sha256": "aa087d112140592ebf4cb3e705f6e9b5145310c53aa974f1cfd793ca253984b9"
+  },
+  {
+    "skill": "meeting-processor",
+    "source": "04-delivery-operations/03-meeting-notes-to-tasks.md",
+    "sha256": "95329d563077ac4190bd19228c05f297cadd077687315ec5050d3f2970160b3a"
+  },
+  {
+    "skill": "weekly-delegated-task-review",
+    "source": "05-team-leadership/07-weekly-delegated-task-review.md",
+    "sha256": "724d3398cc5ae5404f6e2ca5e7767c21251fea4c66879ed7edbbde5105103a32"
+  },
+  {
+    "skill": "agency-context-setup",
+    "source": "plugin-resources/agency-context-setup.md",
+    "sha256": "bd0cd31e93faa85634d4de36d48719668c9bfd850714207abdcc1d3e14767083"
+  }
+]

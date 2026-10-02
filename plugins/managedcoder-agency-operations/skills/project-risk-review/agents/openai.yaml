@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Risk Review"
+  short_description: "Find delivery risk and concrete recovery actions"
+  default_prompt: "Use $project-risk-review with the agency information I provide."

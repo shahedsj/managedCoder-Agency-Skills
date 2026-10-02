@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agency Context Setup"
+  short_description: "Build a reusable context pack for your agency"
+  default_prompt: "Use $agency-context-setup with the agency information I provide."

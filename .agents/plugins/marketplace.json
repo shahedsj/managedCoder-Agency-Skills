@@ -1,0 +1,20 @@
+{
+  "name": "managedcoder-agency-skills",
+  "interface": {
+    "displayName": "ManagedCoder Agency Skills"
+  },
+  "plugins": [
+    {
+      "name": "managedcoder-agency-operations",
+      "source": {
+        "source": "local",
+        "path": "./plugins/managedcoder-agency-operations"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

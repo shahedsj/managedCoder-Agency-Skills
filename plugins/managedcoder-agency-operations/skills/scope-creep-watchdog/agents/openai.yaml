@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scope Creep Watchdog"
+  short_description: "Compare requests against approved project scope"
+  default_prompt: "Use $scope-creep-watchdog with the agency information I provide."

@@ -139,3 +139,18 @@ For teams that eventually want these workflows connected across their business, 
 ## License
 
 MIT
+
+
+
+## Agency Operations plugin release candidate
+
+Six operating Skills plus context setup are now packaged as a portable Skills-only plugin. They work from supplied notes and files. No signup or connector is required. This is a release candidate, not an approved public-directory listing. The other catalog Skills remain reference workflows and are not included in this first package.
+
+- [Install and try](docs/plugin/INSTALL.md)
+- [Publishing status](docs/plugin/PUBLISHING.md)
+- [Launch plan](docs/plugin/LAUNCH_PLAN.md)
+- [Pilot protocol](docs/plugin/PILOT.md)
+- [Validation](docs/plugin/VALIDATION.md)
+- [Privacy](docs/plugin/PRIVACY.md)
+
+Build: `python3 scripts/build_plugin.py`. Requires Python 3 and PyYAML. Check generated files with `python3 scripts/build_plugin.py --check`.
