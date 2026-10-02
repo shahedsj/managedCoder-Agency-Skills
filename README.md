@@ -1,14 +1,35 @@
 # ManagedCoder Agency Skills
 
-**34 reusable AI workflows for agency owners. Built from real agency operating experience.**
+**Build an agency that runs on shared knowledge and repeatable systems, with less depending on the founder.**
 
 Created by [Shahed Islam](https://github.com/shahedsj), co-founder of SJ Innovation, through [ManagedCoder](https://managedcoder.com). This library turns lessons from running an agency into reusable workflows for client updates, delivery, team accountability, outreach, partnerships and weekly decisions.
 
-The goal is simple: help your agency run with fewer decisions and follow-ups depending on the owner.
+ManagedCoder helps agency owners become AI-first operators. Learn from real agency systems, copy a useful workflow, adapt it to your business, and build operating knowledge your team can reuse.
+
+This repository is the free Skills layer: **34 reusable workflows across 9 agency operating areas.**
 
 Start with one Markdown file and the information you already have. Use it with ChatGPT, Claude, Gemini, Codex or another capable AI. No CRM connection or paid ManagedCoder product is required for the standalone workflows. Results depend on the model and the evidence you provide.
 
 [**Start in 5 minutes**](START-HERE.md) · [**Browse all 34 skills**](CATALOG.md) · [**See what changed**](CHANGELOG.md) · [**Try the plugin release candidate**](docs/plugin/INSTALL.md)
+
+## The vision behind the library
+
+Most agency owners already use AI. The repeated work is teaching it about the business: clients, commitments, policies, decisions and who owns the next step.
+
+ManagedCoder helps you capture that context and the rules for using it. The lasting asset is:
+
+**Company Knowledge + Operating Logic + Structured Data + Skills**
+
+Keep those assets usable across models. Your agency's memory and operating methods should remain yours when your AI tool changes.
+
+| Part | Its role |
+|---|---|
+| SJ Innovation | The real agency operating experience behind the lessons |
+| ManagedCoder | Practical education, reusable skills, examples and open resources you can copy and adapt |
+| Agency Second Brain | Your company's shared, source-backed knowledge: policies, decisions, client context, history and lessons |
+| Agency Control Tower | A connected implementation for agencies ready to bring knowledge and workflows together across live systems |
+
+The free files should help even if you never buy a product. Start with supplied information. Add connections only when they make a useful workflow easier to run. Keep consequential decisions and actions reviewable.
 
 ## What is available today
 
@@ -140,7 +161,18 @@ Start with a useful workflow. Add your company's policies, decisions and history
 
 **Learn → Build → Skill → Brain → Connect → Automate → Delegate → Operate**
 
-The durable asset is your agency's knowledge and operating logic. The model can change.
+| Stage | What you build |
+|---|---|
+| Learn | Understand one recurring agency problem |
+| Build | Solve it with real work and evidence |
+| Skill | Capture the rules so the workflow can be repeated |
+| Brain | Add structured company knowledge, sources and decision history |
+| Connect | Retrieve current information from authorized business systems |
+| Automate | Configure and verify a recurring workflow |
+| Delegate | Give an agent a defined responsibility with clear boundaries |
+| Operate | Bring the pieces together in an Agency Control Tower |
+
+The repository supplies reusable workflows and guidance. A shared knowledge system, live integrations and recurring agents require separate implementation. Measure progress by better decisions, fewer repeated explanations and less owner chasing.
 
 ## ManagedCoder
 
