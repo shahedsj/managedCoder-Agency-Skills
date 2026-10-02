@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekly Delegated Task Review"
+  short_description: "Review delegated work without guessing intent"
+  default_prompt: "Use $weekly-delegated-task-review with the agency information I provide."

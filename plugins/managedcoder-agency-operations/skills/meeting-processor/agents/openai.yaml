@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meeting Processor"
+  short_description: "Extract decisions, actions and knowledge candidates"
+  default_prompt: "Use $meeting-processor with the agency information I provide."

@@ -1,0 +1,43 @@
+name: Validate agency plugin
+on:
+  push:
+    paths: ['plugins/**', 'plugin-resources/**', 'scripts/**', '01-owner-command/**', '02-client-success/**', '04-delivery-operations/**', '05-team-leadership/**', '.github/workflows/plugin-validation.yml']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install PyYAML==6.0.2
+      - run: python scripts/build_plugin.py --check
+      - run: python scripts/build_plugin.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: managedcoder-agency-operations-candidate
+          path: dist/managedcoder-agency-operations-1.0.0.zip
+
+  release-candidate:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-plugin.txt
+      - run: python scripts/build_plugin.py
+      - name: Publish prerelease once
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ! gh release view agency-operations-v1.0.0 >/dev/null 2>&1; then
+            gh release create agency-operations-v1.0.0 dist/managedcoder-agency-operations-1.0.0.zip --prerelease --target "$GITHUB_SHA" --title "Agency Operations 1.0.0 release candidate" --notes-file docs/plugin/RELEASE_NOTES.md
+          fi

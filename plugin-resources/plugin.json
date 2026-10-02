@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "managedcoder-agency-operations",
+  "version": "1.0.0",
+  "description": "Evidence-based operating workflows for agency owners.",
+  "author": {
+    "name": "SJ Innovation",
+    "url": "https://managedcoder.com"
+  },
+  "homepage": "https://managedcoder.com",
+  "repository": "https://github.com/shahedsj/managedCoder-Agency-Skills",
+  "license": "MIT",
+  "keywords": [
+    "agency",
+    "operations",
+    "skills"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ManagedCoder Agency Operations",
+        "shortDescription": "Run your agency with evidence",
+        "longDescription": "Six operating Skills and an Agency Context Pack setup flow for agency owners. Draft client updates, review scope changes and delivery risk, process meetings, review delegated work and prepare weekly owner decisions. Start with pasted notes or files. No signup, bundled connector, background tracking or automatic persistent memory is included. Existing authorized host tools can be used when available. Outputs distinguish evidence, unknowns, proposals and completed actions.",
+        "developerName": "SJ Innovation",
+        "category": "Productivity",
+        "websiteURL": "https://managedcoder.com",
+        "supportURL": "https://github.com/shahedsj/managedCoder-Agency-Skills/issues",
+        "privacyPolicyURL": "https://github.com/shahedsj/managedCoder-Agency-Skills/blob/main/docs/plugin/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/shahedsj/managedCoder-Agency-Skills/blob/main/docs/plugin/TERMS.md",
+        "defaultPrompt": [
+          "Draft a client update from these project notes.",
+          "Review this project for delivery risk.",
+          "Turn these meeting notes into decisions and actions."
+        ],
+        "brandColor": "#2A878F",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/logo.svg"
+      },
+      "onboardingSkill": "./skills/agency-context-setup/SKILL.md",
+      "review": {
+        "commerce": false,
+        "commerce_description": "Free Skills-only workflows. No purchase, advertising or subscription upsell in the plugin."
+      },
+      "publication": {
+        "release_notes": "Initial release candidate: six operating workflows, context setup, evidence safeguards and portable packaging."
+      }
+    }
+  }
+}
