@@ -1,5 +1,7 @@
 # All 34 Agency Skills
 
+These skills support ManagedCoder's goal: help agency owners become AI-first operators and reduce founder dependency through shared knowledge and repeatable operating systems.
+
 Pick the recurring problem you want to solve. Open its skill, provide the requested inputs and run it in your preferred capable AI.
 
 [Start here](START-HERE.md) · [Latest updates](CHANGELOG.md)
