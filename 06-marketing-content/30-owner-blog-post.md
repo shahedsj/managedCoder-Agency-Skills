@@ -9,7 +9,7 @@ Generic leadership content is free and worthless. The only thing an agency owner
 
 If a paragraph could appear on any AI or leadership blog, it does not belong in this post.
 
-> Tool placeholders like `~~meeting notes` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~meeting notes` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

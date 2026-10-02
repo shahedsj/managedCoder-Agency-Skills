@@ -7,7 +7,7 @@ description: A 30-day LinkedIn playbook that starts with the people who already 
 
 Most people burn their LinkedIn network chasing strangers while 2,000 people who already know their name sit untouched. This is the 30-day plan that works the warm list first — and the exact words to send.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

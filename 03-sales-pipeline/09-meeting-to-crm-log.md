@@ -7,7 +7,7 @@ description: Turn a call you just had into a properly logged CRM record — clas
 
 The meeting happened. The decision was made. Three weeks later nobody can find where it was written down, and the deal moves forward on someone's memory of it. This is the ten minutes after a call that decides whether the call counts.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

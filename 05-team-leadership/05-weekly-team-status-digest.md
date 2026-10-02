@@ -7,7 +7,7 @@ description: Roll scattered team updates into one digest you can read in three m
 
 You don't need to know what everyone did. You need to know who's stuck, what's about to slip, and who has gone quiet. This finds those three things and ignores the rest.
 
-> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

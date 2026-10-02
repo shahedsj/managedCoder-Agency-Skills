@@ -7,7 +7,7 @@ description: Run a working deal review — pull your open deals, score them by u
 
 Deals don't die from bad pitches. They die from silence. This runs the review that catches silence before it becomes a lost deal.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

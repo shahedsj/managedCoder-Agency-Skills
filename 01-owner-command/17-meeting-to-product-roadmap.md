@@ -9,7 +9,7 @@ A strategy meeting changes the product. The backlog doesn't hear about it. Six w
 
 This runs the full loop: vision out of the meeting, tasks checked against the real build, stale work archived with a written reason, new work created in small approved batches.
 
-> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

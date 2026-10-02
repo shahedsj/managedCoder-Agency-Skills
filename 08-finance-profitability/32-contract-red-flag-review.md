@@ -11,7 +11,7 @@ This skill reads the document, names the real risks in plain English, and tells 
 
 **This is not legal advice and this skill never approves a contract.** It produces a review to bring to a decision. Anything high-value, unusual, cross-border, employment-related, regulated, or litigation-adjacent goes to a qualified attorney, and the review says so.
 
-> Tool placeholders like `~~docs` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~docs` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## What I need from you
 

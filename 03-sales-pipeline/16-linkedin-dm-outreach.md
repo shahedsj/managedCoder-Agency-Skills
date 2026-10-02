@@ -7,7 +7,7 @@ description: Write and send the actual LinkedIn outreach to one specific named p
 
 Most LinkedIn outreach fails at the first line, not the pitch. The recipient decides in two seconds whether this message was written for them or blasted to ten thousand people. This skill writes the version that survives that two seconds.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 
@@ -41,6 +41,10 @@ Four things, before I draft anything:
 **If something is missing, I'll spend 30-60 seconds getting it myself** — open the profile, check connection status, scan recent activity for one usable hook. Thirty to sixty seconds is enough for one sharp detail, not a full bio. Past that, I'm padding, and padding is what makes messages sound researched instead of sounding personal.
 
 If no real hook exists after that pass, I'll say so rather than inventing one.
+
+## Preflight: identity, history and ownership
+
+Verify the specific profile, latest conversation, opt-outs and current relationship owner before drafting. Hold contacts with an unanswered inbound reply or an active teammate-owned discussion. Do not treat missing history as no contact. Use only supported claims; remove unverified results from the draft instead of asking the sender to catch them later. Log a touch only after a verified send or an explicit user report, using the actual date and avoiding duplicate native activity logs.
 
 ## Rule 1 — Approval before every send
 
@@ -204,9 +208,7 @@ Hi Marcus, saw your post last week about the support ticket backlog, especially
 the part about your team spending more time triaging than actually solving
 things.
 
-We hit the same wall with a client last year and ended up building a triage flow
-that cut their first response time in half. Happy to send over how it works, no
-strings.
+I would be interested to hear how your team is approaching it.
 
 Is ticket volume still the main pressure point right now?
 ```
@@ -215,8 +217,8 @@ Is ticket volume still the main pressure point right now?
 ⚠️ Before you send:
 - [Last contact was March. That's 5 months, past the 2-3 month cold
   re-engagement line — a voice note would likely land better than this text.]
-- [I used "first response time in half" from your note. Confirm that number
-  is real before it goes out.]
+- [No verified client result or shareable resource was supplied, so neither
+  was claimed in the draft.]
 - [One ask only. Do not add "and are you free for a call this week."]
 ```
 

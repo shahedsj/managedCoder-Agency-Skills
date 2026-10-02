@@ -7,7 +7,7 @@ description: Score your open tasks, work them 3 at a time, and draft the exact c
 
 Most of your task list isn't waiting on work. It's waiting on you saying yes or no. This finds those tasks first, because every hour one sits there is an hour someone else on payroll is idle.
 
-> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 
@@ -48,7 +48,7 @@ Role alignment is a third of the score. A run without it still returns a confide
 
 ## Step 1 — Pull the open tasks
 
-Everything assigned to this person that is not done, archived, or deleted — status `new` or `in progress` only. For each: title, status, priority, due date, description, the last comment and its date, and who created it. The last comment does most of the work here; a task with no comment history can only be scored on dates. Sort the raw pull by priority (urgent, high, medium, low) then due date ascending, nulls last. That's the input order, not the output order — scoring reorders it.
+Everything assigned to this person that is not done, archived, or deleted — include all live nonterminal statuses supported by the tracker, including blocked and recurring work. For each: title, status, priority, due date, description, the last comment and its date, and who created it. The last comment does most of the work here; a task with no comment history can only be scored on dates. Sort the raw pull by priority (urgent, high, medium, low) then due date ascending, nulls last. That's the input order, not the output order — scoring reorders it.
 
 ## Step 2 — Apply hard overrides first
 
@@ -57,11 +57,11 @@ These run **before** scoring — each describes a situation where the score is t
 | Condition | Action |
 |---|---|
 | Due date is past | **OVERDUE** — show before all others regardless of score |
-| Priority urgent + no due date | Treat as due today |
+| Priority urgent + no due date | Prioritize for review today; retain the missing deadline |
 | Last comment says done / deployed / live but status is still open | Bucket: **CAN CLOSE** |
 | Last comment says on hold | Separate section — do not push the owner on it |
 | 7+ days stale with zero comments | Flag: keep or archive? |
-| Title starts with a person's name | This is accountability, not execution — draft a nudge to that person |
+| Title starts with a person's name | Verify current ownership and delegation history; a name in a title alone does not establish responsibility |
 | Seen 3+ times in past sessions with no action | Add: "you've seen this before — decide now or archive" |
 
 The last row is the one people skip and shouldn't. A task you've looked at three times without acting is not a task, it's a decision you're avoiding — surfacing it a fourth time in the same neutral tone teaches the list to lie to you.
@@ -177,6 +177,10 @@ sam -- deploy the logging change to all instances -- list: mortgage, healthcare,
 nonprofit, agency, client success -- screenshot each as proof -- all done by april 28
 ```
 
+## Evidence and preservation checks
+
+Read current status and completion evidence before suggesting closure. A comment saying “done” is a closure candidate, not proof of acceptance. Missing mirrored records or updates mean unknown. Keep task descriptions and previous comments intact; a nudge belongs in a new authorized comment. Use actual current owners, approved leave and blockers before escalation. Label invented planning dates as proposals.
+
 ## Step 7 — Writing anything back
 
 Every comment, close, and reassignment is **proposed first and written only after an explicit yes.** Then report what actually changed, not what you intended to change. Before any bulk action, show the exact list you're about to touch — bulk-closing the wrong tasks erases a team's work history and no apology recovers it.
@@ -207,7 +211,7 @@ For every open task, collect:
 
 ### 8B — Due-date rollover
 
-Only ever touches the due date.
+Only propose date changes when the user requested rescheduling. Preserve the original commitment and approved change history. Separate a next-action date from a contractual or client deadline; a planning preference cannot move a hard deadline.
 
 | Signal | Proposed action |
 |---|---|
@@ -234,7 +238,7 @@ When a sweep wants to roll more tasks than that allows:
 ### 8D — Recurring task renewal
 
 - Cycle is done and no next cycle exists → propose the next one: same title, due date plus the interval, fresh status
-- Cycle still open and overdue → move it to the **next real occurrence** of the cadence, not to today
+- Cycle still open and overdue → retain the missed occurrence and its deadline. Propose a separate next occurrence if needed; never erase the missed cycle by rolling its date
 - Never let a recurring task lapse into nothing. Propose either a renewal or an explicit "retire this?" flag
 - **A recurring habit that hasn't happened in 3+ cycles is not a habit.** Say so plainly and offer to retire it
 - A recurring task whose title carries a dead date ("Fill the Vault Before Aug 13") is lying to everyone reading the list. Propose renaming it
@@ -306,18 +310,17 @@ Showing top 3 by impact. Say "next" for more.
 
 1. [OVERDUE] fix invoice template
 Due: Aug 5 (7 days past) | Created by: you | Status: in_progress | Score: 1
-Context: Invoice template fix you assigned yourself. No comment in 15 days.
+Context: Invoice template fix you assigned yourself. No comment date is available.
 Your action: This is pure ops (−2) and it's yours only by accident. Delegate or kill it.
 Draft comment:
 dana -- take over the invoice template fix -- ping me only if the layout changes -- done by aug 15
 Delegate? yes — finance/invoicing owner. You've held this 7 days past due with zero movement.
 
 2. [BLOCKING TEAM] maria - homepage hero copy
-Due: no date | Created by: maria | Status: new | Score: 8
-Context: Maria stopped Aug 10 waiting on a tagline decision. Title starts with her
-name — your accountability, her execution.
+Due: no date | Created by: maria | Status: new | Score: 10
+Context: Maria stopped Aug 10 waiting on a tagline decision. Verify the current assignee before routing the action.
 Your action: Pick a tagline. Quick decision (+3), blocked (+3), she created it (+2),
-matches "approve creative direction" (+2), no comment in 5+ days (+1).
+matches "approve creative direction" (+2), no staleness point because the comment is two days old.
 Draft comment:
 maria -- approved, go with option 2 -- ship the hero section by thursday aug 14
 Nudge:
@@ -326,7 +329,7 @@ hey maria, tagline approved, option 2. go ahead and ship the hero by thursday.
 3. [CAN CLOSE] rewrite onboarding deck
 Due: no date | Created by: you | Status: in_progress | Score: 0
 Context: Jul 28 comment says v2 is live and sent to the client; still open 15 days later.
-Your action: Close it. Nothing here is real work.
+Your action: Verify acceptance and check for unresolved scope, then propose closure.
 
 Held back: vendor contract review — on hold pending legal. Not pushing you on it.
 

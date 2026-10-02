@@ -7,7 +7,7 @@ description: Turn a raw CRM export or tag pull into a short outreach list you ca
 
 A list is not an ICP match just because somebody tagged it once in 2021. Most bad outreach batches are not a copywriting failure — they are a list failure that nobody checked. This skill turns a raw pull into a short list you can send to without embarrassment. The filtering is the product, not the search.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 
@@ -55,6 +55,12 @@ Drop a contact if **any** of these is true. No judgment calls, no exceptions for
 
 **Check for duplicate tag names with different IDs.** Most long-lived CRMs have them. Two tags reading `usa agency` are not interchangeable, and picking the wrong one silently halves your pool.
 
+## Eligibility and evidence checks
+
+Resolve duplicate people by stable record IDs and verified addresses before counting. Check live conversation history, channel opt-outs, active deals, current account ownership and approved campaign cadence. An active reply or teammate-owned conversation leaves the cold batch and goes to the relationship owner. Missing history or opt-out data means HOLD FOR REVIEW, not eligible. In standalone mode, label unverified rows as candidates, never send-ready.
+
+Company size and region are required campaign gates when specified. Do not relax them to fill the target. Separate confirmed matches from exceptions for review. Report actual selected count and shortfall. For exclusion totals, assign one primary reason per contact and list secondary reasons separately so counts reconcile.
+
 ## Step 3 — Score fit, don't just filter
 
 Everyone who survives Step 2 gets scored:
@@ -74,7 +80,7 @@ Take the highest scorers up to the target count.
 
 The country field is the least reliable column in almost every agency CRM. Records entered by a form, an import, or a list purchase inherit whatever default the tool had that day.
 
-Cross-check at least two of: state or province, postal code format, phone country code, website domain ending. If two disagree, exclude rather than guess.
+Prefer a verified business address or current first-party company information. Phone prefixes and domain suffixes are supporting clues, not proof of operating location. If sources disagree or only weak clues exist, hold for review rather than guessing.
 
 ## Output
 
@@ -84,7 +90,9 @@ Cross-check at least two of: state or province, postal code format, phone countr
 Pulled: [N]
 Excluded: [N]  (opt-out [n] · already contacted [n] · bad data [n] · invalid email [n])
 Scored: [N]
-Selected: [target]
+Selected: [actual N] / target [N]
+Held for missing evidence: [N] · Shortfall: [N]
+History checked through: [timestamp/source or unavailable]
 
 ⚠️ Fit note: [the honest problem with this pool, if there is one]
 
@@ -109,11 +117,11 @@ Selected: [target]
 - 56 contacts carried the tag.
 - Excluded 4: one do-not-contact, two opted out on email only (the main DND flag read false on both — found by reading the records, not by filtering), one flagged for missing first name.
 - 52 scored. Titles skewed strongly to Founder and Owner, so decision-maker fit was genuinely good. But company size clustered at 2–10 people, against a stated ICP of 10–30+.
-- Selected the top 20, all with verified emails and owner-level titles.
+- Company size is a required gate. Hold size-unknown records for review and exclude confirmed out-of-band records. Select only the remaining confirmed matches, even if fewer than 20. Verified email and title do not override the size requirement.
 
 **The fit note went first:**
 
-> ⚠️ This pool is mostly 2–10 person shops, smaller than your stated 10–30+ ICP. They are real agency owners and the list is clean. Your call whether that is the right fit for this campaign.
+> ⚠️ This pool is mostly 2–10 person shops, smaller than your stated 10–30+ ICP. They are not approved matches for this campaign. Report the eligible shortfall; changing the size requirement requires an explicit campaign decision before selection.
 
 Notice what that avoids: the owner finds out about the size mismatch now, not after 20 sends and two replies.
 

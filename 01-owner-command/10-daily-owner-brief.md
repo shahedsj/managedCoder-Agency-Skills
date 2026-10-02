@@ -7,7 +7,7 @@ description: Build the owner's morning brief — today's calendar, your top 5 ta
 
 Most owners start the day by opening five tabs and reconstructing it from scratch. Twenty minutes gone, and they still lead with whatever shouted loudest. This produces one page that ends with a single decision — so the first hour goes to the thing that actually matters instead of the thing that arrived most recently.
 
-> Tool placeholders like `~~calendar` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~calendar` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

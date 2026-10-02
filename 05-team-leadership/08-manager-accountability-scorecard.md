@@ -1,218 +1,159 @@
 ---
 name: manager-accountability-scorecard
-description: Build a one-page manager accountability scorecard for your Monday leadership meeting — completion rate, overdue count, never-started count, and a risk color per person, plus the sharp question to ask each one in the room. Use whenever the user says "the scorecard", "monday scorecard", "meeting prep scorecard", "accountability report", "how is everyone doing on their tasks", "who is delivering and who isn't", "task completion rates", "show me the numbers by person", or wants a per-person performance summary before a leadership, all-hands, or management meeting. Also use when they're about to walk into a team meeting with no data, when they say the team "feels slow" but can't point at anything, or when the same tasks keep getting discussed week after week with no movement.
+description: Build an evidence-based manager accountability scorecard for a leadership meeting. Use for Monday scorecards, completion rates, overdue commitments, stalled delegated work, or questions about team delivery. Distinguish delivery risk from missing data and prepare a specific decision question for each supported risk.
 ---
 
 # Manager Accountability Scorecard
 
-Most team meetings run on memory and vibes, so the loudest person sounds busiest and the quiet person with six overdue tasks never comes up. This turns your task data into one page of numbers you can put on a screen — and gives you the specific question to ask each person, by name, about their actual stalled work.
+A useful scorecard shows which commitments need help and which decisions are blocking delivery. Task counts alone cannot establish effort or employee performance.
 
-> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders refer to your connected systems. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│  STANDALONE (always works)                                    │
-│  ✓ Paste two lists: completed this week, and open tasks      │
-│  ✓ Full scorecard, risk colors, talking points               │
-├──────────────────────────────────────────────────────────────┤
-│  SUPERCHARGED (when you connect your tools)                   │
-│  + ~~project tracker: pull both lists live, with task titles  │
-│  + ~~email: draft the scorecard to yourself before the room   │
-│  + ~~docs: write it to your standing meeting page             │
-└──────────────────────────────────────────────────────────────┘
-```
+| Mode | Inputs and result |
+|---|---|
+| Standalone | Paste task records, completion evidence and last week's commitments. Receive a scorecard with gaps clearly marked. |
+| Connected | Read current tasks and dated history from ~~project tracker, agreed commitments from ~~meeting notes, and operating policies from ~~docs. |
 
 ## What I need from you
 
-**Option A — Connected tracker.** Say "monday scorecard." I'll pull it.
+- Required: review date, timezone, team scope and task list with stable identifiers, owners, status and due dates where known.
+- Required for weekly completion: the commitments agreed for the review window and dated completion evidence.
+- Optional: approved extensions, dependency owners, working calendar, previous scorecard and company risk thresholds.
+- A pasted count is acceptable as user-reported evidence. Label it as such; it cannot prove individual completion dates.
 
-**Option B — Paste two lists.**
-1. Tasks completed in the last 7 days, per person (a count is enough).
-2. Every currently open task, per person, with status and due date. Task titles matter here — the titles are what make the talking points sharp.
+## Step 1: Define the window and scope
 
-**Option C — One person.** "How is Sam doing?" runs the same math for one row.
+Default to the last seven calendar days ending at the review timestamp. Display the exact start and end, using an inclusive start and exclusive end for timestamp queries. Use the user's timezone.
 
-## Step 1 — Pull completed work, last 7 days
+Resolve current owners and delegated relationships from authoritative records. Do not infer ownership from a title or a frozen roster. Include the owner's tasks only when requested, in a separate section.
 
-Count tasks per person that moved to done in the last 7 days. Scope it to work *you* assigned or own as the delegator, and exclude tasks assigned to yourself — this is a delegation scorecard, not a personal to-do list. Your own tasks in the table make everyone else's numbers look better than they are.
+Deduplicate by stable task ID. Similar titles across client projects are not duplicates. Count co-owned work once in portfolio totals and disclose any shared attribution in person rows.
 
-## Step 2 — Pull all open tasks, per person
+## Step 2: Verify outcomes and dates
 
-For every person, get: total open, how many are past their due date (overdue), how many are still in a "not started" state (never started), and how many are in progress. Exclude anything done or archived.
+Count completed work using completion timestamps or dated status history. A generic last-updated timestamp does not establish completion in the window.
 
-Capture the actual task titles and how many days each overdue task has been overdue. Without titles you can produce a table but not a meeting.
+Separate reopened tasks from currently accepted completed outcomes. Do not count the same outcome twice because it was closed twice. Preserve the source and confidence of each count.
 
-**Missing due dates are normal.** Half-populated trackers are the rule, not the exception. A task with no due date is not overdue — count it as open, and flag the count of undated tasks separately. Never treat "no date" as "on time."
+A completed task with stale metadata is not overdue. Missing due dates are unknown, not on time. Exclude cancelled and archived work from the open backlog while reporting agreed cancellations separately.
 
-## Step 3 — Calculate rate and risk
+Read blockers, approved extensions and holds before interpreting lateness. Show original and approved revised dates. Retain missed commitments in history even after a revision.
 
-**Completion rate** = completed_this_week / (completed_this_week + total_open) x 100. Round to the nearest whole number.
+## Step 3: Calculate two different measures
 
-Why that denominator: it measures throughput against the pile actually sitting on the person. Someone who closed 4 while holding 3 open is moving. Someone who closed 0 while holding 6 is not, no matter how busy the week felt.
+| Measure | Formula | Meaning |
+|---|---|---|
+| Weekly commitment completion | Accepted commitments completed by window end / commitments agreed for that window × 100 | How much of the agreed weekly plan finished |
+| Backlog clearance ratio | Verified completed outcomes in window / (verified completed outcomes + open tasks at review) × 100 | Throughput relative to the current pile; not a weekly plan completion rate |
 
-**Risk level:**
+Freeze the commitment cohort at the agreed planning point. Show additions, removals and scope changes separately so the denominator is not quietly rewritten. Work completed outside that cohort contributes to throughput, not its completion numerator.
 
-| Color | Condition (any one triggers it) |
+Round displayed percentages to whole numbers. Use unrounded numbers for thresholds. A zero denominator is N/A. Missing completion evidence makes the affected metric UNKNOWN. Neither N/A nor UNKNOWN means zero delivery.
+
+## Step 4: Assign delivery risk
+
+Use company policy when supplied. These are starter review thresholds, not employee ratings:
+
+| Band | Evidence required |
 |---|---|
-| 🔴 RED | overdue >= 3 **OR** any single task overdue 14+ days **OR** completion rate < 20% |
-| 🟡 YELLOW | overdue 1-2 **OR** never_started >= 4 **OR** completion rate 20-50% |
-| 🟢 GREEN | overdue = 0 **AND** completion rate > 50% |
+| RED | At least 3 confirmed overdue commitments, any commitment 14+ calendar days overdue, or weekly commitment completion below 20% after the agreed window closes |
+| YELLOW | 1–2 confirmed overdue commitments, at least 4 explicitly unstarted tasks requiring a capacity discussion, or weekly completion from 20% through 50% after the window closes |
+| GREEN | Sufficient evidence, no overdue commitments, no RED/YELLOW condition, and weekly completion above 50% |
+| UNKNOWN | Evidence cannot establish a band; includes no agreed cohort and no other supported risk signal |
 
-Check RED first, then YELLOW, then GREEN — a person can trip more than one line and the worst color wins.
+Evaluate RED, then YELLOW, then GREEN. Missing metrics do not erase a separately confirmed overdue risk. State which signal supports the band and which measures remain unknown. Do not use the backlog ratio as the weekly completion threshold.
 
-The 14-day rule exists because one task rotting for two weeks is a worse signal than three tasks that slipped by two days. Three small slips is a busy week. One task untouched for 14 days is a decision nobody made — either it's not real work, or the person is stuck and hasn't said so. Both need naming out loud.
+Annotate leave, approved holds, dependency delays and data freshness without publishing private reasons. If data is mirrored, check the authoritative tracker before escalation. Use the documented synchronization allowance; do not invent a universal lag.
 
-The never_started >= 4 rule catches the person whose numbers look fine because nothing is overdue yet. Four things queued and untouched means the work hasn't started, and it will all come due at once.
+Four unstarted tasks prompt a capacity question, not a finding of negligence. No update for 14 days prompts an evidence check, not a conclusion that work never started.
 
-## Step 4 — Output
+## Step 5: Produce the scorecard
 
-Use this structure exactly.
+Use this template:
 
+```text
+ACCOUNTABILITY SCORECARD: [window] | [timezone]
+Scope: [team and delegation rule]
+Evidence current through: [timestamp / gaps]
+
+| Owner | Open | Verified done | Overdue | Unstarted | Undated | Weekly completion | Backlog ratio | Risk and reason |
+| ... |
+
+Owner decisions blocking delivery:
+- [Task ID/title, needed decision, impact, source]
+
+Supported risks:
+- [Owner, task, original/current due dates, age, blocker, evidence]
+
+Meeting questions:
+- [Owner]: [one specific question about an outcome or decision]
+
+Data gaps and exceptions:
+- [Missing cohort/history, source conflict, approved hold]
+
+Proposed actions:
+- [Exact record, change, reason, proposed date if applicable]
+Executed actions: [none, or verified results under existing authorization]
 ```
-# 📊 Manager Accountability Scorecard
-## Monday [DATE] — [meeting name]
 
-| Manager | Role | Open | Done ✅ | Overdue ⚠️ | Never Started | Rate | Status |
-|---------|------|------|---------|------------|---------------|------|--------|
-| [name]  | [role] | [n] | [n]    | [n]        | [n]           | [n]% | 🔴/🟡/🟢 |
+Sort confirmed RED risks first, then YELLOW, then UNKNOWN requiring reconciliation, then GREEN. Within a band, sort by client impact, overdue count and age. Do not rank people by task count as a productivity contest.
 
-## 🔴 Critical — Address in Meeting
-[Each RED person, one block. Name their single most overdue task by its actual
- title and its age in days. "[Name] — [n] overdue, [n] done this week. Most
- urgent: "[task title]", overdue [n] days."]
+## Step 6: Preserve history and obtain scoped authorization
 
-## 🟡 Watch — Monitor This Week
-[Each YELLOW person, one line each — the specific thing to watch, not a warning.]
+This review does not automatically modify tasks or notify the team. Show exact records and changes before consequential writes unless the same action is already explicitly authorized. Verify each result and report failures separately.
 
-## 🟢 Performing — Acknowledge
-[Each GREEN person, one short line. Say the number out loud.]
-
-## 📌 Decisions Needed From You
-[Every task blocked waiting on your input, approval, or a call only you can make.
- If there are none, say "None this week" — don't skip the heading.]
-
-## 🎤 Meeting Talking Points
-**[Name]** — [one sharp question built from their actual stalled task]
-```
-
-Sort the table by overdue count descending, then total open descending. The person who needs the conversation should be the first row, not buried alphabetically.
-
-## Step 5 — Writing the talking points
-
-This is the part that makes the difference between a report and a meeting.
-
-**One question per person, built from their real task.** Pull the task title and its age, then ask the question the task raises. The goal is a question the person can only answer with a fact.
-
-Good:
-- *"Is the client portal redesign still happening, or should we kill it — it's been open 42 days with nothing shipped?"*
-- *"How many blog posts actually went live this month?"*
-- *"Is the retail account project alive, or do we archive it today?"*
-- *"What's the current state of the mortgage build — can we demo it Thursday?"*
-
-Bad — delete these on sight:
-- *"Please provide an update."*
-- *"Can you share where you are on your tasks?"*
-- *"What's blocking you?"* (as a standalone — it invites a paragraph, not a fact)
-
-The difference: a generic question gets a generic answer and the task is still open next Monday. A question with a task name, a number, and a live/dead option forces a decision in the room. "Kill it or ship it" is a question people can answer; "give me an update" is a question people can survive.
-
-**Offer the kill option.** For anything overdue 14+ days, the question should include the possibility of closing it. Half the time that's the right answer and nobody wanted to be the one to say it.
-
-## Step 6 — Output format
-
-Ask before doing anything but the first.
-
-- **Default:** markdown in the chat — clean and scannable, ready to project.
-- **"Make it a file"** → save it as a `.md` file.
-- **"Email it to me"** → draft it to the user's `~~email`. Draft only, never send.
-- **"Put it in the doc"** → write to their standing meeting page in `~~docs`, after showing what will be written.
+Do not overwrite a description with a nudge. Do not reset all deadlines to Monday. Keep private 1:1 material out of shared scorecards. Dates proposed during the review are proposals until agreed.
 
 ## The rules that make this work
 
-**Never soften a red.** The temptation is to write "Sam has had a busy week" instead of "Sam: 4 overdue, 0 completed." The scorecard's only job is to be true in a room where everyone can see it. A softened scorecard is worse than none, because now the team has learned the numbers don't mean anything.
-
-**"In progress" for three weeks is not in progress.** Work with no visible output has not started. If a task has sat in progress past 14 days with no comment or update, treat it in your talking point as stalled, not active. This is the single most common way a scorecard lies.
-
-**Count what finished, not what got worked on.** Activity is not outcome. The rate uses completed tasks on purpose — hours logged, comments posted, and "almost done" all belong in the conversation, not in the number.
-
-**Show the whole team, every week, including the greens.** A scorecard that only appears when someone is in trouble becomes a punishment, and people start managing the tracker instead of the work. Run it every Monday whether the news is good or bad.
-
-**Never write back to the tracker from this skill.** This is a read-and-report tool. If the meeting produces changes — reassignments, closures, new dates — propose them as a list, wait for a yes, then make them and report what actually changed.
+- Keep both measures named because a large future backlog can depress the ratio even when every weekly commitment was delivered.
+- Use actual completion evidence because editing an old completed task should not create a new accomplishment.
+- Ask about the blocking decision before the person because the agency owner may be the dependency.
+- Keep an UNKNOWN band because false precision can turn a data problem into an unfair management judgment.
+- Record corrections as proposed operating-policy updates so the same misunderstanding does not repeat next week.
 
 ## Worked example
 
-**Input** (pasted, messy — a real paste from a half-populated tracker):
+Fictional input:
 
-```
-done last 7 days: priya 4, sam 0, dan 1
-open: priya 3 open none overdue none new
-sam 6 open, 4 overdue - "client portal redesign" 42 days, "q3 case study" 9 days,
-"vendor contract review" 4 days, "onboarding doc" 2 days, 2 still new
-dan 5 open, 1 overdue "analytics dashboard spec" 3 days, 4 still sitting in new,
-one of dans has no due date
+```text
+week ended oct 2, review 5pm NY. delivery lead: 4 promised, all 4 accepted,
+6 open for next month. account lead 0 promised, no open work, approved leave.
+project lead 2 open overdue 3 and 5 days, old done item edited today,
+no completion history exported. marketing lead 4 new tasks no dates.
 ```
 
-**Output:**
+Output:
 
-```
-# 📊 Manager Accountability Scorecard
-## Monday Aug 17 — Leadership Meeting
+```text
+ACCOUNTABILITY SCORECARD: Sep 25 17:00 to Oct 2 17:00 | America/New_York
+Scope: four supplied manager roles
+Evidence: supplied export; project-lead completion history missing
 
-| Manager | Role | Open | Done ✅ | Overdue ⚠️ | Never Started | Rate | Status |
-|---------|------|------|---------|------------|---------------|------|--------|
-| Sam     | Delivery Lead | 6 | 0 | 4 | 2 | 0%  | 🔴 |
-| Dan     | Account Lead  | 5 | 1 | 1 | 4 | 17% | 🔴 |
-| Priya   | Ops Lead      | 3 | 4 | 0 | 0 | 57% | 🟢 |
+| Owner | Open | Done | Overdue | Unstarted | Undated | Weekly | Backlog | Risk |
+| Project lead | 2 | UNKNOWN | 2 | UNKNOWN | 0 | UNKNOWN | UNKNOWN | YELLOW: 2 confirmed overdue |
+| Marketing lead | 4 | UNKNOWN | 0 confirmed | 4 | 4 | UNKNOWN | UNKNOWN | YELLOW: capacity check |
+| Account lead | 0 | 0 | 0 | 0 | 0 | N/A | N/A | UNKNOWN: no cohort; approved leave |
+| Delivery lead | 6 | 4 | 0 | 0 | 0 | 100% | 40% | GREEN |
 
-## 🔴 Critical — Address in Meeting
-Sam — 4 overdue, 0 completed this week. Most urgent: "Client Portal Redesign",
-overdue 42 days. Three of the four went overdue in the last two weeks, so this
-is a current problem, not old debt.
-
-Dan — 17% rate, and 4 of 5 tasks have never been started. Only 1 overdue today,
-but all four untouched items come due inside the next fortnight.
-
-## 🟡 Watch — Monitor This Week
-None this week.
-
-## 🟢 Performing — Acknowledge
-Priya — 57% completion rate, zero overdue, nothing sitting untouched. Say it in
-the room; this is the pattern you want copied.
-
-## 📌 Decisions Needed From You
-"Vendor Contract Review" (Sam, 4 days overdue) needs your sign-off before it can
-close. It is waiting on you, not on Sam.
-
-## 🎤 Meeting Talking Points
-**Sam** — is the client portal redesign still happening, or should we kill it —
-it's been open 42 days with nothing shipped?
-**Dan** — four of your five tasks haven't been started. Which one starts today,
-and what do we drop to make room?
-**Priya** — you cleared 4 this week. What are you doing that the others aren't?
-
-⚠️ Before the meeting:
-- [Dan is RED on rate, but only 1 task overdue — his real problem is a
-  never-started pile, not lateness. Lead with capacity, not accountability.]
-- [1 of Dan's tasks has no due date. It isn't counted as overdue. Set a date
-  in the meeting or it will never surface.]
-- ["Vendor Contract Review" is on your desk. Don't ask Sam about it.]
+Owner decisions: none identified in supplied notes; dependency details missing.
+Questions:
+- Project lead: what acceptance evidence and recovery plan exist for the two late commitments?
+- Marketing lead: which of the four queued tasks is committed this week?
+Gaps: an edit to an old done item cannot be counted as a completion today.
+Proposed actions: retrieve missing history and agree dates for queued work.
+Executed actions: none. No deadlines changed.
 ```
 
 ## Tips
 
-1. **Read the Decisions Needed section before you open your mouth.** Half the time the CEO is the reason something is red. Calling out a task you're personally blocking is the fastest way to lose the room's trust in the scorecard.
-2. **Two reds for the same person, two weeks running, is a management problem, not a task problem.** The scorecard has done its job by showing you; the fix is a 1:1, not a louder meeting.
-3. **A 0% rate with only 2 open tasks is not the same as a 0% rate with 12.** Read the Open column next to the Rate column before deciding who to worry about — small denominators swing wildly.
-4. **Kill something in the meeting, every week.** If nothing ever gets closed as dead, the never-started column only grows, and by month three the scorecard is all red and nobody looks at it.
-5. **Project it on the screen, don't email it.** The number being visible to the whole team is what changes behavior. A private scorecard is a report; a shared one is a system.
-
-## Pairs with
-
-This runs **Monday** and produces the meeting brief. The weekly delegated task review runs **Friday** — it chases open work, updates tasks, and drafts the follow-ups. Friday cleans the data, Monday shows the truth. Run both every week and you have a complete weekly accountability loop that doesn't depend on you remembering anything.
+1. Read owner-blocked items before asking the team for explanations.
+2. Compare the same cohort and time window each week.
+3. Separate a delivery conversation from an employment decision.
+4. If a metric changes after a data repair, explain the repair beside the number.
+5. A weekly schedule must be configured separately; this file installs no automation.
 
 ---
-*Free next step: join a live class and get the weekly AI-for-agencies newsletter at managedcoder.com*
-
-*Part of the Agency Skill File Starter Kit — ManagedCoder. Want this pulled, scored, and waiting in your inbox every Monday at 7am, with no manual exports? See Agency Control Tower: controltower.collabai.software*
+*Part of the ManagedCoder Agency Skills library. Use the same review rules each week and improve them with verified corrections.*

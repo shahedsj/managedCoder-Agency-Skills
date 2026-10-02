@@ -7,7 +7,7 @@ description: Build a one-page research brief on a company before you pitch, comp
 
 Walking into a call having read their website is table stakes. Walking in having spotted the thing they're clearly struggling with is what makes them lean forward.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

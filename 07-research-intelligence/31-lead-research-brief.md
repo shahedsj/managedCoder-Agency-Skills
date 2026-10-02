@@ -9,7 +9,7 @@ Outreach written on invented research is worse than outreach written on none. A 
 
 This skill produces a short, honest brief on a **person** before you write to them. [`04 Competitor & Prospect Scan`](04-competitor-prospect-scan.md) does the same job for their **company**. Use both before a big call.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

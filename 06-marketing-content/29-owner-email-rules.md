@@ -1,6 +1,6 @@
 ---
 name: owner-email-rules
-description: The operating rules for every email written as the agency owner — voice, the one-value-item formula, deliver-don't-promise, banned words, length, subject lines, the reply-or-new-email decision, and the pre-send checklist. Use before writing any email on the owner's behalf: lead follow-up, deal follow-up, client note, partner outreach, intro, reply, thank-you. Also use when an email draft "sounds like AI", when replies have dried up, or when deciding whether to reply into an old thread or start a new one. If this file and another skill disagree on email mechanics, this file wins.
+description: "The operating rules for every email written as the agency owner — voice, the one-value-item formula, deliver-don't-promise, banned words, length, subject lines, the reply-or-new-email decision, and the pre-send checklist. Use before writing any email on the owner's behalf: lead follow-up, deal follow-up, client note, partner outreach, intro, reply, thank-you. Also use when an email draft \"sounds like AI\", when replies have dried up, or when deciding whether to reply into an old thread or start a new one. If this file and another skill disagree on email mechanics, this file wins."
 ---
 
 # Owner Email Rules
@@ -9,7 +9,7 @@ Most agency owners have no email problem. They have an email *consistency* probl
 
 Read it before writing. Not from memory.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## What I need from you, once
 

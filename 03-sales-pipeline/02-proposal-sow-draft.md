@@ -9,7 +9,7 @@ Proposals don't lose on price. They lose on ambiguity — the client couldn't te
 
 This produces a first draft you edit, not a final you send.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

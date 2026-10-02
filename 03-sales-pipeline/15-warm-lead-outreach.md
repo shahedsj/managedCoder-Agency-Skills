@@ -7,7 +7,7 @@ description: Research a contact across email, calendar, CRM and deals BEFORE wri
 
 Your list is not cold. It is full of people who already met you, already liked you, and already forgot about you. The only thing that ruins that is a message that proves you forgot about them first.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 
@@ -202,11 +202,12 @@ Drafted: [n]
 
 Skipped: [name] — [reason: meeting Thursday / teammate managing]
 
-Ready to update the CRM: follow-up status → contacted, last contact
-date → today, next follow-up → [today + 1 month]. Confirm? [waits]
+Drafts only: no contact dates or sent statuses changed.
+After a verified send or explicit user report of sending, propose the exact
+CRM record, actual send timestamp, message and next-action rule for approval.
 ```
 
-Then, and only then, write the updates back.
+Write sent activity only after verified sending or an explicit user report with the actual send date, and authorization for the CRM update. A yes to saving a draft is not evidence of sending.
 
 **Never auto-write to any system. Confirm first, every time,** then report what actually changed — not what you intended to change.
 

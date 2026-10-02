@@ -7,7 +7,7 @@ description: Prep a 1:1 with a direct report, run it with the right agenda and q
 
 The 1:1 is where you find out a person is leaving — three months before they tell you, if you run it well, or on the day they resign, if you don't. This skill prepares the meeting, gives you the questions for the situation you're actually in, and makes sure what was agreed becomes a task instead of a good intention.
 
-> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~project tracker` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

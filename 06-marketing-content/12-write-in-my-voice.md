@@ -1,13 +1,13 @@
 ---
 name: write-in-my-voice
-description: Rewrite AI-generated or overly formal content into the owner's natural voice, and write new emails, social posts, blogs and proposals in that voice from scratch. Use whenever the user says "humanize this", "make it sound like me", "this sounds too AI", "too robotic", "fix the tone", "clean this up", "polish this", "rewrite this email/post/blog", or pastes a block of text and asks you to improve it. Also use when they say "write a LinkedIn post", "draft a post about X", "fix this post", or "make this post better" — this skill owns the rules for how a post is written. Trigger it automatically whenever a draft in the conversation reads like AI output: em dashes everywhere, buzzwords, long sentences, bullet-heavy structure.
+description: "Rewrite AI-generated or overly formal content into the owner's natural voice, and write new emails, social posts, blogs and proposals in that voice from scratch. Use whenever the user says \"humanize this\", \"make it sound like me\", \"this sounds too AI\", \"too robotic\", \"fix the tone\", \"clean this up\", \"polish this\", \"rewrite this email/post/blog\", or pastes a block of text and asks you to improve it. Also use when they say \"write a LinkedIn post\", \"draft a post about X\", \"fix this post\", or \"make this post better\" — this skill owns the rules for how a post is written. Trigger it automatically whenever a draft in the conversation reads like AI output: em dashes everywhere, buzzwords, long sentences, bullet-heavy structure."
 ---
 
 # Write In My Voice
 
 People buy from people. The moment a client reads a message that sounds like it came out of a machine, the relationship drops a notch — and they will not tell you that's why. This skill is the difference between content that gets replied to and content that gets skimmed.
 
-> Tool placeholders like `~~email` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~email` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 

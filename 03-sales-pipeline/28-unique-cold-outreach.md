@@ -1,13 +1,13 @@
 ---
 name: unique-cold-outreach
-description: Draft a batch of cold or warm outreach emails that are genuinely different from each other — not one template with the name swapped — so the batch does not read as a blast to spam filters or to the people receiving it. Use whenever the user says "make these unique", "personalize these emails", "don't let this look like a newsletter", "draft outreach to this list", or is about to send the same message to more than one person. Drafts only, never sends.
+description: Draft a batch of cold or warm outreach emails that are genuinely different from each other — not one template with the name swapped — so each draft reflects the recipient’s real context. Use whenever the user says "make these unique", "personalize these emails", "don't let this look like a newsletter", "draft outreach to this list", or is about to send the same message to more than one person. Drafts only, never sends.
 ---
 
 # Unique Cold Outreach
 
-A merge-tag email is structurally identical on every send. Same sentence shapes, same length, same links, same rhythm — only the name changes. That sameness is exactly what spam filters score and what recipients learn to recognise in half a second. This skill produces real per-contact variation, grounded in what you actually know about each person, not a swapped first name.
+A merge-tag email is structurally identical on every send. Same sentence shapes, same length, same links, same rhythm — only the name changes. Recipients can recognize repetitive copy. Variation does not guarantee deliverability or bypass filtering; consent, relevance, sender practices and platform rules still matter. This skill produces real per-contact variation, grounded in what you actually know about each person, not a swapped first name.
 
-> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](CONNECTORS.md).
+> Tool placeholders like `~~CRM` mean whatever tool you've connected in that category. See [CONNECTORS.md](../CONNECTORS.md).
 
 ## How it works
 
@@ -41,17 +41,21 @@ For every contact, before a word is written:
 
 That third row is the one that costs real money. A live lead swallowed by a batch process is worse than never having run the batch.
 
+Before drafting, also check opt-outs, invalid addresses, duplicate contacts, active opportunities and current relationship ownership. Suppress opted-out or invalid contacts. Hold active conversations for their owner. If history or permission evidence is missing, mark the row HOLD and request the missing information. Pasted contacts alone do not establish send readiness.
+
+A draft is not a sent touch. This skill never sends or updates last-contact dates. Any downstream logging needs a verified send or explicit user report, the actual timestamp, and authorization.
+
 ## Step 2 — Build variation on three independent axes
 
 Real uniqueness comes from mixing three things per contact, not from a synonym pass:
 
 **1. A specific reference to what they actually do.** Pull it from their business name, their tags, their site — "packaging and branding", "a web shop that mostly does ecommerce", "a studio doing brand work for restaurants". This is the highest-leverage line in the email. It proves a human looked, even when a human did not write every word.
 
-**2. The subject line.** Rotate through the approved pool. Never the same subject twice in one day's batch if you can avoid it.
+**2. The subject line.** Rotate through the approved pool. Reuse is acceptable when the approved pool is smaller than the batch; never invent extra subjects to force uniqueness.
 
 **3. The shape of the opening sentence.** Rotate between a direct question, a one-line observation about their work, and a plain statement of why you are writing. Do not use the same shape twice in a row.
 
-Three axes, mixed, gives you a batch where no two emails share a fingerprint — while every email still says the same thing.
+Use these three axes to improve relevance while keeping the offer consistent. Do not promise a unique technical fingerprint or inbox placement.
 
 ## Step 3 — Keep the ask identical
 
@@ -85,7 +89,7 @@ Then, before anything goes out:
 
 Pulled from the batch: [contacts who already replied — they need a human answer]
 Thin personalization: [contacts where the specific detail was weak or generic]
-Going out: [count] · No repeated subject + opening combination in this batch
+Drafted for review: [count] · No repeated subject + opening combination in this batch
 ```
 
 ## The rules that make this work
