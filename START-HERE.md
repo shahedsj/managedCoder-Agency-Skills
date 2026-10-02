@@ -1,6 +1,10 @@
 # Start Here: ManagedCoder Agency Skill Starter Kit
 
-**34 reusable AI operating skills for agency owners.**
+**Start building an agency that depends less on the founder.**
+
+ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 34 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
+
+Your durable asset is **Company Knowledge + Operating Logic + Structured Data + Skills**. Keep it usable across AI models. Begin with pasted information, then add an Agency Second Brain, connections and recurring automation when the workflow earns your trust.
 
 This is not a prompt collection to browse for an hour.
 
