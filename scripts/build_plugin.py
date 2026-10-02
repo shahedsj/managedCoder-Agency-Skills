@@ -114,7 +114,14 @@ def main():
     result = validate(files)
     if args.check:
         actual = {str(p.relative_to(PACKAGE)): p.read_bytes() for p in PACKAGE.rglob('*') if p.is_file()}
-        assert actual == files, 'Generated plugin has drifted. Run scripts/build_plugin.py.'
+        drift = sorted(k for k in set(actual) | set(files) if actual.get(k) != files.get(k))
+        assert not drift, f'Generated plugin has drifted: {drift}. Run scripts/build_plugin.py.'
+        saved_provenance = json.loads((ROOT / 'docs/plugin/SOURCE_MAP.json').read_text())
+        assert saved_provenance == provenance, 'Source map has drifted.'
+        with zipfile.ZipFile(ROOT / 'dist/managedcoder-agency-operations-1.0.0.zip') as archive:
+            assert archive.testzip() is None, 'ZIP integrity failure.'
+            assert len(archive.namelist()) == len(set(archive.namelist())), 'Duplicate ZIP entries.'
+            assert {k: archive.read(k) for k in archive.namelist()} == files, 'ZIP contents have drifted.' 
     else:
         for path, data in files.items():
             target = PACKAGE / path
