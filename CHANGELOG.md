@@ -1,5 +1,11 @@
 # Change log
 
+## October 10, 2026: Event Command Center
+
+Added [Event Command Center](10-events/35-event-command-center.md): plan, promote, track and close out webinars, in-person and co-hosted events. New Events category. Catalog grows from 34 to 35.
+
+This skill was not added to the plugin package or the website listing.
+
 ## October 2, 2026: accountability, outreach and two new workflows
 
 The public catalog grew from 32 to 34 skills.

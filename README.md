@@ -6,11 +6,11 @@ Created by [Shahed Islam](https://github.com/shahedsj), co-founder of SJ Innovat
 
 ManagedCoder helps agency owners become AI-first operators. Learn from real agency systems, copy a useful workflow, adapt it to your business, and build operating knowledge your team can reuse.
 
-This repository is the free Skills layer: **34 reusable workflows across 9 agency operating areas.**
+This repository is the free Skills layer: **35 reusable workflows across 10 agency operating areas.**
 
 Start with one Markdown file and the information you already have. Use it with ChatGPT, Claude, Gemini, Codex or another capable AI. No CRM connection or paid ManagedCoder product is required for the standalone workflows. Results depend on the model and the evidence you provide.
 
-[**Start in 5 minutes**](START-HERE.md) · [**Browse all 34 skills**](CATALOG.md) · [**See what changed**](CHANGELOG.md) · [**Try the plugin release candidate**](docs/plugin/INSTALL.md)
+[**Start in 5 minutes**](START-HERE.md) · [**Browse all 35 skills**](CATALOG.md) · [**See what changed**](CHANGELOG.md) · [**Try the plugin release candidate**](docs/plugin/INSTALL.md)
 
 ## The vision behind the library
 
@@ -35,13 +35,17 @@ The free files should help even if you never buy a product. Start with supplied 
 
 | What you can use | Current scope |
 |---|---|
-| Public skill library | 34 Markdown workflows across 9 agency operating areas |
+| Public skill library | 35 Markdown workflows across 10 agency operating areas |
 | Standalone use | Paste relevant notes, tasks, project or CRM information into your AI with the selected skill |
 | Connected use | Optional guidance for using your own authorized tools; this repository does not provide a working connection to your systems |
-| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 34-skill catalog |
+| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 35-skill catalog |
 | Public plugin directory | Not published or approved; see [publishing status](docs/plugin/PUBLISHING.md) |
 
-## Latest update: October 2, 2026
+## Latest update: October 10, 2026
+
+- **New: [Event Command Center](10-events/35-event-command-center.md).** Plan, promote, track and close out webinars, in-person workshops and co-hosted events. Adds an Events category and brings the catalog to 35 skills.
+
+### October 2, 2026
 
 - **New: [Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md).** Track reciprocal commitments, resolve relationship ownership and separate internal notes from partner-visible updates.
 - **New: [Weekly Marketing & Sales Review](06-marketing-content/34-weekly-marketing-sales-review.md).** Turn last week's promises, campaign evidence and pipeline changes into a decision agenda.
@@ -71,6 +75,7 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 | [**07 Research & Intelligence**](07-research-intelligence/) | You need better prospect, competitor, or market intelligence | 2 |
 | [**08 Finance & Profitability**](08-finance-profitability/) | Projects are busy but you cannot see where margin is leaking | 2 |
 | [**09 Agency Brain & Systems**](09-agency-brain-systems/) | Important decisions and knowledge keep disappearing into meetings and people's heads | 2 |
+| [**10 Events**](10-events/) | Events break quietly: unbooked venues, unclear headcounts, follow-ups that never go out | 1 |
 
 ## Start with a problem you have this week
 
@@ -95,9 +100,11 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 | You want to write about what you actually learned running the agency | [Owner Blog Post](06-marketing-content/30-owner-blog-post.md) |
 | You need real background on a person before a call | [Lead Research Brief](07-research-intelligence/31-lead-research-brief.md) |
 | A contract is sitting unread and somebody wants it signed | [Contract Red-Flag Review](08-finance-profitability/32-contract-red-flag-review.md) |
+| Event bookings, headcounts and follow-ups are unclear | [Event Command Center](10-events/35-event-command-center.md) |
 
 ## New workflows
 
+- [Event Command Center](10-events/35-event-command-center.md)
 - [Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md)
 - [Weekly Marketing & Sales Review](06-marketing-content/34-weekly-marketing-sales-review.md)
 
