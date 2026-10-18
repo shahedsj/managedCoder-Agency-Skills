@@ -1,4 +1,4 @@
-# All 36 Agency Skills
+# All 39 Agency Skills
 
 These skills support ManagedCoder's goal: help agency owners become AI-first operators and reduce founder dependency through shared knowledge and repeatable operating systems.
 
@@ -6,7 +6,7 @@ Pick the recurring problem you want to solve. Open its skill, provide the reques
 
 [Start here](START-HERE.md) · [Latest updates](CHANGELOG.md)
 
-The plugin release candidate contains a separate subset: six operating skills plus context setup. This catalog lists the 36 standalone reference workflows.
+The plugin release candidate contains a separate subset: six operating skills plus context setup. This catalog lists the 39 standalone reference workflows.
 
 ## Owner Command & Direction
 
@@ -87,6 +87,9 @@ The plugin release candidate contains a separate subset: six operating skills pl
 |---|---|
 | 24 | [Meeting to Knowledge Capture](09-agency-brain-systems/24-meeting-to-knowledge-capture.md) |
 | 25 | [Agency Decision Logger](09-agency-brain-systems/25-agency-decision-logger.md) |
+| 37 | [Build the Brain](09-agency-brain-systems/37-build-the-brain.md) |
+| 38 | [Ask the Brain](09-agency-brain-systems/38-ask-the-brain.md) |
+| 39 | [Brain Health Check](09-agency-brain-systems/39-brain-health-check.md) |
 
 ## Events
 

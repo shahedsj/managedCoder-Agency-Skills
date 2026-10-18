@@ -1,5 +1,17 @@
 # Change log
 
+## October 18, 2026: Agency Brain Kit
+
+Added the [Agency Brain Kit](09-agency-brain-systems/brain-kit/README.md) and three skills, bringing the standalone catalog from 36 to 39 workflows:
+
+- [Build the Brain](09-agency-brain-systems/37-build-the-brain.md): turn rough notes or an Agency Brain page file into source-backed company files. Marks unknown facts, separates Confirmed from Proposed, and previews before saving.
+- [Ask the Brain](09-agency-brain-systems/38-ask-the-brain.md): answer from your own files with the file, entry and date. Says "Not in the Brain" instead of guessing and flags conflicts and old entries.
+- [Brain Health Check](09-agency-brain-systems/39-brain-health-check.md): report entries past review, with no source, in conflict, or never confirmed. Reports only.
+
+The kit is plain Markdown: no signup, no connection and no ManagedCoder product needed. Test cases and a fictional sample agency are in `tests/brain-kit-evals.json` and `tests/brain-kit-fixtures/`. The cases are defined but not yet run in a supported host, so they are not evidence of results.
+
+These skills are not added to the plugin package.
+
 ## October 18, 2026: voice decisions and evidence checks
 
 - Added [Voice Task Review](01-owner-command/36-voice-task-review.md), bringing the standalone catalog to 36 workflows. Work through one owner decision at a time and verify approved tracker changes.
