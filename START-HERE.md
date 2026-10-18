@@ -2,7 +2,7 @@
 
 **Start building an agency that depends less on the founder.**
 
-ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 36 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
+ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 39 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
 
 Your durable asset is **Company Knowledge + Operating Logic + Structured Data + Skills**. Keep it usable across AI models. Begin with pasted information, then add an Agency Second Brain, connections and recurring automation when the workflow earns your trust.
 
@@ -39,7 +39,7 @@ That is the difference between asking AI to write and giving AI a reusable way t
 
 ## Choose based on the problem
 
-You do not need all 36 skills.
+You do not need all 39 skills.
 
 | What is happening in your agency? | Start with |
 |---|---|
@@ -48,6 +48,9 @@ You do not need all 36 skills.
 | Meetings create notes but not ownership | **03 Meeting Notes to Tasks** |
 | Important meeting decisions keep getting forgotten | **24 Meeting to Knowledge Capture** |
 | The same leadership decision keeps getting reopened | **25 Agency Decision Logger** |
+| Your agency knowledge lives only in your head | [37 Build the Brain](09-agency-brain-systems/37-build-the-brain.md) |
+| You want answers from your own files, with the source | [38 Ask the Brain](09-agency-brain-systems/38-ask-the-brain.md) |
+| You are not sure your Brain files are still true | [39 Brain Health Check](09-agency-brain-systems/39-brain-health-check.md) |
 | Your day is controlled by whoever messages you first | **10 Daily Owner Brief** |
 | Your weekly review is mostly status instead of decisions | **18 Weekly Owner Decision Brief** |
 | You need to prepare for an important meeting | **26 Next Meeting Prep Brief** |
@@ -130,9 +133,9 @@ Next: invoice/cash collection, pricing, utilization economics, monthly profitabi
 
 Capture the knowledge that normally disappears into meetings, chat, documents, and people's heads.
 
-Current skills: `24 Meeting to Knowledge Capture`, `25 Agency Decision Logger`.
+Current skills: `24 Meeting to Knowledge Capture`, `25 Agency Decision Logger`, `37 Build the Brain`, `38 Ask the Brain`, `39 Brain Health Check`. Start with the [Agency Brain Kit](09-agency-brain-systems/brain-kit/README.md).
 
-Next: SOP Builder, Employee Handoff Builder, knowledge health review, Agency Second Brain setup and maintenance.
+Next: SOP Builder, Employee Handoff Builder.
 
 ### 10 Events
 
