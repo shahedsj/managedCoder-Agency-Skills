@@ -1,6 +1,6 @@
 ---
 name: next-meeting-prep-brief
-description: Build a one-screen prep brief for an agency owner's next important client, prospect, partner, or leadership meeting using recent meetings, email, CRM, project history, open commitments, and company knowledge. Use when the user says prep me for my next meeting, prepare for this call, what do I need to know before the meeting, or wants talking points, open threads, questions, objections, and one desired outcome.
+description: Build a one-screen prep brief for an agency owner's next important client, prospect, partner, leadership, committee, or advisory meeting using recent meetings, email, CRM, project history, open commitments, and company knowledge. Use when the user says prep me for my next meeting, prepare for this call, what do I need to know before the meeting, or wants talking points, open threads, questions, objections, and one desired outcome.
 ---
 
 # Next Meeting Prep Brief
@@ -42,6 +42,17 @@ Separate:
 - inference
 - recommendation
 
+### Verify invitations, packets and commitments
+
+- Read the selected meeting occurrence and the latest direct invitation. Reconcile cancellations, reschedules and platform changes. A recurrence identifier or old invitation can retain an obsolete date or location.
+- State RSVP separately from attendance. An accepted invitation is not proof the person attended.
+- Read actual agenda, minutes and relevant attachments before citing their contents. Record meeting date, filename, parent message and page when available. A filename alone is not evidence of review.
+- If the current agenda is missing, say so. Label prior packets as historical context rather than presenting them as the upcoming agenda.
+- Verify current roles and committee assignments when they affect the recommendation. Saved rosters are lookup hints.
+- For each historical action, retain its original owner and deadline. Check later correspondence before calling it open or overdue. If completion evidence is absent, use status unverified.
+- Separate a discussion, proposal, approved decision, assigned action and suggested contribution. Interest in an offer does not prove implementation.
+- For sensitive advisory or governance work, use only authorized sources and keep the brief in its permitted audience. Do not copy private packets into a company knowledge base by default.
+
 ## Step 4 - Find open loops
 
 Look specifically for:
@@ -74,6 +85,8 @@ Keep to one screen when possible.
 # Meeting Prep - [Name / Company]
 **When:** [date/time]
 **Meeting:** [title]
+**Invitation checked:** [source, date, RSVP; unresolved conflicts]
+**Packet:** [current agenda/minutes read, or missing; historical material labeled]
 **Relationship:** [one sentence]
 
 ## Last time
@@ -81,6 +94,11 @@ Keep to one screen when possible.
 
 ## Open loops
 - [who owes what / since when / impact]
+
+## Commitment evidence
+| Commitment | Owner | Original deadline | Latest evidence | Verified status |
+|---|---|---|---|---|
+| [commitment] | [owner] | [date/unknown] | [dated source] | [status/unknown] |
 
 ## What they care about
 - [stated goal/constraint with source]
@@ -127,3 +145,7 @@ Keep to one screen when possible.
 ## What good looks like
 
 The owner can walk into the meeting knowing what happened last time, what is still open, what to ask, and what outcome to leave with.
+
+## Synthetic example: changed invitation and missing packet
+
+An old recurring invitation says Tuesday on a video call. A later direct invitation moves the meeting to Wednesday in person. Use Wednesday and the later location, citing both the change and the selected occurrence. The last packet is four months old. Mark the current agenda missing. A proposed pilot appears in those minutes, but no launch evidence exists. List pilot status as unverified and ask for confirmation. Do not describe it as an active program.

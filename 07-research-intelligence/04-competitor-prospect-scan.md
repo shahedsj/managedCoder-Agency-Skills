@@ -11,23 +11,14 @@ Walking into a call having read their website is table stakes. Walking in having
 
 ## How it works
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│  STANDALONE (always works)                                    │
-│  ✓ Give a company name — web research does the rest          │
-│  ✓ Snapshot, likely pains, recent moves, opening lines       │
-│  ✓ Everything marked confirmed vs inferred                    │
-├──────────────────────────────────────────────────────────────┤
-│  SUPERCHARGED (when you connect your tools)                   │
-│  + ~~CRM: pull existing notes and past interactions first     │
-│  + ~~email: check whether anyone here has talked to them      │
-│  + ~~enrichment: headcount, tech stack, funding detail        │
-└──────────────────────────────────────────────────────────────┘
-```
+| Mode | What happens |
+|---|---|
+| Standalone | Pasted company pages or notes work without browsing. A name alone requires web access; disclose when current facts cannot be checked. |
+| Connected | Use authorized CRM history, email and enrichment to add prior relationship context. |
 
 ## What I need from you
 
-**Just the company name.** A website or LinkedIn URL helps but isn't required.
+**Provide pasted company pages or notes.** With web access, a company name or website is enough to start. State when current facts cannot be verified.
 
 **Tell me which job this is doing:**
 - **Prospect** — you're pitching them
@@ -41,6 +32,12 @@ Walking into a call having read their website is table stakes. Walking in having
 If a `~~CRM` or `~~email` connector is available, search the company name **before** going to the web. Existing notes, a past deal, an old thread, a colleague who already met them.
 
 This matters more than it sounds. Presenting research on a company your own team pitched eight months ago — without mentioning it — is embarrassing in a way that's hard to recover from mid-call.
+
+### Resolve saved research before relying on it
+
+Read the complete relevant saved research, its source links and review date when available. A local summary can omit later corrections. Use approved canonical company knowledge for our positioning. Keep research, historical decisions and approved current strategy distinct.
+
+Do not claim a re-uploaded document contains new operating knowledge without comparing its content or revision evidence.
 
 ## Step 2 — Research, marking every claim
 
@@ -56,6 +53,18 @@ The whole brief is only useful if the user can tell fact from guess. Mark every 
 2. **Recent news** — funding, leadership changes, launches, layoffs, acquisitions. Anything in the last 3-6 months is a trigger event, and trigger events are why deals happen at all.
 3. **Their own site** — positioning, who they say they serve, case studies and their dates. A case-study page where the newest entry is two years old says something.
 4. **LinkedIn activity** — what leadership posts about is what's on their mind this quarter.
+
+For competitor offers, read the provider's original offer and pricing pages before inferring positioning. Compare audience, geography, delivery format, duration, entry offer, implementation support, proof and next action. Use job postings as supporting evidence, not as stronger evidence than the actual offer page for what the provider sells.
+
+Mark provider assertions as Provider claim, verified facts as Confirmed with source and review date, and interpretations as Inference. A published testimonial or result is a provider claim unless independently verified.
+
+For every changing price, record currency, unit, format, inclusions and review date. Do not compare a per-seat class with a team package as if they were equivalent. If no price is published, say not publicly confirmed rather than guessing.
+
+When pages conflict, show both values and their contexts. Prefer an explicit current correction when available. Do not silently turn an old price into the latest verified price.
+
+Failure to find a service on reviewed pages does not prove the provider lacks it. Say not found in reviewed sources. Keep uncertainty out of sales claims about competitors.
+
+Treat proposed differentiation as a hypothesis until checked against our actual capability and approved positioning. Research does not authorize changing our prices, offers or website.
 
 ## Step 3 — Produce the brief
 
@@ -81,6 +90,9 @@ Keep it to one page. This is a scan before a call, not a research report.
 |---|---|---|
 | Positioning | | |
 | Apparent price point | | |
+| Delivery format | | |
+| Implementation support | | |
+| Evidence date | | |
 | Where they look stronger | | |
 | Where we look stronger | | |
 
@@ -90,6 +102,8 @@ Keep it to one page. This is a scan before a call, not a research report.
 
 ## What I couldn't confirm
 - [Gap] — worth asking on the call
+
+**Decision this supports:** [what to test, owner role, and what evidence would change the recommendation]
 ```
 
 ## The rules that make this work
@@ -143,6 +157,10 @@ Keep it to one page. This is a scan before a call, not a research report.
 
 > ⚠️ Worth knowing before the call:
 > - They're stronger than you on hospitality proof. Don't compete there — get the conversation onto operations early, or you're arguing on their ground.
+
+## Synthetic example: conflicting offer prices
+
+Provider A lists a workshop at $240 per seat. An older article lists a $1,800 team session. The newer workshop page does not confirm the team offer or its price. Keep the seat price and team price separate. Mark the team price historical and current availability unconfirmed. Recommend checking the current team offer before changing our positioning. Do not claim the provider only sells workshops.
 
 ## Tips
 

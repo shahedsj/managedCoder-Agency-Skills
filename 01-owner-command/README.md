@@ -13,5 +13,6 @@ The goal is not to make the owner faster at doing everything. It is to help the 
 | 17 | [Meeting to Product Roadmap](17-meeting-to-product-roadmap.md) |
 | 18 | [Weekly Owner Decision Brief](18-weekly-owner-decision-brief.md) |
 | 26 | [Next Meeting Prep Brief](26-next-meeting-prep-brief.md) |
+| 36 | [Voice Task Review](36-voice-task-review.md) |
 
 [All categories](../CATALOG.md) · [Start here](../START-HERE.md)
