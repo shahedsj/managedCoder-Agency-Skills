@@ -20,7 +20,7 @@ You keep the files. The AI reads them when you ask a question, and helps you add
 
 You do not need all 7 files today. Start with 5 good entries, not 100 messy ones.
 
-1. **Company file (10 min).** No company file yet? Make one in 5 minutes on the Agency Brain page at [managedcoder.com](https://managedcoder.com). Download it, then run skill 37 and paste it in. Skill 37 turns it into `company.md`. Prefer not to use the page? Answer the 5 questions in skill 37 instead.
+1. **Company file (10 min).** No company file yet? Make one in 5 minutes on the [ManagedCoder Agency Brain page](https://managedcoder.com/second-brain). Download it, then run skill 37 and paste it in. Skill 37 turns it into `company.md`. Prefer not to use the page? Answer the 5 questions in skill 37 instead.
 2. **One client (5 min).** Copy `clients/_client-template.md`. Fill in one real client. Skip fields you do not know. Write `UNKNOWN`.
 3. **One policy (5 min).** Open `policies.md`. Add one rule you keep repeating, like how you handle scope changes.
 4. **One decision (5 min).** After your next leadership meeting, run skill 25 and save the result in `decisions/`.
