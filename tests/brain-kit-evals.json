@@ -127,5 +127,5 @@
       "expected": "Brain skills should not route to this task."
     }
   ],
-  "status": "Cases defined 2026-10-18. Not yet run. Results go in tests/brain-kit-results.md after execution in at least two AI tools."
+  "status": "22 cases defined 2026-10-18. 8 spot-checked once in one AI model family; see tests/brain-kit-results.md. 14 not run. Not yet tested in a second AI tool."
 }

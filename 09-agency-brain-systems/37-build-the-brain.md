@@ -94,6 +94,10 @@ If something is an open question, write it as a question, not a fact.
 
 ## Step 4 - Write each entry in the standard shape
 
+Use the full shape below for anything that can change or that someone may rely on: prices, payment terms, rules, client status, team size and tools. These always need a source and a `review_date`, even inside `company.md`.
+
+Simple, stable facts in `company.md`, like the agency name or a one-line description, can stay as a bullet with a **[Confirmed]** or **[Proposed]** mark.
+
 ```text
 title:
 summary:
