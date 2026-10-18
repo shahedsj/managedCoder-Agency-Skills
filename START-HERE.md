@@ -2,7 +2,7 @@
 
 **Start building an agency that depends less on the founder.**
 
-ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 35 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
+ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 36 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
 
 Your durable asset is **Company Knowledge + Operating Logic + Structured Data + Skills**. Keep it usable across AI models. Begin with pasted information, then add an Agency Second Brain, connections and recurring automation when the workflow earns your trust.
 
@@ -39,7 +39,7 @@ That is the difference between asking AI to write and giving AI a reusable way t
 
 ## Choose based on the problem
 
-You do not need all 35 skills.
+You do not need all 36 skills.
 
 | What is happening in your agency? | Start with |
 |---|---|
@@ -51,6 +51,7 @@ You do not need all 35 skills.
 | Your day is controlled by whoever messages you first | **10 Daily Owner Brief** |
 | Your weekly review is mostly status instead of decisions | **18 Weekly Owner Decision Brief** |
 | You need to prepare for an important meeting | **26 Next Meeting Prep Brief** |
+| You want to work through one spoken owner decision | [36 Voice Task Review](01-owner-command/36-voice-task-review.md) |
 | You have too many tasks and cannot see the real priorities | **06 Daily Task Triage** |
 | Delegated work keeps coming back to you | **07 Weekly Delegated Task Review** |
 | Managers need stronger accountability | **08 Manager Accountability Scorecard** |
@@ -67,7 +68,6 @@ You do not need all 35 skills.
 | You want to write about what you actually learned | **30 Owner Blog Post** |
 | You need background on a person before a call | **31 Lead Research Brief** |
 | A contract is waiting and nobody has read it properly | **32 Contract Red-Flag Review** |
-
 | Partner promises lose momentum | [33 Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md) |
 | Marketing and sales meetings lack follow-through | [34 Weekly Marketing & Sales Review](06-marketing-content/34-weekly-marketing-sales-review.md) |
 | Event bookings, headcounts and follow-ups are unclear | [35 Event Command Center](10-events/35-event-command-center.md) |
@@ -80,7 +80,7 @@ ManagedCoder is organized around what an agency owner needs to run the business,
 
 Know what matters, what needs a decision, what should be delegated, and what the owner needs before an important meeting.
 
-Current skills: `06 Daily Task Triage`, `10 Daily Owner Brief`, `17 Meeting to Product Roadmap`, `18 Weekly Owner Decision Brief`, `26 Next Meeting Prep Brief`.
+Current skills: `06 Daily Task Triage`, `10 Daily Owner Brief`, `17 Meeting to Product Roadmap`, `18 Weekly Owner Decision Brief`, `26 Next Meeting Prep Brief`, `36 Voice Task Review`.
 
 ### 02 Client Success & Retention
 

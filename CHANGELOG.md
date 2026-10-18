@@ -1,5 +1,13 @@
 # Change log
 
+## October 18, 2026: voice decisions and evidence checks
+
+- Added [Voice Task Review](01-owner-command/36-voice-task-review.md), bringing the standalone catalog to 36 workflows. Work through one owner decision at a time and verify approved tracker changes.
+- Updated [Next Meeting Prep Brief](01-owner-command/26-next-meeting-prep-brief.md) with invitation reconciliation, packet checks and dated commitment evidence.
+- Updated [Competitor / Prospect Scan](07-research-intelligence/04-competitor-prospect-scan.md) with pasted-input support, dated offer comparisons, provider-claim labels and conflicting-price handling.
+
+These are adapted operating workflows with synthetic examples. Static checks do not establish real-world effectiveness. This batch does not add plugin entries, change internal systems or publish website listings.
+
 ## October 10, 2026: Event Command Center
 
 Added [Event Command Center](10-events/35-event-command-center.md): plan, promote, track and close out webinars, in-person and co-hosted events. New Events category. Catalog grows from 34 to 35.
