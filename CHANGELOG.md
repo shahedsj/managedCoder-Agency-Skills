@@ -1,5 +1,11 @@
 # Change log
 
+## October 28, 2026: decision routing and follow-through
+
+Added [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md), bringing the standalone catalog to 40 workflows. Distinguishes decisions awaiting approval, recorded decisions, execution evidence, and supported completion. Adds short follow-up drafts, preserves original deadlines, and keeps consequential actions reviewable.
+
+The revised workflow was checked in eight anonymized AI regression scenarios with expected behavior observed. These checks do not establish live operational reliability or cross-model effectiveness. This addition is a standalone reference workflow, not a new plugin entry or live system connection.
+
 ## October 18, 2026: Agency Brain Kit
 
 Added the [Agency Brain Kit](09-agency-brain-systems/brain-kit/README.md) and three skills, bringing the standalone catalog from 36 to 39 workflows:

@@ -1,4 +1,4 @@
-# All 39 Agency Skills
+# All 40 Agency Skills
 
 These skills support ManagedCoder's goal: help agency owners become AI-first operators and reduce founder dependency through shared knowledge and repeatable operating systems.
 
@@ -18,6 +18,7 @@ The plugin release candidate contains a separate subset: six operating skills pl
 | 18 | [Weekly Owner Decision Brief](01-owner-command/18-weekly-owner-decision-brief.md) |
 | 26 | [Next Meeting Prep Brief](01-owner-command/26-next-meeting-prep-brief.md) |
 | 36 | [Voice Task Review](01-owner-command/36-voice-task-review.md) |
+| 40 | [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md) |
 
 ## Client Success & Retention
 
