@@ -6,11 +6,11 @@ Created by [Shahed Islam](https://github.com/shahedsj), co-founder of SJ Innovat
 
 ManagedCoder helps agency owners become AI-first operators. Learn from real agency systems, copy a useful workflow, adapt it to your business, and build operating knowledge your team can reuse.
 
-This repository is the free Skills layer: **39 reusable workflows across 10 agency operating areas.**
+This repository is the free Skills layer: **40 reusable workflows across 10 agency operating areas.**
 
 Start with one Markdown file and the information you already have. Use it with ChatGPT, Claude, Gemini, Codex or another capable AI. No CRM connection or paid ManagedCoder product is required for the standalone workflows. Results depend on the model and the evidence you provide.
 
-[**Start in 5 minutes**](START-HERE.md) · [**Browse all 39 skills**](CATALOG.md) · [**See what changed**](CHANGELOG.md) · [**Try the plugin release candidate**](docs/plugin/INSTALL.md)
+[**Start in 5 minutes**](START-HERE.md) · [**Browse all 40 skills**](CATALOG.md) · [**See what changed**](CHANGELOG.md) · [**Try the plugin release candidate**](docs/plugin/INSTALL.md)
 
 ## The vision behind the library
 
@@ -35,13 +35,17 @@ The free files should help even if you never buy a product. Start with supplied 
 
 | What you can use | Current scope |
 |---|---|
-| Public skill library | 39 Markdown workflows across 10 agency operating areas |
+| Public skill library | 40 Markdown workflows across 10 agency operating areas |
 | Standalone use | Paste relevant notes, tasks, project or CRM information into your AI with the selected skill |
 | Connected use | Optional guidance for using your own authorized tools; this repository does not provide a working connection to your systems |
-| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 39-skill catalog |
+| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 40-skill catalog |
 | Public plugin directory | Not published or approved; see [publishing status](docs/plugin/PUBLISHING.md) |
 
-## Latest update: October 18, 2026
+## Latest update: October 28, 2026
+
+- **New: [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md).** Route decisions, follow through on existing approvals, and stop chasing accepted completion. Works with pasted information; optional authorized tools can supply current evidence. Brings the standalone catalog to 40 skills.
+
+### October 18, 2026
 
 - **New: [Agency Brain Kit](09-agency-brain-systems/brain-kit/README.md).** A small folder of Markdown files for your agency knowledge, with three new skills: [Build the Brain](09-agency-brain-systems/37-build-the-brain.md), [Ask the Brain](09-agency-brain-systems/38-ask-the-brain.md) and [Brain Health Check](09-agency-brain-systems/39-brain-health-check.md). Free, no signup, works with any capable AI. Brings the catalog to 39 skills.
 
@@ -74,7 +78,7 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 
 | Area | Use it when... | Skills |
 |---|---|---:|
-| [**01 Owner Command & Direction**](01-owner-command/) | Too many things still need the owner's attention or decision | 6 |
+| [**01 Owner Command & Direction**](01-owner-command/) | Too many things still need the owner's attention or decision | 7 |
 | [**02 Client Success & Retention**](02-client-success/) | You want to catch client risk before the client becomes the alert | 2 |
 | [**03 Sales & Pipeline**](03-sales-pipeline/) | Deals, proposals, CRM, and follow-up are inconsistent | 9 |
 | [**04 Delivery, Scope & Operations**](04-delivery-operations/) | Projects slip, ownership is unclear, or scope keeps expanding | 3 |
@@ -112,6 +116,8 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 | Event bookings, headcounts and follow-ups are unclear | [Event Command Center](10-events/35-event-command-center.md) |
 
 ## New workflows
+
+- [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md)
 
 - [Voice Task Review](01-owner-command/36-voice-task-review.md)
 - [Event Command Center](10-events/35-event-command-center.md)
