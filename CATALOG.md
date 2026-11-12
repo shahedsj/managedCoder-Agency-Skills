@@ -40,6 +40,7 @@ The plugin release candidate contains a separate subset: six operating skills pl
 | 27 | [ICP List Build](03-sales-pipeline/27-icp-list-build.md) |
 | 28 | [Unique Cold Outreach](03-sales-pipeline/28-unique-cold-outreach.md) |
 | 33 | [Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md) |
+| 41 | [Relationship Network Keeper](03-sales-pipeline/41-relationship-network-keeper.md) |
 
 ## Delivery, Scope & Operations
 

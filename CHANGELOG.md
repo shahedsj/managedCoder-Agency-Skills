@@ -1,5 +1,9 @@
 # Change log
 
+## November 12, 2026: relationship tiers
+
+Added [Relationship Network Keeper](03-sales-pipeline/41-relationship-network-keeper.md), bringing the standalone catalog to 41 workflows. Sorts contacts into Network of 90, List of 20, or Lead before anything is drafted, so partners and clients stop getting cold pitches. Drafts 3 short relationship touches a day and proposes record updates for approval. Inspired by the network of 90 and list of 20 ideas from Book Yourself Solid.
+
 ## October 28, 2026: decision routing and follow-through
 
 Added [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md), bringing the standalone catalog to 40 workflows. Distinguishes decisions awaiting approval, recorded decisions, execution evidence, and supported completion. Adds short follow-up drafts, preserves original deadlines, and keeps consequential actions reviewable.

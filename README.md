@@ -119,6 +119,7 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 
 - [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md)
 
+- [Relationship Network Keeper](03-sales-pipeline/41-relationship-network-keeper.md)
 - [Voice Task Review](01-owner-command/36-voice-task-review.md)
 - [Event Command Center](10-events/35-event-command-center.md)
 - [Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md)
