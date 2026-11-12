@@ -1,4 +1,4 @@
-# All 40 Agency Skills
+# All 41 Agency Skills
 
 These skills support ManagedCoder's goal: help agency owners become AI-first operators and reduce founder dependency through shared knowledge and repeatable operating systems.
 
@@ -6,7 +6,7 @@ Pick the recurring problem you want to solve. Open its skill, provide the reques
 
 [Start here](START-HERE.md) · [Latest updates](CHANGELOG.md)
 
-The plugin release candidate contains a separate subset: six operating skills plus context setup. This catalog lists the 39 standalone reference workflows.
+The plugin release candidate contains a separate subset: six operating skills plus context setup. This catalog lists the 41 standalone reference workflows.
 
 ## Owner Command & Direction
 

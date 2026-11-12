@@ -2,7 +2,7 @@
 
 **Start building an agency that depends less on the founder.**
 
-ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 39 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
+ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 41 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
 
 Your durable asset is **Company Knowledge + Operating Logic + Structured Data + Skills**. Keep it usable across AI models. Begin with pasted information, then add an Agency Second Brain, connections and recurring automation when the workflow earns your trust.
 
@@ -39,7 +39,7 @@ That is the difference between asking AI to write and giving AI a reusable way t
 
 ## Choose based on the problem
 
-You do not need all 39 skills.
+You do not need all 41 skills.
 
 | What is happening in your agency? | Start with |
 |---|---|
@@ -95,7 +95,7 @@ Current skills: `01 Client Status Report`, `19 Client Health Review`.
 
 Keep opportunities moving from research and proposal through CRM and follow-up.
 
-Current skills: `02 Proposal / SOW Draft`, `09 Meeting-to-CRM Log`, `13 Deal Pipeline Review`, `14 LinkedIn Outbound Strategy`, `15 Warm Lead Outreach`, `16 LinkedIn DM Outreach`, `27 ICP List Build`, `28 Unique Cold Outreach`, `33 Partner Pipeline & Follow-Up`.
+Current skills: `02 Proposal / SOW Draft`, `09 Meeting-to-CRM Log`, `13 Deal Pipeline Review`, `14 LinkedIn Outbound Strategy`, `15 Warm Lead Outreach`, `16 LinkedIn DM Outreach`, `27 ICP List Build`, `28 Unique Cold Outreach`, `33 Partner Pipeline & Follow-Up`, `41 Relationship Network Keeper`.
 
 ### 04 Delivery, Scope & Operations
 
