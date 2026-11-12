@@ -1,4 +1,4 @@
-# All 40 Agency Skills
+# All 41 Agency Skills
 
 These skills support ManagedCoder's goal: help agency owners become AI-first operators and reduce founder dependency through shared knowledge and repeatable operating systems.
 
@@ -6,7 +6,7 @@ Pick the recurring problem you want to solve. Open its skill, provide the reques
 
 [Start here](START-HERE.md) · [Latest updates](CHANGELOG.md)
 
-The plugin release candidate contains a separate subset: six operating skills plus context setup. This catalog lists the 39 standalone reference workflows.
+The plugin release candidate contains a separate subset: six operating skills plus context setup. This catalog lists the 41 standalone reference workflows.
 
 ## Owner Command & Direction
 
@@ -40,6 +40,7 @@ The plugin release candidate contains a separate subset: six operating skills pl
 | 27 | [ICP List Build](03-sales-pipeline/27-icp-list-build.md) |
 | 28 | [Unique Cold Outreach](03-sales-pipeline/28-unique-cold-outreach.md) |
 | 33 | [Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md) |
+| 41 | [Relationship Network Keeper](03-sales-pipeline/41-relationship-network-keeper.md) |
 
 ## Delivery, Scope & Operations
 

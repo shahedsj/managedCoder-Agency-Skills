@@ -6,7 +6,7 @@ Created by [Shahed Islam](https://github.com/shahedsj), co-founder of SJ Innovat
 
 ManagedCoder helps agency owners become AI-first operators. Learn from real agency systems, copy a useful workflow, adapt it to your business, and build operating knowledge your team can reuse.
 
-This repository is the free Skills layer: **40 reusable workflows across 10 agency operating areas.**
+This repository is the free Skills layer: **41 reusable workflows across 10 agency operating areas.**
 
 Start with one Markdown file and the information you already have. Use it with ChatGPT, Claude, Gemini, Codex or another capable AI. No CRM connection or paid ManagedCoder product is required for the standalone workflows. Results depend on the model and the evidence you provide.
 
@@ -35,13 +35,17 @@ The free files should help even if you never buy a product. Start with supplied 
 
 | What you can use | Current scope |
 |---|---|
-| Public skill library | 40 Markdown workflows across 10 agency operating areas |
+| Public skill library | 41 Markdown workflows across 10 agency operating areas |
 | Standalone use | Paste relevant notes, tasks, project or CRM information into your AI with the selected skill |
 | Connected use | Optional guidance for using your own authorized tools; this repository does not provide a working connection to your systems |
-| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 40-skill catalog |
+| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 41-skill catalog |
 | Public plugin directory | Not published or approved; see [publishing status](docs/plugin/PUBLISHING.md) |
 
-## Latest update: October 28, 2026
+## Latest update: November 12, 2026
+
+- **New: [Relationship Network Keeper](03-sales-pipeline/41-relationship-network-keeper.md).** Sort every contact into Network of 90, List of 20, or Lead before you draft, so partners and clients stop getting cold pitches. Drafts 3 short relationship touches a day. Brings the standalone catalog to 41 skills.
+
+### October 28, 2026
 
 - **New: [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md).** Route decisions, follow through on existing approvals, and stop chasing accepted completion. Works with pasted information; optional authorized tools can supply current evidence. Brings the standalone catalog to 40 skills.
 
@@ -119,6 +123,7 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 
 - [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md)
 
+- [Relationship Network Keeper](03-sales-pipeline/41-relationship-network-keeper.md)
 - [Voice Task Review](01-owner-command/36-voice-task-review.md)
 - [Event Command Center](10-events/35-event-command-center.md)
 - [Partner Pipeline & Follow-Up](03-sales-pipeline/33-partner-pipeline-follow-up.md)

@@ -17,5 +17,6 @@ The goal is to reduce opportunities lost because context was scattered or the ne
 | 27 | [ICP List Build](27-icp-list-build.md) |
 | 28 | [Unique Cold Outreach](28-unique-cold-outreach.md) |
 | 33 | [Partner Pipeline & Follow-Up](33-partner-pipeline-follow-up.md) |
+| 41 | [Relationship Network Keeper](41-relationship-network-keeper.md) |
 
 [All categories](../CATALOG.md) · [Start here](../START-HERE.md)
