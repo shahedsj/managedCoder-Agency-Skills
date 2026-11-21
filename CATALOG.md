@@ -1,4 +1,4 @@
-# All 41 Agency Skills
+# All 42 Agency Skills
 
 These skills support ManagedCoder's goal: help agency owners become AI-first operators and reduce founder dependency through shared knowledge and repeatable operating systems.
 
@@ -6,7 +6,7 @@ Pick the recurring problem you want to solve. Open its skill, provide the reques
 
 [Start here](START-HERE.md) · [Latest updates](CHANGELOG.md)
 
-The plugin release candidate contains a separate subset: six operating skills plus context setup. This catalog lists the 41 standalone reference workflows.
+The plugin release candidate contains a separate subset: six operating skills plus context setup. This catalog lists the 42 standalone reference workflows.
 
 ## Owner Command & Direction
 
@@ -19,6 +19,7 @@ The plugin release candidate contains a separate subset: six operating skills pl
 | 26 | [Next Meeting Prep Brief](01-owner-command/26-next-meeting-prep-brief.md) |
 | 36 | [Voice Task Review](01-owner-command/36-voice-task-review.md) |
 | 40 | [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md) |
+| 42 | [ADHD Focus Menu](01-owner-command/42-adhd-focus.md) |
 
 ## Client Success & Retention
 
