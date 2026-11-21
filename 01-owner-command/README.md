@@ -15,5 +15,6 @@ The goal is not to make the owner faster at doing everything. It is to help the 
 | 26 | [Next Meeting Prep Brief](26-next-meeting-prep-brief.md) |
 | 36 | [Voice Task Review](36-voice-task-review.md) |
 | 40 | [Should This Reach the Owner?](40-should-this-reach-the-owner.md) |
+| 42 | [ADHD Focus Menu](42-adhd-focus.md) |
 
 [All categories](../CATALOG.md) · [Start here](../START-HERE.md)
