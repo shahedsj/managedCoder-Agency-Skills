@@ -1,5 +1,13 @@
 # Change log
 
+## November 21, 2026: ADHD Focus Menu
+
+Added [ADHD Focus Menu](01-owner-command/42-adhd-focus.md) as standalone skill 42 in Owner Command & Direction. It preserves seven selectable workflows: task paralysis shatterer, dopamine menu, body doubling, context switching, interest-based quest, time-blindness audit, and externalizing open loops. It opens the menu before selecting a tool and uses small steps and one input at a time. The name is a memorable label for work structure, not a diagnosis or treatment.
+
+Added [ADHD regression scenarios](tests/adhd-focus-evals.json) to define expected behavior, including no automatic timers, no diagnosis, and no unapproved writes. These scenarios are not evidence of cross-model effectiveness. Updated the main README, catalog, getting-started guide and Owner Command index. This addition is not included in the existing plugin release candidate and does not change live website downloads.
+
+Attribution: adapted from seven focus prompts attributed to Awa K. Penn in source material dated November 21, 2026.
+
 ## November 12, 2026: relationship tiers
 
 Added [Relationship Network Keeper](03-sales-pipeline/41-relationship-network-keeper.md), bringing the standalone catalog to 41 workflows. Sorts contacts into Network of 90, List of 20, or Lead before anything is drafted, so partners and clients stop getting cold pitches. Drafts 3 short relationship touches a day and proposes record updates for approval. Inspired by the network of 90 and list of 20 ideas from Book Yourself Solid.
