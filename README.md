@@ -6,11 +6,11 @@ Created by [Shahed Islam](https://github.com/shahedsj), co-founder of SJ Innovat
 
 ManagedCoder helps agency owners become AI-first operators. Learn from real agency systems, copy a useful workflow, adapt it to your business, and build operating knowledge your team can reuse.
 
-This repository is the free Skills layer: **41 reusable workflows across 10 agency operating areas.**
+This repository is the free Skills layer: **42 reusable workflows across 10 agency operating areas.**
 
 Start with one Markdown file and the information you already have. Use it with ChatGPT, Claude, Gemini, Codex or another capable AI. No CRM connection or paid ManagedCoder product is required for the standalone workflows. Results depend on the model and the evidence you provide.
 
-[**Start in 5 minutes**](START-HERE.md) · [**Browse all 40 skills**](CATALOG.md) · [**See what changed**](CHANGELOG.md) · [**Try the plugin release candidate**](docs/plugin/INSTALL.md)
+[**Start in 5 minutes**](START-HERE.md) · [**Browse all 42 skills**](CATALOG.md) · [**See what changed**](CHANGELOG.md) · [**Try the plugin release candidate**](docs/plugin/INSTALL.md)
 
 ## The vision behind the library
 
@@ -35,13 +35,17 @@ The free files should help even if you never buy a product. Start with supplied 
 
 | What you can use | Current scope |
 |---|---|
-| Public skill library | 41 Markdown workflows across 10 agency operating areas |
+| Public skill library | 42 Markdown workflows across 10 agency operating areas |
 | Standalone use | Paste relevant notes, tasks, project or CRM information into your AI with the selected skill |
 | Connected use | Optional guidance for using your own authorized tools; this repository does not provide a working connection to your systems |
-| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 41-skill catalog |
+| Agency Operations plugin | Release candidate with 6 operating skills plus context setup; not the full 42-skill catalog |
 | Public plugin directory | Not published or approved; see [publishing status](docs/plugin/PUBLISHING.md) |
 
-## Latest update: November 12, 2026
+## Latest update: November 21, 2026
+
+- **New: [ADHD Focus Menu](01-owner-command/42-adhd-focus.md).** Choose one of seven work-structure tools to start a stuck task, switch context, time-map work, or clear open loops. Includes small-step guidance and honest user-initiated body-double check-ins. The name is a memory shortcut, not a medical diagnosis. Brings the standalone catalog to 42 skills. The plugin release candidate remains unchanged.
+
+### November 12, 2026
 
 - **New: [Relationship Network Keeper](03-sales-pipeline/41-relationship-network-keeper.md).** Sort every contact into Network of 90, List of 20, or Lead before you draft, so partners and clients stop getting cold pitches. Drafts 3 short relationship touches a day. Brings the standalone catalog to 41 skills.
 
@@ -82,7 +86,7 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 
 | Area | Use it when... | Skills |
 |---|---|---:|
-| [**01 Owner Command & Direction**](01-owner-command/) | Too many things still need the owner's attention or decision | 7 |
+| [**01 Owner Command & Direction**](01-owner-command/) | Too many things still need the owner's attention or decision | 8 |
 | [**02 Client Success & Retention**](02-client-success/) | You want to catch client risk before the client becomes the alert | 2 |
 | [**03 Sales & Pipeline**](03-sales-pipeline/) | Deals, proposals, CRM, and follow-up are inconsistent | 9 |
 | [**04 Delivery, Scope & Operations**](04-delivery-operations/) | Projects slip, ownership is unclear, or scope keeps expanding | 3 |
@@ -104,6 +108,7 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 | Project status says green but you do not trust it | [Project Risk Review](04-delivery-operations/21-project-risk-review.md) |
 | Your weekly review is mostly status instead of decisions | [Weekly Owner Decision Brief](01-owner-command/18-weekly-owner-decision-brief.md) |
 | You want to work through one spoken owner decision | [Voice Task Review](01-owner-command/36-voice-task-review.md) |
+| You cannot get started, keep switching tasks, or feel overloaded | [ADHD Focus Menu](01-owner-command/42-adhd-focus.md) |
 | You need context before an important call | [Next Meeting Prep Brief](01-owner-command/26-next-meeting-prep-brief.md) |
 | You cannot tell whether the team is truly overloaded | [Capacity & Overload Review](05-team-leadership/22-capacity-overload-review.md) |
 | A project is busy but margin keeps disappearing | [Project Margin Leakage Review](08-finance-profitability/23-project-margin-leakage-review.md) |
@@ -120,6 +125,8 @@ The aim is to make useful operating knowledge available beyond one owner or one 
 | Event bookings, headcounts and follow-ups are unclear | [Event Command Center](10-events/35-event-command-center.md) |
 
 ## New workflows
+
+- [ADHD Focus Menu](01-owner-command/42-adhd-focus.md)
 
 - [Should This Reach the Owner?](01-owner-command/40-should-this-reach-the-owner.md)
 
