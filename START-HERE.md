@@ -2,7 +2,7 @@
 
 **Start building an agency that depends less on the founder.**
 
-ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 41 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
+ManagedCoder helps agency owners become AI-first operators through practical education and reusable operating systems. These 42 free skills are a starting point: learn one workflow, use it on real work, and keep the rules and company context your team can reuse.
 
 Your durable asset is **Company Knowledge + Operating Logic + Structured Data + Skills**. Keep it usable across AI models. Begin with pasted information, then add an Agency Second Brain, connections and recurring automation when the workflow earns your trust.
 
@@ -39,7 +39,7 @@ That is the difference between asking AI to write and giving AI a reusable way t
 
 ## Choose based on the problem
 
-You do not need all 41 skills.
+You do not need all 42 skills.
 
 | What is happening in your agency? | Start with |
 |---|---|
@@ -55,6 +55,7 @@ You do not need all 41 skills.
 | Your weekly review is mostly status instead of decisions | **18 Weekly Owner Decision Brief** |
 | You need to prepare for an important meeting | **26 Next Meeting Prep Brief** |
 | You want to work through one spoken owner decision | [36 Voice Task Review](01-owner-command/36-voice-task-review.md) |
+| You cannot get started or feel mentally overloaded | [42 ADHD Focus Menu](01-owner-command/42-adhd-focus.md) |
 | You have too many tasks and cannot see the real priorities | **06 Daily Task Triage** |
 | Delegated work keeps coming back to you | **07 Weekly Delegated Task Review** |
 | Managers need stronger accountability | **08 Manager Accountability Scorecard** |
@@ -83,7 +84,7 @@ ManagedCoder is organized around what an agency owner needs to run the business,
 
 Know what matters, what needs a decision, what should be delegated, and what the owner needs before an important meeting.
 
-Current skills: `06 Daily Task Triage`, `10 Daily Owner Brief`, `17 Meeting to Product Roadmap`, `18 Weekly Owner Decision Brief`, `26 Next Meeting Prep Brief`, `36 Voice Task Review`.
+Current skills: `06 Daily Task Triage`, `10 Daily Owner Brief`, `17 Meeting to Product Roadmap`, `18 Weekly Owner Decision Brief`, `26 Next Meeting Prep Brief`, `36 Voice Task Review`, `40 Should This Reach the Owner?`, `42 ADHD Focus Menu`.
 
 ### 02 Client Success & Retention
 
