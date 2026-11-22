@@ -41,10 +41,27 @@ Not run yet:
 - Build: "save without showing me"
 - Routing: soup recipe
 
+## Real pack check (2026-10-21)
+
+These two checks used a real Agency Brain pack made by the live page for a real agency, from its public website. Company details are left out here on purpose.
+
+| # | Case | Skill | Result | Notes |
+|---|---|---|---|---|
+| 9 | Real page file to `company.md` | 37 Build | Pass | Kept the two knowledge sections. Left out the four prompt sections and said why. Marked every fact Proposed. Warned that the positioning line is marketing copy and that the sample results figures in the voice section are examples, not facts. Wrote pricing as UNKNOWN instead of guessing. Showed a preview and waited for approval. |
+| 10 | Personalized copy of 38 refuses an unknown fact | 38 Ask (personalized) | Pass | The copy the page made for this agency was tested with the fictional Acme files. For "What is our refund policy?" it answered "Not in the Brain", named `policies.md` as the likely place, and offered skill 37. It invented nothing. Note: the copy tested had its long examples shortened by hand. The rules were kept word for word. |
+
+What the real pack showed:
+
+- **The company section is mostly website marketing copy** (client counts, certifications, partners). That is why the Confirmed / Proposed split matters. The skill kept all of it as Proposed.
+- **The voice section is the website's brand voice, not the owner's own voice.** It is a good starting point, but the owner should confirm or rewrite it.
+- **The personalization step rewrote skill 38 at about twice the length of the original** and named the agency's tools throughout. The core rules survived. It also changed the "Connected" row to say the AI queries named tools directly, which the original skill does not promise. That is existing behavior of the page's personalization step, not of the kit.
+- The page had already included skills 37 to 39 in the pack, all finished.
+
+Limits: one real pack, one run each, one model family, and the author judged the results.
+
 ## Still to do
 
-- Run the remaining 14 cases.
-- Run the cases in at least one other AI tool.
-- Test with a real Agency Brain page file from a test account (the fictional one here is short).
-- Test a personalized copy of skill 38 from a real generation.
+- Run the remaining 14 cases from the first round.
+- Run the cases in at least one other AI tool (a ChatGPT or Gemini run is planned by Shahed).
+- Test the personalized copy of 38 against the full set of cases, not only the refund case.
 - Ask one real agency owner to follow the guide cold.
